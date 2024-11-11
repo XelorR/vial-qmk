@@ -25,6 +25,15 @@
 #define TAB_L C(S(KC_TAB))
 #define TAB_R C(KC_TAB)
 
+enum layers {
+    _DEF,
+    _GAM,
+    _GFN,
+    _SYM,
+    _NAV,
+    _NUM,
+};
+
 enum keycodes {
     // Custom oneshot mod implementation with no timers.
     OS_SHFT = SAFE_RANGE,
