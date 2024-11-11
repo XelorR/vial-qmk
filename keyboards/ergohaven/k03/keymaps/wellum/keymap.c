@@ -46,7 +46,7 @@ enum keycodes {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_DEF] = LAYOUT_split_3x5_3(
+    [_DEF] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
         _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, _______,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, KC_CAPS, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, KC_RALT, _______, _______
     ),
 
-    [_GAM] = LAYOUT_split_3x5_3(
+    [_GAM] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______,  _______, _______, _______,  _______, _______,
         _______, KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,                                            KC_NONE,  KC_NONE, KC_UP,   KC_NONE,  KC_TAB,  _______,
         _______, KC_LSFT,  KC_A,   KC_S,    KC_D,    KC_F,                                            KC_NONE,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT, _______,
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                            _______, _______, KC_LALT, KC_SPC,  LA_GFN, _______,    _______, DF(_DEF), KC_SPC,  KC_PSCR, _______,  _______
     ),
 
-    [_GFN] = LAYOUT_split_3x5_3(
+    [_GFN] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______,  _______, _______, _______,  _______, _______,
         _______, KC_5,    KC_1,    KC_2,    KC_3,    KC_4,                                            KC_NONE,  KC_NONE, KC_UP,   KC_NONE,  KC_TAB,  _______,
         _______, KC_0,    KC_6,    KC_7,    KC_8,    KC_9,                                            KC_NONE,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT, _______,
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, KC_ESC,  KC_ENT,  _______, _______,     _______, _______, _______,  _______, _______,  _______
     ),
 
-    [_SYM] = LAYOUT_split_3x5_3(
+    [_SYM] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                            KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
         _______, KC_SCLN, GRV,     KC_GRV,  QUOT,    KC_MINS,                                         KC_PLUS, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
-    [_NAV] = LAYOUT_split_3x5_3(
+    [_NAV] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                          KC_ESC,  KC_HOME, KC_END,  KC_BSPC, KC_DEL,  _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
-    [_NUM] = LAYOUT_split_3x5_3(
+    [_NUM] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, KC_P1,   KC_P2,   KC_P3,   KC_P4,   KC_P5,                                           KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_F11,                                          KC_F12,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
