@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         LG_SET_DFLT, LG_SET_M0, LG_SET_M1M2, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                          KC_ESC,  KC_HOME, KC_END,  KC_BSPC,  KC_DEL,  _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT, _______,
         _______, SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_TAB,                                         KC_TAB,  KC_PGUP, KC_PGDN, KC_QUOT,  KC_NUM,  _______,
