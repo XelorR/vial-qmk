@@ -63,11 +63,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EN_PC] = LAYOUT(
-        _______, _______, _______, _______, _______,   _______,                                         _______,   _______, _______, _______, _______, _______,
-        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,      KC_L,    KC_U,    KC_Y,    KC_QUOT, TG(_NAV_PC),
-        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,      KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,      KC_H,    KC_COMM, KC_DOT,  KC_SLSH, OSM(MOD_RSFT),
-                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV_PC, _______,   _______, LA_SYM,  OSL(_NUM), LG_WORD, _______, _______
+        _______, _______, _______, _______, _______,   _______,                                         _______,   _______,   _______, _______, _______, _______,
+        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,      KC_L,      KC_U,    KC_Y,    KC_QUOT, TG(_NAV_PC),
+        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,      KC_N,      KC_E,    KC_I,    KC_O,    KC_ENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,      KC_H,      KC_COMM, KC_DOT,  KC_SLSH, OSM(MOD_RSFT),
+                          _______, _______, LG_SET_RU, KC_SPC,  LA_NAV_PC, _______,   _______, LA_SYM,  OSL(_NUM), LG_SET_EN, LG_COMMA, LG_DOT
     ),
 
     [_RU_PC] = LAYOUT(
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                        KC_PGUP,     KC_HOME, KC_UP,   KC_END,   KC_DEL,      _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                        KC_PGDN,     KC_LEFT, KC_DOWN, KC_RGHT,  KC_BSPC,     _______,
         KC_CAPS, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM_PC),                                   OSL(_MACRO), KC_BTN1, KC_APP,  KC_F2,    DF(_EN_MAC), CW_TOGG,
-                          _______, _______, _______, _______, _______, _______,     _______, LA_FN, _______, _______, _______, _______
+                          _______, _______, _______, _______, _______, _______,     _______, LA_FN, _______,     _______, _______, _______
     ),
 
     [_GAM_PC] = LAYOUT(
@@ -103,11 +103,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_EN_MAC] = LAYOUT(
-        _______, _______, _______, _______, _______,   _______,                                         _______, _______, _______, _______, _______, _______,
-        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, TG(_NAV_MAC),
-        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, OSM(MOD_RSFT),
-                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV_MAC, _______,      _______, LA_SYM,  OSL(_NUM), LG_WORD, _______, _______
+        _______, _______, _______, _______, _______,   _______,                                    _______, _______,   _______,   _______, _______, _______,
+        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                       KC_J,    KC_L,      KC_U,      KC_Y,    KC_QUOT, TG(_NAV_MAC),
+        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                       KC_M,    KC_N,      KC_E,      KC_I,    KC_O,    KC_ENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                       KC_K,    KC_H,      KC_COMM,   KC_DOT,  KC_SLSH, OSM(MOD_RSFT),
+                          _______, _______, LG_SET_RU, KC_SPC,  LA_NAV_MAC, _______,      _______, LA_SYM,  OSL(_NUM), LG_SET_EN, LG_COMMA, LG_DOT
     ),
 
     [_RU_MAC] = LAYOUT(
