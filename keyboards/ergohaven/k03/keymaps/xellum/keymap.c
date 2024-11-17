@@ -75,10 +75,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV_PC] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                          KC_ESC,  KC_HOME, KC_END,  KC_BSPC,  KC_DEL,  _______,
-        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,    KC_RGHT, _______,
-        _______, SPACE_L, SPACE_R, DF(_GAM_PC), KC_PSCR, KC_TAB,                                         KC_TAB,  KC_PGUP, KC_PGDN, KC_QUOT,  KC_NUM,  _______,
+        _______, _______, _______, _______, _______, _______,                                      _______, _______, _______, _______, _______, _______,
+        _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                       KC_PGUP,  KC_HOME, KC_UP,  KC_END,  KC_DEL,  _______,
+        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                       KC_PGDN,  KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM_PC),                                  OSL(_MACRO), KC_BTN1, KC_APP, DF(_EN_PC),  DF(_EN_MAC),  _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
