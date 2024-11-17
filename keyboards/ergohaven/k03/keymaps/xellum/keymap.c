@@ -84,17 +84,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_GAM_PC] = LAYOUT(
         _______, _______, _______, _______,  _______, _______,                                             _______,  _______, _______, _______,  _______, _______,
-        KC_I,    KC_TAB,   KC_Q,   KC_W,     KC_E,    KC_R,                                                _______,  _______, KC_UP,   _______,  KC_TAB,  DYN_REC_START2,
-        KC_CAPS, KC_LSFT,  KC_A,   KC_S,     KC_D,    KC_F,                                                _______,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT, DYN_REC_STOP,
-        KC_M,    KC_LCTL,  KC_Z,   KC_X,     KC_C,    KC_V,                                                _______,  _______, KC_VOLD, KC_VOLU,  KC_RCTL, DYN_MACRO_PLAY2,
+        KC_I,    KC_TAB,   KC_Q,   KC_W,     KC_E,    KC_R,                                                _______,  _______, KC_UP,   _______,  KC_TAB,  DM_REC2,
+        KC_CAPS, KC_LSFT,  KC_A,   KC_S,     KC_D,    KC_F,                                                _______,  KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT, DM_RSTP,
+        KC_M,    KC_LCTL,  KC_Z,   KC_X,     KC_C,    KC_V,                                                _______,  _______, KC_VOLD, KC_VOLU,  KC_RCTL, DM_PLY2,
                            _______, _______, KC_LALT, KC_SPC,  LA_GFN_PC, _______,    _______, DF(_EN_PC), KC_SPC,   KC_PSCR, _______,  _______
     ),
 
     [_GFN_PC] = LAYOUT(
         _______,         _______, _______, _______, _______, _______,                                         _______,  _______, _______, _______,  _______, _______,
-        DYN_REC_START1,  KC_5,    KC_1,    KC_2,    KC_3,    KC_4,                                            _______,  KC_F8,   KC_F9,   _______,  _______, DYN_REC_START2,
-        DYN_REC_STOP,    KC_0,    KC_6,    KC_7,    KC_8,    KC_9,                                            KC_F1,    KC_F5,   KC_F6,   KC_F7,    _______, DYN_REC_STOP,
-        DYN_MACRO_PLAY1, KC_T,    KC_J,    KC_O,    KC_P,    KC_G,                                            _______,  _______, _______, _______,  _______, DYN_MACRO_PLAY2,
+        DM_REC1, KC_5,    KC_1,    KC_2,    KC_3,    KC_4,                                                    _______,  KC_F8,   KC_F9,   _______,  _______, DM_REC2,
+        DM_RSTP, KC_0,    KC_6,    KC_7,    KC_8,    KC_9,                                                    KC_F1,    KC_F5,   KC_F6,   KC_F7,    _______, DM_RSTP,
+        DM_PLY1, KC_T,    KC_J,    KC_O,    KC_P,    KC_G,                                                    _______,  _______, _______, _______,  _______, DM_PLY2,
                                   _______, _______, KC_ESC,  KC_ENT,  _______, _______,     _______, _______, _______,  _______, _______,  _______
     ),
 
