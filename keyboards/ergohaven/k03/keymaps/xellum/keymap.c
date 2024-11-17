@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "quantum.h"
 #include "ergohaven.h"
 #include "oneshot.h"
 #include "swapper.h"
