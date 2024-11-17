@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                        KC_PGUP,     KC_HOME, KC_UP,   KC_END,   KC_DEL,      _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                        KC_PGDN,     KC_LEFT, KC_DOWN, KC_RGHT,  KC_BSPC,     _______,
         KC_CAPS, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM_PC),                                   OSL(_MACRO), KC_BTN1, KC_APP,  KC_F2,    DF(_EN_MAC), CW_TOGG,
-                          _______, _______, _______, LG_SET_M0, _______, _______,   _______, LA_FN, LG_SET_M1M2, _______, _______, _______
+                          _______, _______, _______, _______, _______, _______,     _______, LA_FN, _______, _______, _______, _______
     ),
 
     [_GAM_PC] = LAYOUT(
@@ -123,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, C(KC_LEFT), C(KC_RIGHT), TAB_L,   TAB_R,   SW_TAB,                                        KC_PGUP,     C(KC_LEFT), KC_UP,   C(KC_RIGHT), S(KC_BSPC), _______,
         _______, OS_CMD,     OS_ALT,      OS_CTRL, OS_SHFT, SW_WIN,                                        KC_PGDN,     KC_LEFT,    KC_DOWN, KC_RGHT,     KC_BSPC,    _______,
         KC_CAPS, G(KC_Z),    G(KC_X),     G(KC_C), G(KC_V), DF(_GAM_MAC),                                  OSL(_MACRO), KC_BTN1,    KC_APP,  KC_ENT,      DF(_EN_PC), CW_TOGG,
-                             _______,     _______, _______, LG_SET_M0, _______, _______,   _______, LA_FN, LG_SET_M1M2, _______,    _______, _______
+                             _______,     _______, _______, _______, _______, _______,     _______, LA_FN, _______, _______,    _______, _______
     ),
 
     [_GAM_MAC] = LAYOUT(
@@ -159,11 +159,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                       _______, _______, _______, _______, _______, _______,
-        _______, KC_12,   KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       _______, KC_MSTP, KC_MPRV, KC_MNXT, KC_MPLY, _______,
-        _______, KC_11,   KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
-        _______, KC_10,   KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                                       _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, _______,
-                          _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______
+        _______, _______, _______, _______, _______,     _______,                                         _______,     _______, _______, _______, _______, _______,
+        _______, KC_F12,  KC_F7,   KC_F8,   KC_F9,       KC_PSCR,                                         _______,     KC_MSTP, KC_MPRV, KC_MNXT, KC_MPLY, _______,
+        _______, KC_F11,  KC_F4,   KC_F5,   KC_F6,       KC_SCRL,                                         _______,     OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
+        _______, KC_F10,  KC_F1,   KC_F2,   KC_F3,       KC_PAUS,                                         _______,     KC_MUTE, KC_VOLD, KC_VOLU, _______, _______,
+                          _______, _______, LG_SET_DFLT, LG_SET_M0, _______, _______,   _______, _______, LG_SET_M1M2, _______, _______, _______
     ),
 
     [_MACRO] = LAYOUT(
