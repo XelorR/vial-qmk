@@ -10,7 +10,7 @@
 
 #define LA_SYM MO(_SYM)
 #define LA_FN MO(_FN)
-// #define LA_NUM MO(_NUM)
+#define LA_NUM MO(_NUM)
 // #define LA_MACRO MO(_MACRO)
 
 #define LA_NAV MO(_NAV)
@@ -36,8 +36,8 @@ enum layers {
     _NAV,
     _GAM,
     _GFN,
-    _SYM,
     _NUM,
+    _SYM,
     _FN,
     _MACRO,
 };
@@ -55,11 +55,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EN] = LAYOUT(
-        _______, _______, _______, _______, _______,   _______,                                      _______,   _______,   _______, _______, _______, _______,
-        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                         KC_J,      KC_L,      KC_U,    KC_Y,    KC_QUOT, TG(_NAV),
-        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                         KC_M,      KC_N,      KC_E,    KC_I,    KC_O,    KC_ENT,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                         KC_K,      KC_H,      KC_COMM, KC_DOT,  KC_SLSH, OSM(MOD_RSFT),
-                          _______, _______, LG_SET_RU, KC_SPC,  LA_NAV, _______,   _______, LA_SYM,  OSL(_NUM), LG_SET_EN, LG_COMMA, LG_DOT
+        _______, _______, _______, _______, _______,   _______,                                      _______,       _______, _______, _______, _______, _______,
+        KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                         KC_J,          KC_L,    KC_U,    KC_Y,    KC_QUOT, TG(_NAV),
+        QK_GESC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                         KC_M,          KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                         KC_K,          KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,   _______, LA_NUM,  OSM(MOD_RSFT), LA_FN,   LG_COMMA, LG_DOT
     ),
 
     [_RU] = LAYOUT(
@@ -94,20 +94,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   _______, _______, KC_ESC,  KC_ENT,  _______, _______,     _______, _______, _______,  _______, _______,  _______
     ),
 
-    [_SYM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______,   _______,    _______, _______, _______, _______,
-        DM_REC1, LG_TILD, LG_AMPR, S(KC_8), S(KC_9), KC_GRV,                                          LG_DQUO,   S(KC_BSLS), KC_O,    LG_LCBR, LG_RCBR, DM_REC2,
-        DM_RSTP, LG_COLON, LG_DLR, S(KC_5), LG_CIRC, S(KC_MINS),                                      S(KC_EQL), OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  DM_RSTP,
-        DM_PLY1, KC_INS,  S(KC_1), LG_AT,   LG_HASH, S(KC_9),                                         S(KC_0),   KC_RBRC,    LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
-                          _______, _______, _______, _______, _______, _______,     _______, _______, _______,   _______,    _______, _______
-    ),
-
     [_NUM] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                       _______,  _______,  _______,  _______, _______, _______,
         DM_REC1, LG_GRAVE, KC_7,   KC_8,    KC_9,    KC_GRV,                                        LG_QUOTE, S(KC_BSLS),  KC_O,  LG_LBR,  LG_RBR,   DM_REC2,
         DM_RSTP, LG_SCLN, KC_4,    KC_5,    KC_6,    KC_MINS,                                       KC_EQL,   OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   DM_RSTP,
         DM_PLY1, KC_0,    KC_1,    KC_2,    KC_3,    S(KC_9),                                       S(KC_0),  KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
                           _______, _______, _______, _______, _______, _______,   _______, _______, _______,  _______,  _______,  _______
+    ),
+
+    [_SYM] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,                                         _______,   _______,    _______, _______, _______, _______,
+        DM_REC1, LG_TILD, LG_AMPR, S(KC_8), S(KC_9), KC_GRV,                                          LG_DQUO,   S(KC_BSLS), KC_O,    LG_LCBR, LG_RCBR, DM_REC2,
+        DM_RSTP, LG_COLON, LG_DLR, S(KC_5), LG_CIRC, S(KC_MINS),                                      S(KC_EQL), OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  DM_RSTP,
+        DM_PLY1, KC_INS,  S(KC_1), LG_AT,   LG_HASH, S(KC_9),                                         S(KC_0),   KC_RBRC,    LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
+                          _______, _______, _______, _______, _______, _______,     _______, _______, _______,   _______,    _______, _______
     ),
 
     [_FN] = LAYOUT(
@@ -208,5 +208,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NAV, _FN);
+    return update_tri_layer_state(state, _NUM, _NAV, _SYM);
 }
