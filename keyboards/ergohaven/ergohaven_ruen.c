@@ -24,14 +24,14 @@ void set_lang(uint8_t lang) {
                 tap_code(KC_SPACE);
                 wait_ms(50);
                 unregister_code(KC_LCTL);
-                TG(1);
+                layer_invert(1);
                 wait_ms(50);
             } else {
                 register_code(KC_LGUI);
                 tap_code(KC_SPACE);
                 wait_ms(50);
                 unregister_code(KC_LGUI);
-                TG(1);
+                layer_invert(1);
                 wait_ms(50);
             }
             break;
