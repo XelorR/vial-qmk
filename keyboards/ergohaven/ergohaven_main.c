@@ -232,9 +232,9 @@ static const char* PROGMEM LAYER_NAME[] = {
     // clang-format off
     "Eng  ",
     "Rus  ",
-    "Nav  ",
     "Game ",
     "GamFn",
+    "Nav  ",
     "Num  ",
     "Sym  ",
     "Fn   ",
@@ -253,9 +253,9 @@ static const char* PROGMEM LAYER_UPPER_NAME[] = {
     // clang-format off
     "ENG  ",
     "RUS  ",
-    "NAV  ",
     "GAME ",
     "GAMFN",
+    "NAV  ",
     "NUM  ",
     "SYM  ",
     "FN   ",
