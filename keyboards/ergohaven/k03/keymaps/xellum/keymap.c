@@ -95,11 +95,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NUM] = LAYOUT(
-        _______, _______,  _______, _______, _______, _______,                                       _______,  _______,  _______,  _______, _______, _______,
-        DM_REC1, LG_GRAVE, KC_7,    KC_8,    KC_9,    KC_GRV,                                        LG_QUOTE, KC_BSLS,  KC_O,     LG_LBR,  LG_RBR,   DM_REC2,
-        DM_RSTP, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_MINS,                                       KC_EQL,   OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   DM_RSTP,
-        DM_PLY1, KC_0,     KC_1,    KC_2,    KC_3,    S(KC_9),                                       S(KC_0),  KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
-                           _______, _______, _______, _______, _______, _______,   _______, _______, _______,  _______,  _______,  _______
+        _______, _______,  _______, _______, _______, _______,                                               _______,  _______,  _______,  _______, _______, _______,
+        DM_REC1, LG_GRAVE, KC_7,    KC_8,    KC_9,    KC_GRV,                                                LG_QUOTE, KC_BSLS,  KC_O,     LG_LBR,  LG_RBR,   DM_REC2,
+        DM_RSTP, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_MINS,                                               KC_EQL,   OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   DM_RSTP,
+        DM_PLY1, KC_0,     KC_1,    KC_2,    KC_3,    S(KC_9),                                               S(KC_0),  KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
+                           _______, _______, _______, _______, _______, MC_9,       MC_8, _______, _______,  _______,  _______,  _______
     ),
 
     [_SYM] = LAYOUT(
