@@ -146,7 +146,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 bool is_oneshot_cancel_key(uint16_t keycode) {
     switch (keycode) {
-    case LA_SYM:
+    case LA_NUM:
     case LA_NAV:
         return true;
     default:
@@ -156,7 +156,7 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
-    case LA_SYM:
+    case LA_NUM:
     case LA_NAV:
     case KC_LSFT:
     case OS_SHFT:
