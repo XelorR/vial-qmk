@@ -95,19 +95,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NUM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                       _______,  _______,  _______,  _______, _______, _______,
-        DM_REC1, LG_GRAVE, KC_7,   KC_8,    KC_9,    KC_GRV,                                        LG_QUOTE, S(KC_BSLS),  KC_O,  LG_LBR,  LG_RBR,   DM_REC2,
-        DM_RSTP, LG_SCLN, KC_4,    KC_5,    KC_6,    KC_MINS,                                       KC_EQL,   OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   DM_RSTP,
-        DM_PLY1, KC_0,    KC_1,    KC_2,    KC_3,    S(KC_9),                                       S(KC_0),  KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
-                          _______, _______, _______, _______, _______, _______,   _______, _______, _______,  _______,  _______,  _______
+        _______, _______,  _______, _______, _______, _______,                                       _______,  _______,  _______,  _______, _______, _______,
+        DM_REC1, LG_GRAVE, KC_7,    KC_8,    KC_9,    KC_GRV,                                        LG_QUOTE, KC_BSLS,  KC_O,     LG_LBR,  LG_RBR,   DM_REC2,
+        DM_RSTP, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_MINS,                                       KC_EQL,   OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   DM_RSTP,
+        DM_PLY1, KC_0,     KC_1,    KC_2,    KC_3,    S(KC_9),                                       S(KC_0),  KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
+                           _______, _______, _______, _______, _______, _______,   _______, _______, _______,  _______,  _______,  _______
     ),
 
     [_SYM] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______,   _______,    _______, _______, _______, _______,
-        DM_REC1, LG_TILD, LG_AMPR, S(KC_8), S(KC_9), KC_GRV,                                          LG_DQUO,   S(KC_BSLS), KC_O,    LG_LCBR, LG_RCBR, DM_REC2,
-        DM_RSTP, LG_COLON, LG_DLR, S(KC_5), LG_CIRC, S(KC_MINS),                                      S(KC_EQL), OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  DM_RSTP,
-        DM_PLY1, KC_INS,  S(KC_1), LG_AT,   LG_HASH, S(KC_9),                                         S(KC_0),   KC_RBRC,    LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
-                          _______, _______, _______, _______, _______, _______,     _______, _______, _______,   _______,    _______, _______
+        _______, _______,  _______, _______, _______, _______,                                         _______,   _______,    _______, _______, _______, _______,
+        DM_REC1, LG_TILD,  LG_AMPR, S(KC_8), S(KC_9), S(KC_GRV),                                       LG_DQUO,   S(KC_BSLS), S(KC_O), LG_LCBR, LG_RCBR, DM_REC2,
+        DM_RSTP, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_MINS),                                      S(KC_EQL), OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  DM_RSTP,
+        DM_PLY1, KC_INS,   S(KC_1), LG_AT,   LG_HASH, S(KC_9),                                         S(KC_0),   S(KC_RBRC), LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
+                           _______, _______, _______, _______, _______, _______,     _______, _______, _______,   _______,    _______, _______
     ),
 
     [_FN] = LAYOUT(
