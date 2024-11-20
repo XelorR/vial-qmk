@@ -113,16 +113,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,  _______, _______, _______, _______,                                           _______,  _______,  _______,  _______, _______, _______,
         DM_REC1, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                            _______,  _______,  _______,  LG_LBR,  LG_RBR,   DM_REC2,
         DM_RSTP, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                            _______,  KC_RSFT,  KC_RCTL,  KC_LALT, KC_RGUI,  DM_RSTP,
-        DM_PLY1, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                           _______,  _______,  LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
+        DM_PLY1, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                           _______,  KC_GRV,   LG_COMMA, LG_DOT,  LG_SLASH, DM_PLY2,
                            _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______,  _______,  _______,  _______
     ),
 
     [_SYM] = LAYOUT(
-        _______, _______,  _______, _______, _______, _______,                                                  _______, _______, _______, _______, _______, _______,
-        DM_REC1, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                                  _______, _______, _______, LG_LCBR, LG_RCBR, DM_REC2,
-        DM_RSTP, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                                _______, KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, DM_RSTP,
-        DM_PLY1, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                               _______, _______, LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
-                           _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______, _______, _______
+        _______, _______,  _______, _______, _______, _______,                                                  _______, _______,   _______, _______, _______, _______,
+        DM_REC1, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                                  _______, _______,   _______, LG_LCBR, LG_RCBR, DM_REC2,
+        DM_RSTP, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                                _______, KC_RSFT,   KC_RCTL, KC_LALT, KC_RGUI, DM_RSTP,
+        DM_PLY1, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                               _______, S(KC_GRV), LG_LT,   LG_GT,   LG_QUES, DM_PLY2,
+                           _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______, _______,   _______
     ),
 
     [_FN] = LAYOUT(
