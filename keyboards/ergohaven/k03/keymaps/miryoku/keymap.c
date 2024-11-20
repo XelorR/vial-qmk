@@ -17,10 +17,10 @@
 #define LA_FUN LT(_FN,KC_DEL)
 #define LA_GFN MO(_GFN)
 
-#define SPACE_L C(G(KC_LEFT))
-#define SPACE_R C(G(KC_RGHT))
-#define TAB_L C(S(KC_TAB))
-#define TAB_R C(KC_TAB)
+// #define SPACE_L C(G(KC_LEFT))
+// #define SPACE_R C(G(KC_RGHT))
+// #define TAB_L C(S(KC_TAB))
+// #define TAB_R C(KC_TAB)
 
 #define BU_Z LT(_BUTTON, KC_Z)
 #define BU_SLSH LT(_BUTTON, KC_SLSH)
@@ -93,8 +93,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______,    _______, _______, _______, _______, _______,
-        _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   _______,                                         S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
-        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                                         CW_TOGG,    KC_LEFT, KC_DOWN, KC_UP,   KC_PGDN, _______,
+        _______, _______, _______, _______, _______, _______,                                         S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                                         CW_TOGG,    KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, _______,
         KC_CAPS, _______, KC_ALGR, _______, _______, _______,                                         KC_INS,     KC_HOME, KC_PGDN, KC_PGUP, KC_END, CW_TOGG,
                           _______, _______, _______, _______, _______, _______,     _______, KC_ENT,  KC_BSPC,    KC_DEL,  _______, _______
     ),
