@@ -38,6 +38,8 @@ enum layers {
     _NAV,
     _NUM,
     _SYM,
+    _MEDIA,
+    _MOUSE,
     _FN,
     _MACRO,
 };

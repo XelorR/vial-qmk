@@ -53,10 +53,10 @@ enum layers {
     _NAV,
     _NUM,
     _SYM,
-    _FN,
-    _MACRO,
     _MEDIA,
     _MOUSE,
+    _FN,
+    _MACRO,
     _BUTTON,
 };
 
