@@ -3,6 +3,7 @@
 #include "ergohaven.h"
 
 #define TAPPING_TERM 200
+#undef QUICK_TAP_TERM
 #define QUICK_TAP_TERM 0
 // #define IGNORE_MOD_TAP_INTERRUPT
 // #define PERMISSIVE_HOLD
