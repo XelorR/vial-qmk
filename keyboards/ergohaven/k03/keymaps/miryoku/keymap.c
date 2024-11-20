@@ -2,11 +2,13 @@
 #include "ergohaven_ruen.h"
 #include "ergohaven.h"
 
-#define TAPPING_TERM 200
 #undef QUICK_TAP_TERM
+#undef IGNORE_MOD_TAP_INTERRUPT
+#undef PERMISSIVE_HOLD
+#define TAPPING_TERM 200
 #define QUICK_TAP_TERM 0
-// #define IGNORE_MOD_TAP_INTERRUPT
-// #define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
 
 #define LA_GFN MO(_GFN)
 #define LA_NAV LT(_NAV,KC_SPC)
