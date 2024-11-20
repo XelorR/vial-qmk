@@ -27,11 +27,12 @@
 
 enum layers {
     _DEF,
+    _RUS,
     _GAM,
     _GFN,
-    _SYM,
     _NAV,
     _NUM,
+    _SYM,
 };
 
 enum keycodes {
