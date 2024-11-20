@@ -25,7 +25,7 @@ jobs:
       id: build
       run: |
         git config --global --add safe.directory $(pwd)
-        qmk compile -kb ergohaven/k03 -km xellum
+        # qmk compile -kb ergohaven/k03 -km xellum
         qmk compile -kb ergohaven/k03 -km miryoku
 
     - uses: actions/upload-artifact@v4
