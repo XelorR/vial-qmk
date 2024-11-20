@@ -2,7 +2,7 @@ OLED_GAMING = yes
 VIAL_ENABLE = yes
 
 ifeq ($(strip $(OLED_ENABLE)), yes)
-  SRC += font_block.c
+  # SRC += font_block.c
 endif
 
 ifeq ($(strip $(OLED_GAMING)), yes)
