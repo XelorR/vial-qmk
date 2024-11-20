@@ -1,9 +1,9 @@
 #include QMK_KEYBOARD_H
 #include "oled/bongocat.c"
 /* #include "oled/luna.c" */
-#include "font_block.h"
-#include "game/game.h"
-#include "layers.c"
+// #include "font_block.h"
+// #include "game/game.h"
+// #include "layers.c"
 #include "ergohaven_ruen.h"
 #include "ergohaven.h"
 
