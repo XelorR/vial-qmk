@@ -482,7 +482,7 @@ enum tapdances{
 
 tap_dance_action_t tap_dance_actions[VIAL_TAP_DANCE_ENTRIES] = {
     [TD_I] = ACTION_TAP_DANCE_DOUBLE(KC_I, KC_O),
-    [TD_M] = ACTION_TAP_DANCE_DOUBLE(KC_M, KC_RBCR),
+    [TD_M] = ACTION_TAP_DANCE_DOUBLE(KC_M, KC_RCBR),
 };
 
 /* Load timings from eeprom into custom_tapping_term */
