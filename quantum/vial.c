@@ -475,7 +475,13 @@ static void on_dance_reset(tap_dance_state_t *state, void *user_data) {
     }
 }
 
-tap_dance_action_t tap_dance_actions[VIAL_TAP_DANCE_ENTRIES] = { };
+enum tapdances{
+  TD_I = 0,
+};
+
+tap_dance_action_t tap_dance_actions[VIAL_TAP_DANCE_ENTRIES] = {
+    [TD_I] = ACTION_TAP_DANCE_DOUBLE(KC_I, KC_O),
+};
 
 /* Load timings from eeprom into custom_tapping_term */
 static void reload_tap_dance(void) {

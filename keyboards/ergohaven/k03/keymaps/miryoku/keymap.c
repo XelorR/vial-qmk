@@ -51,10 +51,6 @@ enum tapdances{
 
 #define TD_IO TD(TD_I) 
 
-// tap_dance_action_t tap_dance_actions[] = {
-//     [TD_I] = ACTION_TAP_DANCE_DOUBLE(KC_I, KC_O),
-// };
-
 enum layers {
     _EN,
     _RU,
