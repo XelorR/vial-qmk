@@ -45,14 +45,6 @@
 #define HA_L LALT_T(KC_L)
 #define HG_SCLN RGUI_T(KC_SCLN)
 
-enum tapdances{
-  TD_I = 0,
-  TD_M,
-};
-
-#define TD_IO TD(TD_I) 
-#define TD_MRCBR TD(TD_M)
-
 enum layers {
     _EN,
     _RU,
@@ -79,9 +71,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RU] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______,  _______, _______, _______,  _______,
-        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,     TD_IO,   KC_P,    KC_LBRC,  _______,
+        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,     KC_I,    KC_P,    KC_LBRC,  _______,
         _______, HG_A,    HA_S,    HC_D,    HS_F,    KC_G,                                            KC_H,    HS_J,     HC_K,    HA_L,    HG_SCLN,  _______,
-        _______, BU_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    TD_MRCBR, KC_COMM, KC_DOT,  BU_QUOTE, _______,
+        _______, BU_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,     KC_COMM, KC_DOT,  BU_QUOTE, _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______,  _______, _______
     ),
 
@@ -119,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUM] = LAYOUT(
         _______, _______,  _______, _______, _______, _______,                                           _______,  _______,  _______,  _______, _______,  _______,
-        _______, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                            _______,  _______,  _______,  LG_LBR,  LG_RBR,   _______,
+        _______, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                            _______,  KC_O,     _______,  LG_LBR,  LG_RBR,   _______,
         _______, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                            _______,  KC_RSFT,  KC_RCTL,  KC_LALT, KC_RGUI,  _______,
         _______, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                           _______,  KC_GRV,   LG_COMMA, LG_DOT,  LG_SLASH, _______,
                            _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______,  _______,  _______,  _______
@@ -127,7 +119,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT(
         _______, _______,  _______, _______, _______, _______,                                                  _______, _______,   _______, _______, _______, _______,
-        _______, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                                  _______, _______,   _______, LG_LCBR, LG_RCBR, _______,
+        _______, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                                  _______, S(KC_O),   _______, LG_LCBR, LG_RCBR, _______,
         _______, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                                _______, KC_RSFT,   KC_RCTL, KC_LALT, KC_RGUI, _______,
         _______, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                               _______, S(KC_GRV), LG_LT,   LG_GT,   LG_QUES, _______,
                            _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______, _______,   _______
