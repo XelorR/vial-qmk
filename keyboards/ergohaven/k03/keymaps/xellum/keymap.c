@@ -116,11 +116,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        _______, _______, _______,  _______,  _______,  _______,                                     _______,   _______, _______,  _______, _______,  _______,
-        _______, S(KC_1), LG_AT,    LG_HASH,  LG_DLR,   S(KC_5),                                     LG_CIRC,   LG_QUES, S(KC_8),  S(KC_9), S(KC_0),  _______,
-        _______, LG_TILD, LG_GRAVE, LG_QUOTE, LG_DQUO,  KC_MINS,                                     S(KC_EQL), OS_SHFT, OS_CTRL,  OS_ALT,  OS_CMD,   _______,
-        _______, KC_BSLS, LG_PIPE,  LG_SCLN,  LG_COMMA, S(KC_MINS),                                  KC_EQL,    LG_DOT,  LG_COLON, LG_PIPE, LG_SLASH, _______,
-                          _______,  _______,  _______,  _______, _______, MC_9,       MC_8, _______, _______,   _______, _______,  _______
+        _______,  _______, _______,  _______,  _______,  _______,                                     _______,   _______, _______,  _______, _______,  _______,
+        _______,  S(KC_1), LG_AT,    LG_HASH,  LG_DLR,   S(KC_5),                                     LG_CIRC,   LG_QUES, S(KC_8),  S(KC_9), S(KC_0),  _______,
+        LA_MOUSE, LG_TILD, LG_GRAVE, LG_QUOTE, LG_DQUO,  KC_MINS,                                     S(KC_EQL), OS_SHFT, OS_CTRL,  OS_ALT,  OS_CMD,   KC_ESC,
+        _______,  KC_BSLS, LG_PIPE,  LG_SCLN,  LG_COMMA, S(KC_MINS),                                  KC_EQL,    LG_DOT,  LG_COLON, LG_PIPE, LG_SLASH, _______,
+                           _______,  _______,  _______,  _______, _______, MC_9,       MC_8, _______, _______,   _______, _______,  _______
     ),
 
     [_NUM] = LAYOUT(
