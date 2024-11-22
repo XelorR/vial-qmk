@@ -109,9 +109,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MOUSE] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______,    _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______,                                         _______,    KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, _______,
+        _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   _______,                                         _______,    KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, _______,
         _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, _______,                                         _______,    KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, _______,
-        _______, _______, KC_ALGR, _______, _______, _______,                                         S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  S(C(KC_Z)),                                   S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
                           _______, _______, _______, _______, _______, _______,     _______, KC_BTN2, KC_BTN1,    KC_BTN3,  _______, _______
     ),
 
