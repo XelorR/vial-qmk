@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
         _______,  _______, _______, _______, _______,   _______,                                         _______, _______, _______, _______, _______, _______,
         _______,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
-        LA_MOUSE, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    _______,
+        LA_MOUSE, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    LG_COLON,
         _______,  KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    LG_AMPR, LG_LBR,  LG_RBR,  _______,
                            _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, LA_ALT,  _______, _______
     ),
@@ -77,17 +77,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ALT] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, KC_GRV,                                          _______, _______, KC_O,    LG_LT,   LG_GT,   _______,
-        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, LG_LCBR, LG_RCBR, _______,
-        _______, _______, _______, _______, _______, _______,                                         _______, LG_RCBR, LG_AMPR, LG_LBR,  LG_RBR,  _______,
+        _______, _______, _______, KC_VOLU, _______, KC_GRV,                                          _______, _______, KC_O,    LG_LT,   LG_GT,   _______,
+        _______, _______, KC_MPRV, KC_VOLD, KC_MNXT, _______,                                         _______, _______, _______, LG_LCBR, LG_RCBR, _______,
+        _______, _______, DM_REC1, DM_RSTP, DM_PLY1, _______,                                         _______, LG_RCBR, LG_AMPR, LG_LBR,  LG_RBR,  _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
     [_GAM] = LAYOUT(
         _______, _______, _______, _______,  _______, _______,                                         _______, _______, _______, _______,  _______, _______,
-        KC_I,    KC_TAB,  KC_Q,    KC_W,     KC_E,    KC_R,                                            _______, _______, KC_UP,   _______,  KC_TAB,  _______,
+        _______, KC_TAB,  KC_Q,    KC_W,     KC_E,    KC_R,                                            _______, _______, KC_UP,   _______,  KC_TAB,  _______,
         KC_CAPS, KC_LSFT, KC_A,    KC_S,     KC_D,    KC_F,                                            _______, KC_LEFT, KC_DOWN, KC_RGHT,  KC_RSFT, _______,
-        KC_M,    KC_LCTL, KC_Z,    KC_X,     KC_C,    KC_V,                                            _______, _______, KC_VOLD, KC_VOLU,  KC_RCTL, _______,
+        _______, KC_LCTL, KC_Z,    KC_X,     KC_C,    KC_V,                                            _______, _______, KC_VOLD, KC_VOLU,  KC_RCTL, _______,
                           _______, _______,  KC_LALT, KC_SPC,  LA_GFN, _______,     _______, DF(_ENG), KC_SPC,  KC_PSCR, _______, _______
     ),
 
@@ -95,16 +95,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______,                                         _______,  _______, _______, _______,  _______, _______,
         _______, KC_5,    KC_1,    KC_2,    KC_3,    KC_4,                                            _______,  KC_F8,   KC_F9,   _______,  _______, _______,
         _______, KC_0,    KC_6,    KC_7,    KC_8,    KC_9,                                            KC_F1,    KC_F5,   KC_F6,   KC_F7,    _______, _______,
-        _______, KC_T,    KC_J,    KC_O,    KC_P,    KC_G,                                            _______,  DM_REC1, DM_RSTP, DM_PLY1,  _______, _______,
+        _______, KC_G,    KC_J,    KC_I,    KC_M,    KC_T,                                            _______,  DM_REC2, DM_RSTP, DM_PLY2,  _______, _______,
                           _______, _______, KC_ESC,  KC_ENT,  _______, _______,     _______, _______, _______,  _______, _______,  _______
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______, _______,  _______,                                         _______, _______, _______, _______,     _______, _______,
-        _______, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,    KC_ESC,                                          KC_ESC,  KC_HOME, KC_UP,   KC_END,      KC_PGUP, _______,
-        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT,  KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_RGHT,     KC_PGDN, _______,
-        _______, SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_TAB,                                          KC_TAB,  KC_BSPC, KC_DEL,  OSL(_MACRO), _______,  _______,
-                          _______, _______, _______,  _______, _______, _______,     _______, _______, _______, _______, _______, _______
+        _______, _______, _______, _______,  _______,  _______,                                         _______, _______, _______, _______,     _______, _______,
+        _______, SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_ESC,  KC_HOME, KC_UP,   KC_END,      KC_PGUP, _______,
+        _______, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_RGHT,     KC_PGDN, _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  S(C(KC_Z)),                                      KC_TAB,  KC_BSPC, KC_DEL,  OSL(_MACRO), KC_APP,  _______,
+                          _______, _______,  _______,  _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
     [_MOUSE] = LAYOUT(
