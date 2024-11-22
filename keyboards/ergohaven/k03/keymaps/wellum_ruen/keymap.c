@@ -11,6 +11,7 @@
 #define LA_SYM MO(_SYM)
 #define LA_NAV MO(_NAV)
 #define LA_GFN MO(_GFN)
+#define LA_ALT MO(_ALT)
 
 #define QUOT S(KC_GRV)
 #define PIPE S(KC_BSLS)
@@ -34,6 +35,15 @@ enum layers {
     _NAV,
     _NUM,
     _SYM,
+    _MEDIA,
+    _MOUSE,
+    _FN,
+    _MACRO,
+    _BUTTO,
+    _12,
+    _13,
+    _14,
+    _ALT,
 };
 
 enum keycodes {
@@ -53,14 +63,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_Q,    KC_W,    KC_E,    KC_R,      KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    _______,
         _______, KC_A,    KC_S,    KC_D,    KC_F,      KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, _______,
         _______, KC_Z,    KC_X,    KC_C,    KC_V,      KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, _______,
-                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, KC_RALT, _______, _______
+                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, LA_ALT,  _______, _______
     ),
 
     [_RUS] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______,  _______,
-        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_IO,   KC_P,    KC_LBRC,  _______,
+        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_P,    KC_LBRC,  _______,
         _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  _______,
         _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOTE, _______,
+                          _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
+    ),
+
+    [_ALT] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, KC_GRV,                                          _______, _______, KC_O,    _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,                                         _______, LG_RCBR, _______, _______, _______, _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 

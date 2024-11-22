@@ -245,7 +245,7 @@ static const char* PROGMEM LAYER_NAME[] = {
     "12   ",
     "13   ",
     "14   ",
-    "15   ",
+    "Alt  ",
     // clang-format on
 };
 
@@ -266,7 +266,7 @@ static const char* PROGMEM LAYER_UPPER_NAME[] = {
     "12   ",
     "13   ",
     "14   ",
-    "15   ",
+    "ALT  ",
     // clang-format on
 };
 
