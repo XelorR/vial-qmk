@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
         _______,  _______, _______, _______, _______,   _______,                                         _______, _______, _______, _______, _______, _______,
         _______,  KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
-        LA_MOUSE, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ESC,
+        KC_TAB,   KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT,
         _______,  KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    LG_AMPR, LG_LBR,  LG_RBR,  _______,
                            _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, LA_ALT,  _______, _______
     ),
@@ -100,11 +100,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______,  _______,  _______,                                         _______,  _______, _______, _______,     _______, _______,
-        _______, SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          DF(_GAM), KC_HOME, KC_UP,   KC_END,      KC_PGUP, _______,
-        KC_TAB,  OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT,     KC_PGDN, CW_TOGG,
-        _______, C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  S(C(KC_Z)),                                      KC_NO,    KC_BSPC, KC_DEL,  OSL(_MACRO), KC_APP,  _______,
-                          _______, _______,  _______,  _______, _______, _______,     _______, _______, _______,  _______, _______, _______
+        _______,  _______, _______, _______,  _______,  _______,                                         _______,  _______, _______, _______,     _______, _______,
+        _______,  SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          DF(_GAM), KC_HOME, KC_UP,   KC_END,      KC_PGUP, _______,
+        LA_MOUSE, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          CW_TOGG,  KC_LEFT, KC_DOWN, KC_RGHT,     KC_PGDN, KC_ESC,
+        _______,  C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  S(C(KC_Z)),                                      KC_NO,    KC_BSPC, KC_DEL,  OSL(_MACRO), KC_APP,  _______,
+                            _______, _______,  _______,  _______, _______, _______,     _______, _______, _______,  _______, _______, _______
     ),
 
     [_MOUSE] = LAYOUT(
