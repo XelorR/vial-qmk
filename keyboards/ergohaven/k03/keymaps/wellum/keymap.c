@@ -31,8 +31,8 @@ enum layers {
     _GAM,
     _GFN,
     _NAV,
-    _NUM,
     _SYM,
+    _NUM,
 };
 
 enum keycodes {
