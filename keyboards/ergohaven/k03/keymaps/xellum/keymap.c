@@ -10,7 +10,7 @@
 
 #define LA_SYM MO(_SYM)
 #define LA_NAV MO(_NAV)
-#define LA_MOUSE MO(_MOUSE)
+#define LA_MOUSE LT(_MOUSE, KC_SPC)
 #define LA_GFN MO(_GFN)
 #define LA_ALT MO(_ALT)
 
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
         KC_TAB,  KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    TG(_NAV),
         _______, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    LG_AMPR, LG_LBR,  LG_RBR,  _______,
-                          _______, _______, LG_TOGGLE, KC_SPC,  LA_NAV, _______,      _______, LA_SYM,  KC_LSFT, LA_ALT,  _______, _______
+                          _______, _______, LG_TOGGLE, LA_MOUSE, LA_NAV, _______,     _______, LA_SYM,  KC_LSFT, LA_ALT,  _______, _______
     ),
 
     [_RUS] = LAYOUT(
