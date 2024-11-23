@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,    _______, _______, _______,  _______,  _______,                                         _______,    _______,    _______, _______, _______,  _______,
         _______,    SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_ESC,     KC_HOME,    KC_UP,   KC_END,  KC_PGUP,  _______,
         C(KC_BSPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          KC_ENT,     KC_LEFT,    KC_DOWN, KC_RGHT, KC_PGDN,  C(KC_DEL),
-        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  OSL(_MACRO),                                     KC_TAB,     KC_APP,     KC_F2,   KC_RCTL, DF(_GAM), _______,
+        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  OSL(_MACRO),                                     KC_TAB,     KC_APP,     KC_RCTL, KC_F2,   DF(_GAM), _______,
                              _______, _______,  _______,  _______, _______, _______,     _______, _______, C(KC_PGUP), C(KC_PGDN), _______, _______
     ),
 
