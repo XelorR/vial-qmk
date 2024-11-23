@@ -4,23 +4,11 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define RESET QK_BOOT
-
-#define XXXX KC_NONE
-
 #define LA_SYM MO(_SYM)
 #define LA_NAV MO(_NAV)
 #define LA_MOUSE LT(_MOUSE, KC_SPC)
 #define LA_GFN MO(_GFN)
 #define LA_ALT MO(_ALT)
-
-#define QUOT S(KC_GRV)
-#define PIPE S(KC_BSLS)
-#define DPIPE S(RALT(KC_BSLS))
-#define SCLN S(KC_LBRC)
-#define CLN S(KC_RBRC)
-#define GRV RALT(KC_GRV)
-#define BSL RALT(KC_BSLS)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
