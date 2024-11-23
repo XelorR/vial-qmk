@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, KC_VOLU, _______, KC_GRV,                                          _______, _______, KC_O,    LG_LT,   LG_GT,   _______,
         _______, _______, KC_MPRV, KC_VOLD, KC_MNXT, _______,                                         _______, _______, _______, LG_LCBR, LG_RCBR, _______,
         _______, _______, DM_REC1, DM_RSTP, DM_PLY1, _______,                                         _______, KC_RBR,  LG_AMPR, LG_LBR,  LG_RBR,  _______,
-                          _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
+                          _______, _______, KC_ALGR, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
     [_GAM] = LAYOUT(
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,    _______, _______, _______,  _______,  _______,                                         _______,    _______,    _______, _______, _______,  _______,
         _______,    SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_ESC,     KC_HOME,    KC_UP,   KC_END,  KC_PGUP,  _______,
         C(KC_BSPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          KC_ENT,     KC_LEFT,    KC_DOWN, KC_RGHT, KC_PGDN,  C(KC_DEL),
-        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  OSL(_MACRO),                                     KC_TAB,     KC_F2,      KC_APP,  KC_PSCR, DF(_GAM), _______,
+        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  OSL(_MACRO),                                     KC_TAB,     KC_APP,     KC_F2,   KC_RCTL, DF(_GAM), _______,
                              _______, _______,  _______,  _______, _______, _______,     _______, _______, C(KC_PGUP), C(KC_PGDN), _______, _______
     ),
 
@@ -126,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                            KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_F11,                                          KC_F12,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
+        KC_PSCR, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_F11,                                          KC_F12,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_PSCR,
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
