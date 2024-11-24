@@ -4,12 +4,12 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define LA_SYM MO(_SYM)
-#define LA_NAV MO(_NAV)
-#define LA_NUM MO(_NUM)
-#define LA_MOUSE MO(_MOUSE)
+#define LA_SYM LT(_SYM,KC_ENT)
+#define LA_NAV LT(_NAV,KC_SPC)
+#define LA_NUM LT(_NUM,KC_BSPC)
+#define LA_MOUSE LT(_MOUSE,KC_TAB)
+#define LA_FN LT(_FN,KC_DEL)
 #define LA_GFN MO(_GFN)
-#define LA_FN MO(_FN)
 #define SH_SPC LSFT_T(KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
         KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ESC,
         _______, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, _______,
-                          _______, _______, LG_TOGGLE, SH_SPC, LA_NAV, _______,       _______, LA_SYM,  LA_NUM, LA_FN,   _______, _______
+                          _______, _______, LG_TOGGLE, LA_NAV, LA_MOUSE, _______,     _______, LA_SYM,  LA_NUM,  LA_FN,   _______, _______
     ),
 
     [_RUS] = LAYOUT(
@@ -205,5 +205,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NAV, _MOUSE);
+    return update_tri_layer_state(state, _SYM, _MOUSE, _MACRO);
 }
