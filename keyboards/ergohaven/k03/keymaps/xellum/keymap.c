@@ -82,9 +82,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______,  _______,  _______,                                         _______,   _______, _______,  _______, _______,  _______,
-        _______, SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_APP,  KC_HOME, KC_UP,    KC_END,  KC_PGUP,  _______,
-        CW_TOGG, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          S(KC_TAB), KC_LEFT, KC_DOWN,  KC_RGHT, KC_PGDN,  _______,
+        _______, _______, _______, _______,  _______,  _______,                                         _______,   _______, _______,  _______, _______, _______,
+        _______, SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_APP,  KC_HOME,   KC_UP,    KC_END,  KC_PGUP, _______,
+        CW_TOGG, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          S(KC_TAB), KC_LEFT, KC_DOWN,  KC_RGHT, KC_PGDN, LG_WORD,
         _______, C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  DF(_GAM),                                        KC_TAB,    S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
                           _______, _______,  KC_ESC,   KC_SPC, KC_TAB, _______,        _______, KC_ENT, KC_BSPC,   KC_DEL, _______,  _______
     ),
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_MOUSE] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                       _______,   _______, _______,  _______, _______, _______,
         _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                        KC_APP,    KC_WH_L, KC_MS_U,  KC_WH_R, KC_WH_U, _______,
-        CW_TOGG, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                        S(KC_TAB), KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, _______,
+        CW_TOGG, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                        S(KC_TAB), KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, LG_WORD,
         _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM),                                      KC_TAB,    S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
                           _______, _______, KC_ESC,  KC_SPC, KC_TAB, _______,     _______, KC_BTN2, KC_BTN1,   KC_BTN3, _______,  _______
     ),
