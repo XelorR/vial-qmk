@@ -82,11 +82,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______,    _______, _______, _______,  _______,  _______,                                         _______,     _______,    _______,  _______, _______,  _______,
-        _______,    SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          DF(_GAM),    KC_HOME,    KC_UP,    KC_END,  KC_PGUP,  _______,
-        C(KC_BSPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          CW_TOGG,     KC_LEFT,    KC_DOWN,  KC_RGHT, KC_PGDN,  _______,
-        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  KC_APP,                                          OSL(_MACRO), S(KC_1),    LG_COMMA, LG_DOT,  LG_QUES, _______,
-                             _______, _______,  _______,  _______, _______, _______,     _______, _______, C(KC_PGUP),  C(KC_PGDN), _______,  _______
+        _______,    _______, _______, _______,  _______,  _______,                                         _______,     _______, _______,  _______, _______,  _______,
+        _______,    SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          DF(_GAM),    KC_HOME, KC_UP,    KC_END,  KC_PGUP,  _______,
+        C(KC_BSPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          CW_TOGG,     KC_LEFT, KC_DOWN,  KC_RGHT, KC_PGDN,  _______,
+        _______,    C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  KC_APP,                                          OSL(_MACRO), S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
+                             _______, _______,  _______,  _______, _______, _______,     _______, _______, _______,     _______, _______,  _______
     ),
 
     [_MOUSE] = LAYOUT(
@@ -143,7 +143,7 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
     switch (keycode) {
     case LA_SYM:
     case LA_NAV:
-    case LA_FN:
+    case LA_MOUSE:
         return true;
     default:
         return false;
@@ -154,7 +154,7 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_SYM:
     case LA_NAV:
-    case LA_FN:
+    case LA_MOUSE:
     case KC_LSFT:
     case OS_SHFT:
     case OS_CTRL:
@@ -205,5 +205,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NUM, _FN);
+    return update_tri_layer_state(state, _SYM, _NAV, _FN);
 }
