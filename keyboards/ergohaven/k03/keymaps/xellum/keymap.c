@@ -90,11 +90,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_MOUSE] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______,  _______, _______, _______,
-        _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                         _______, KC_WH_L, KC_MS_U,  KC_WH_R, KC_WH_U, _______,
-        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                         _______, KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, _______,
-        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_APP,                                          _______, S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
-                          _______, _______, _______, _______, _______, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3, _______,  _______
+        _______,   _______, _______, _______, _______, _______,                                         _______,     _______, _______,  _______, _______, _______,
+        _______,   SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                          DF(_GAM),    KC_WH_L, KC_MS_U,  KC_WH_R, KC_WH_U, _______,
+        S(KC_DEL), OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                          CW_TOGG,     KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, _______,
+        _______,   C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_APP,                                          OSL(_MACRO), S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
+                          _______, _______, _______, _______, _______, _______,     _______, KC_BTN2, KC_BTN1,     KC_BTN3, _______,  _______
     ),
 
     [_NUM] = LAYOUT(
