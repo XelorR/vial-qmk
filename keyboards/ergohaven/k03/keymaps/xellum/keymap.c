@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
         KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ESC,
         _______, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, _______,
-                          _______, _______, LG_TOGGLE, LA_NAV, LA_MOUSE, _______,     _______, LA_SYM,  LA_NUM,  LA_FN,   _______, _______
+                          _______, _______, LG_TOGGLE, LA_NAV, LA_MOUSE, _______,     _______, LA_SYM,  LA_NUM,  OSM(MOD_LSFT),   _______, _______
     ),
 
     [_RUS] = LAYOUT(
@@ -90,10 +90,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_MOUSE] = LAYOUT(
-        _______,   _______, _______, _______, _______, _______,                                         _______,     _______, _______,  _______, _______, _______,
-        _______,   SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                          DF(_GAM),    KC_WH_L, KC_MS_U,  KC_WH_R, KC_WH_U, _______,
-        S(KC_DEL), OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                          CW_TOGG,     KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, _______,
-        _______,   C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_APP,                                          OSL(_MACRO), S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
+        _______, _______, _______, _______, _______, _______,                                         _______,     _______, _______,  _______, _______, _______,
+        _______, SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                          DF(_GAM),    KC_WH_L, KC_MS_U,  KC_WH_R, KC_WH_U, _______,
+        KC_DEL,  OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                          CW_TOGG,     KC_MS_L, KC_MS_D,  KC_MS_R, KC_WH_D, _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_APP,                                          OSL(_MACRO), S(KC_1), LG_COMMA, LG_DOT,  LG_QUES, _______,
                           _______, _______, _______, _______, _______, _______,     _______, KC_BTN2, KC_BTN1,     KC_BTN3, _______,  _______
     ),
 
@@ -204,6 +204,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-// layer_state_t layer_state_set_user(layer_state_t state) {
-//     return update_tri_layer_state(state, _SYM, _MOUSE, _MACRO);
-// }
+layer_state_t layer_state_set_user(layer_state_t state) {
+    return update_tri_layer_state(state, _SYM, _NUM, _FN);
+}
