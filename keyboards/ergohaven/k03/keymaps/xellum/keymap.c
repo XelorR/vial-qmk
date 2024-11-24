@@ -6,9 +6,11 @@
 
 #define LA_SYM MO(_SYM)
 #define LA_NAV MO(_NAV)
-#define LA_MOUSE LT(_MOUSE, KC_SPC)
+#define LA_NUM MO(_NUM)
+#define LA_MOUSE MO(_MOUSE)
 #define LA_GFN MO(_GFN)
 #define LA_FN MO(_FN)
+#define SH_SPC LSFT_T(KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
@@ -52,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, _______,
         KC_BSPC, KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ESC,
         _______, KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, _______,
-                          _______, _______, LG_TOGGLE, LA_MOUSE, LA_NAV, _______,     _______, LA_SYM,  KC_LSFT, LA_FN,   _______, _______
+                          _______, _______, LG_TOGGLE, SH_SPC, LA_NAV, _______,       _______, LA_SYM,  LA_NUM, LA_FN,   _______, _______
     ),
 
     [_RUS] = LAYOUT(
@@ -95,20 +97,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, _______, _______, _______, _______,     _______, KC_BTN2, KC_BTN1,    KC_BTN3,  _______, _______
     ),
 
-    [_SYM] = LAYOUT(
-        _______, _______,  _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                         _______, S(KC_0), KC_O,    LG_LBR,  LG_RBR,  _______,
-        KC_GRV,  LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                       KC_MINS, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  CW_TOGG,
-        _______, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                      _______, LG_RCBR, LG_LT,   LG_GT,   LG_QUES, _______,
-                           _______, _______, S(KC_9), S(KC_0),    _______, MC_9,        MC_8, _______, _______, _______, _______, _______
+    [_NUM] = LAYOUT(
+        _______, _______,  _______, _______, _______, _______,                                  _______,  _______,  _______,  _______, _______,  _______,
+        _______, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                   _______,  _______,  KC_O,     LG_LBR,  LG_RBR,   _______,
+        KC_GRV,  LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                   _______,  KC_RSFT,  KC_RCTL,  KC_LALT, KC_RGUI,  _______,
+        _______, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                  _______,  KC_LBRC,  LG_COMMA, LG_DOT,  LG_SLASH, _______,
+                           _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______,  _______,  _______,  _______
     ),
 
-    [_NUM] = LAYOUT(
-        _______,   _______,  _______, _______, _______, _______,                                  _______,     _______,    _______,  _______, _______,  _______,
-        _______,   LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                   _______,     KC_0,       S(KC_O),  LG_LCBR, LG_RCBR,  _______,
-        S(KC_GRV), LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                   S(KC_MINS),  OS_SHFT,    OS_CTRL,  OS_ALT,  OS_CMD,   _______,
-        _______,   LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                  _______,     S(LG_RCBR), LG_COMMA, LG_DOT,  LG_SLASH, _______,
-                             _______, _______, LG_DOT,  _______, _______, _______,       _______, _______,     _______,     _______,  _______,  _______
+    [_SYM] = LAYOUT(
+        _______,   _______,  _______, _______, _______, _______,                                         _______, _______,   _______, _______, _______, _______,
+        _______,   LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                         _______, _______,   S(KC_O), LG_LCBR, LG_RCBR, _______,
+        S(KC_GRV), LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                       _______, KC_RSFT,   KC_RCTL, KC_LALT, KC_RGUI, _______,
+        _______,   LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                      _______, S(KC_LBRC), LG_LT,   LG_GT,   LG_QUES, _______,
+                             _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______, _______,   _______
     ),
 
     [_FN] = LAYOUT(
@@ -203,5 +205,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NAV, _NUM);
+    return update_tri_layer_state(state, _SYM, _NAV, _MOUSE);
 }
