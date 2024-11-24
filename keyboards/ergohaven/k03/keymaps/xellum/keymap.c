@@ -10,7 +10,7 @@
 #define LA_MOUSE LT(_MOUSE,KC_TAB)
 #define LA_FN LT(_FN,KC_DEL)
 #define LA_GFN MO(_GFN)
-#define SH_SPC LSFT_T(KC_SPC)
+// #define SH_SPC LSFT_T(KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
@@ -142,7 +142,9 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 bool is_oneshot_cancel_key(uint16_t keycode) {
     switch (keycode) {
     case LA_SYM:
+    case LA_NUM:
     case LA_NAV:
+    case LA_FN:
     case LA_MOUSE:
         return true;
     default:
@@ -153,8 +155,10 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_SYM:
+    case LA_NUM:
     case LA_NAV:
     case LA_MOUSE:
+    case LA_FN:
     case KC_LSFT:
     case OS_SHFT:
     case OS_CTRL:
