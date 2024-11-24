@@ -114,11 +114,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                       _______, _______,   _______,    _______, _______, _______,
-        _______, KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       DM_REC1, KC_MPRV,   KC_MSTP,    KC_MPLY, KC_MNXT, _______,
-        _______, KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       DM_RSTP, OS_SHFT,   OS_CTRL,    OS_ALT,  OS_CMD,  _______,
-        _______, KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                                       DM_PLY1, C(KC_EQL), C(KC_MINS), KC_ALGR, _______, _______,
-                          _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______,   _______, _______, _______, _______,   _______,    _______
+        _______, _______, _______, _______, _______, _______,                                       _______, _______,    _______,   _______, _______, _______,
+        _______, KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       DM_REC1, KC_MPRV,    KC_MSTP,   KC_MPLY, KC_MNXT, _______,
+        _______, KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       DM_RSTP, OS_SHFT,    OS_CTRL,   OS_ALT,  OS_CMD,  _______,
+        _______, KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                                       DM_PLY1, C(KC_MINS), C(KC_EQL), KC_ALGR, _______, _______,
+                          _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______,   _______, _______, _______, _______,    _______,   _______
     ),
 
     [_MACRO] = LAYOUT(
