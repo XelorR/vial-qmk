@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT(
         _______, _______,  _______, _______, _______, _______,                                  _______, _______,  _______,  _______, _______,  _______,
         _______, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                   _______, _______,  KC_O,     LG_LBR,  LG_RBR,   _______,
-        KC_GRV,  LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                   _______, KC_RSFT,  KC_RCTL,  KC_LALT, KC_RGUI,  _______,
+        KC_GRV,  LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                   _______, OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   _______,
         _______, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                              OSL(_MACRO), KC_LBRC,  LG_COMMA, LG_DOT,  LG_SLASH, _______,
                            _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______,  _______,  _______, _______
     ),
@@ -108,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_SYM] = LAYOUT(
         _______,   _______,  _______, _______, _______, _______,                                         _______, _______,    _______, _______, _______, _______,
         _______,   LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                         _______, _______,    S(KC_O), LG_LCBR, LG_RCBR, _______,
-        S(KC_GRV), LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                       _______, KC_RSFT,    KC_RCTL, KC_LALT, KC_RGUI, _______,
+        S(KC_GRV), LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                       _______, OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  _______,
         _______,   LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                  OSL(_MACRO), S(KC_LBRC), LG_LT,   LG_GT,   LG_QUES, _______,
                              _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______,    _______, _______
     ),
