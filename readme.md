@@ -14,7 +14,12 @@ I love everything in [Miryoku](https://github.com/manna-harbour/miryoku) except 
 - home row mod-taps - to be replaced with home row one shot sticky [Callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum)-like mods
 - navigation layer is very pure and lots of useful things can be allocated additionly
 
-Also, I like [Wellum](https://github.com/braindefender/wellum)'s game layer, so to be added. And I use two layouts: national and [Colemak-dh](https://colemakmods.github.io/mod-dh/) for English, so language switching button should also toggle layers. Also implemented.
+I also like following ideas:
+
+- [Wellum](https://github.com/braindefender/wellum)'s game layer
+- Combos for frequent symbols
+- [Ergohaven](https://ergohaven.xyz/)'s [RuEn](keyboards/ergohaven/docs/ruen.md) symbols
+- as I use two layouts: national and [Colemak-dh](https://colemakmods.github.io/mod-dh/) for English, so **language switching button should also toggle layers**
 
 ## Layers
 
