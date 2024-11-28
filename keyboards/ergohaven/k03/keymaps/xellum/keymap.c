@@ -88,9 +88,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT(
         _______,  _______, _______, _______, _______,    _______,                                           _______,  _______, _______, _______, _______, _______,
-        S(KC_1),  LG_AMPR, S(KC_8), S(KC_9), S(KC_0),    KC_GRV,                                            LG_NUM,   KC_BSLS, KC_O,    LG_LBR,  LG_LT,   LG_GT,
+        S(KC_1),  LG_AMPR, S(KC_8), S(KC_9), S(KC_0),    KC_GRV,                                            LG_NUM,   KC_BSLS, KC_O,    LG_LT,   LG_GT,   LG_QUES,
         LG_DOT,   LG_DLR,  S(KC_5), LG_CIRC, KC_MINS,    S(KC_EQL),                                         LG_GRAVE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
-        LG_COLON, S(KC_1), LG_AT,   LG_HASH, S(KC_MINS), KC_EQL,                                            LG_TILD,  LG_RBR,  LG_QUES, LG_LCBR, LG_RCBR, LG_SCLN,
+        LG_COLON, S(KC_1), LG_AT,   LG_HASH, S(KC_MINS), KC_EQL,                                            LG_TILD,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_SCLN,
                            _______, _______, CW_TOGG,    _______,   _______, _______,     _______, _______, _______,  _______,  _______, _______
     ),
 
