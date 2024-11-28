@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,       _______, _______, _______,  _______,  _______,                                         _______, _______,   _______,  _______,  _______, _______,
         S(KC_1),       SPACE_L, SPACE_R, TAB_L,    TAB_R,    SW_TAB,                                          KC_INS,  KC_HOME,   KC_UP,    KC_END,   KC_PGUP, LG_QUES,
         OSM(MOD_LSFT), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT,  SW_WIN,                                          KC_APP,  KC_LEFT,   KC_DOWN,  KC_RGHT,  KC_PGDN, LG_COMMA,
-        QK_LLCK,       C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  DF(_GAM),                                        CW_TOGG, S(KC_TAB), KC_TAB,   S(KC_F6), KC_F6,   LG_DOT,
+        LG_TOGGLE,     C(KC_Z), C(KC_X), C(KC_C),  C(KC_V),  DF(_GAM),                                        CW_TOGG, S(KC_TAB), KC_TAB,   S(KC_F6), KC_F6,   LG_DOT,
                                 _______, _______,  KC_ESC,   KC_SPC, KC_TAB, _______,        _______, KC_ENT, KC_BSPC, KC_DEL,    _______,  _______
     ),
 
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,       _______, _______, _______, _______, _______,                                       _______, _______,   _______,  _______,  _______, _______,
         S(KC_1),       SPACE_L, SPACE_R, TAB_L,   TAB_R,   SW_TAB,                                        KC_INS,  KC_WH_L,   KC_MS_U,  KC_WH_R,  KC_WH_U, LG_QUES,
         OSM(MOD_LSFT), OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, SW_WIN,                                        KC_APP,  KC_MS_L,   KC_MS_D,  KC_MS_R,  KC_WH_D, LG_COMMA,
-        QK_LLCK,       C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM),                                      CW_TOGG, S(KC_TAB), KC_TAB,   S(KC_F6), KC_F6,   LG_DOT,
+        LG_TOGGLE,     C(KC_Z), C(KC_X), C(KC_C), C(KC_V), DF(_GAM),                                      CW_TOGG, S(KC_TAB), KC_TAB,   S(KC_F6), KC_F6,   LG_DOT,
                                 _______, _______, KC_ESC,  KC_SPC, KC_TAB, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3,   _______,  _______
     ),
 
@@ -105,7 +105,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,  _______, _______, _______, _______,                                  _______, _______,  _______,  _______, _______,  _______,
         DM_REC2, LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                   _______, KC_GRV,   KC_O,     LG_LBR,  LG_RBR,   _______,
         DM_RSTP, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                   _______, OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,   _______,
-        DM_PLY2, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                              OSL(_MACRO), KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, QK_LLCK,
+        DM_PLY2, LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                              OSL(_MACRO), KC_RBRC,  LG_COMMA, LG_DOT,  LG_SLASH, _______,
                            _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______,  _______,  _______, _______
     ),
 
@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,  _______, _______, _______, _______,                                         _______, _______,    _______, _______, _______, _______,
         DM_REC1, LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                         _______, S(KC_GRV),  S(KC_O), LG_LCBR, LG_RCBR, _______,
         DM_RSTP, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                       _______, OS_SHFT,    OS_CTRL, OS_ALT,  OS_CMD,  _______,
-        DM_PLY1, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                  OSL(_MACRO), S(KC_RBRC), LG_LT,   LG_GT,   LG_QUES, QK_LLCK,
+        DM_PLY1, LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                  OSL(_MACRO), S(KC_RBRC), LG_LT,   LG_GT,   LG_QUES, _______,
                            _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_9,     MC_8, _______, _______, _______,    _______, _______
     ),
 
