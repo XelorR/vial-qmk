@@ -35,32 +35,6 @@
         "Disabled"
       ]
     ],
-    "customKeycodes": [
-    	{"name": "OS SHFT",
-    	 "title": "One Shot Sticky Shift",
-    	 "shortName": "OS_SHFT"
-    	},
-    	{"name": "OS CTRL",
-    	 "title": "One Shot Sticky Control",
-    	 "shortName": "OS_CTRL"
-    	},
-    	{"name": "OS ALT",
-    	 "title": "One Shot Sticky Alt",
-    	 "shortName": "OS_ALT"
-    	},
-    	{"name": "OS CMD",
-    	 "title": "One Shot Sticky GUI",
-    	 "shortName": "OS_CMD"
-    	},
-    	{"name": "SW WIN",
-    	 "title": "Sticky Alt-tab",
-    	 "shortName": "SW_WIN"
-    	},
-    	{"name": "SW TAB",
-    	 "title": "Sticky Ctrl-tab",
-    	 "shortName": "SW_TAB"
-    	}
-    ],
     "keymap": [
       [{"y":0.4},"0,5","0,4",{"y":-0.45},"0,3",{"y":-0.1},"0,2",{"y":0.1},"0,1",{"y":0.15},"0,0"],
       [{"y":0.3},"1,5","1,4",{"y":-0.45},"1,3",{"y":-0.1},"1,2",{"y":0.1},"1,1",{"y":0.15},"1,0"],
