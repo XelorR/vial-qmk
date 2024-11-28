@@ -4,11 +4,8 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#undef TAPPING_TOGGLE
-#define TAPPING_TOGGLE 3
-
 #define LA_SYM MO(_SYM)
-#define LA_NAV TT(_NAV)
+#define LA_NAV MO(_NAV)
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 #define LA_LAUNCH OSL(_MACRO)
@@ -58,11 +55,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-        _______,  _______, _______, _______, _______, _______,                                       _______, _______, _______, _______, _______, _______,
-        MC_4,     KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                          KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MC_5,
-        MC_7,     KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                          KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    MC_6,
-        LG_COLON, BU_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                          KC_K,    KC_H,    KC_COMM, KC_DOT,  BU_SLSH, LG_SCLN,
-                           _______, _______, KC_ESC,  KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, KC_ENT, _______, _______
+        _______,  _______, _______, _______, _______,   _______,                                       _______, _______,   _______, _______, _______, _______,
+        MC_4,     KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                          KC_J,    KC_L,      KC_U,    KC_Y,    KC_QUOT, MC_5,
+        MC_7,     KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                          KC_M,    KC_N,      KC_E,    KC_I,    KC_O,    MC_6,
+        LG_COLON, BU_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                          KC_K,    KC_H,      KC_COMM, KC_DOT,  BU_SLSH, LG_SCLN,
+                           _______, _______, LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, LA_LAUNCH, _______, _______
     ),
 
     [_RUS] = LAYOUT(
@@ -94,15 +91,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_1),  LG_AMPR, S(KC_8), S(KC_9), S(KC_0),    KC_GRV,                                            LG_NUM,   KC_BSLS, KC_O,    LG_LT,   LG_GT,   LG_QUES,
         LG_DOT,   LG_DLR,  S(KC_5), LG_CIRC, KC_MINS,    S(KC_EQL),                                         LG_GRAVE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
         LG_COLON, S(KC_1), LG_AT,   LG_HASH, S(KC_MINS), KC_EQL,                                            LG_TILD,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_SCLN,
-                           _______, _______, LA_LAUNCH,  KC_BTN1,   _______, _______,     _______, _______, _______,  _______,  _______, _______
+                           _______, _______, CW_TOGG,    KC_BTN1,   _______, _______,     _______, _______, _______,  _______,  _______, _______
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______,  _______, _______, _______, _______,                                         _______, _______,   _______, _______, _______, _______,
-        KC_VOLU, SW_TAB,   SW_WIN,  TAB_L,   TAB_R,   CL_TAB,                                          CL_WIN,  S(KC_TAB), KC_TAB,  KC_BSPC, KC_DEL,  KC_PSCR,
-        KC_VOLD, OS_CMD,   OS_ALT,  OS_CTRL, OS_SHFT, A(KC_SPC),                                       CW_TOGG, KC_LEFT,   KC_DOWN, KC_UP,   KC_RGHT, A(KC_PSCR),
-        KC_MUTE, DF(_GAM), KC_APP,  SPACE_L, SPACE_R, KC_LGUI,                                         KC_ALGR, KC_HOME,   KC_PGDN, KC_PGUP, KC_END,  G(S(KC_S)),
-                           _______, _______, _______, _______, _______, _______,     _______, _______, KC_BTN1, LA_LAUNCH, _______, _______
+        _______, _______, _______, _______,  _______, _______,                                         _______, _______, _______, _______, _______, _______,
+        KC_VOLU, CL_WIN,  CL_TAB,  SW_TAB,   SW_WIN,  KC_ESC,                                          KC_ESC,  KC_HOME, KC_END,  KC_BSPC, KC_DEL,  KC_PSCR,
+        KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, A(KC_PSCR),
+        KC_MUTE, SPACE_L, SPACE_R, DF(_GAM), KC_BTN1, KC_TAB,                                          KC_TAB,  KC_PGUP, KC_PGDN, KC_WH_U, KC_WH_D, G(S(KC_S)),
+                          _______, _______,  _______, _______, _______, _______,     _______, _______, KC_BTN1, CW_TOGG, _______, _______
     ),
 
     [_NUM] = LAYOUT(
