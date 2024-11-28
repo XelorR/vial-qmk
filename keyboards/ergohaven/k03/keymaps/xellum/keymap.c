@@ -4,11 +4,9 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define LA_SYM LT(_SYM,KC_ENT)
-#define LA_NAV LT(_NAV,KC_SPC)
-#define LA_NUM LT(_NUM,KC_BSPC)
-#define LA_MOUSE LT(_MOUSE,KC_TAB)
-#define LA_FN LT(_FN,KC_DEL)
+#define LA_SYM MO(_SYM)
+#define LA_NAV MO(_NAV)
+#define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 
 #define SPACE_L C(G(KC_LEFT))
