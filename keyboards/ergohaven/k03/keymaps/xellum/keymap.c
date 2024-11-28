@@ -41,7 +41,7 @@ enum layers {
 
 enum keycodes {
     // Custom oneshot mod implementation with no timers.
-    OS_SHFT = SAFE_RANGE,
+    OS_SHFT = QK_KB_0,
     OS_CTRL,
     OS_ALT,
     OS_CMD,
