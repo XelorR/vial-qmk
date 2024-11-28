@@ -4,6 +4,7 @@
 #include "oneshot.h"
 #include "swapper.h"
 
+#undef TAPPING_TOGGLE
 #define TAPPING_TOGGLE 3
 
 #define LA_SYM MO(_SYM)
