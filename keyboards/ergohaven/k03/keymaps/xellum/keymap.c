@@ -91,15 +91,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_1),  LG_AMPR, S(KC_8), S(KC_9), S(KC_0),    KC_GRV,                                            LG_NUM,   KC_BSLS, KC_O,    LG_LT,   LG_GT,   LG_QUES,
         LG_DOT,   LG_DLR,  S(KC_5), LG_CIRC, KC_MINS,    S(KC_EQL),                                         LG_GRAVE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
         LG_COLON, S(KC_1), LG_AT,   LG_HASH, S(KC_MINS), KC_EQL,                                            LG_TILD,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_SCLN,
-                           _______, _______, CW_TOGG,    _______,   _______, _______,     _______, _______, _______,  _______,  _______, _______
+                           _______, _______, LG_WORD,    _______,   _______, _______,     _______, _______, _______,  _______,  _______, _______
     ),
 
     [_NAV] = LAYOUT(
         _______, _______, _______, _______,  _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_VOLU,                                         KC_ESC,  KC_MS_D, KC_MS_U, KC_BSPC, KC_DEL,  _______,
+        _______, SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_VOLU,                                         KC_ESC,  KC_WH_D, KC_WH_U, KC_BSPC, KC_DEL,  _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_VOLD,                                         KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
         _______, SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_MUTE,                                         KC_TAB,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______,
-                         _______,  _______, _______,  _______, _______, _______,     _______, _______, _______, LG_WORD, _______, _______
+                         _______,  _______, _______,  _______, _______, _______,     _______, _______, _______, CW_TOGG, _______, _______
     ),
 
     [_NUM] = LAYOUT(
