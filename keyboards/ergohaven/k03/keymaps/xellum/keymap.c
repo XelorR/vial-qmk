@@ -4,8 +4,10 @@
 #include "oneshot.h"
 #include "swapper.h"
 
+#define TAPPING_TOGGLE 3
+
 #define LA_SYM MO(_SYM)
-#define LA_NAV MO(_NAV)
+#define LA_NAV TT(_NAV)
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 #define LA_LAUNCH LT(_MACRO,KC_LGUI)
