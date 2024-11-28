@@ -10,7 +10,6 @@
 #define LA_MOUSE LT(_MOUSE,KC_TAB)
 #define LA_FN LT(_FN,KC_DEL)
 #define LA_GFN MO(_GFN)
-// #define SH_SPC LSFT_T(KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
@@ -19,6 +18,9 @@
 #define TAB_R C(KC_TAB)
 
 #define SH_ESC LSFT_T(KC_ESC)
+#define BU_Z LT(_BUTTON, KC_Z)
+#define BU_SLSH LT(_BUTTON, KC_SLSH)
+#define BU_QUOTE LT(_BUTTON, KC_QUOTE)
 
 enum layers {
     _ENG,
@@ -32,7 +34,7 @@ enum layers {
     _MOUSE,
     _FN,
     _MACRO,
-    _BUTTO,
+    _BUTTON,
     _12,
     _13,
     _14,
@@ -55,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,       _______, _______, _______, _______,   _______,                                         _______, _______, _______, _______, _______, _______,
         MC_4,          KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MC_5,
         OSM(MOD_LSFT), KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    MC_6,
-        LG_TOGGLE,     KC_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, MC_7,
+        LG_TOGGLE,     BU_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,    KC_H,    KC_COMM, KC_DOT,  BU_SLSH, MC_7,
                        _______, _______, SH_ESC,  LA_NAV,    LA_MOUSE, _______,    _______, LA_SYM,  LA_NUM,  LA_FN,   _______, _______
     ),
 
@@ -63,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______,  _______,
         _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_P,    KC_LBRC,  _______,
         _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  _______,
-        _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOTE, _______,
+        _______, BU_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  BU_QUOTE, _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
@@ -129,6 +131,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, MC_10,   MC_11,   MC_12,   MC_13,   MC_14,                                           MC_15,   MC_16,   MC_17,   MC_18,   MC_19,   _______,
         _______, MC_0,    MC_1,    MC_2,    MC_3,    MC_4,                                            MC_5,    MC_6,    MC_7,    MC_8,    MC_9,    _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
+    ),
+
+    [_BUTTON] = LAYOUT(
+        _______, _______, _______, _______, _______, _______,                                            _______,    _______, _______, _______, _______, _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(C(KC_Z)),                                         S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, _______,                                            _______,    OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD, _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(C(KC_Z)),                                         S(C(KC_Z)), C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+                          _______, _______, KC_BTN3, KC_BTN1,    KC_BTN2, _______,     _______, KC_BTN2, KC_BTN1,    KC_BTN3, _______, _______
     ),
 };
 
