@@ -8,12 +8,14 @@
 #define LA_NAV MO(_NAV)
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
+#define LA_LAUNCH LT(_MACRO,KC_LGUI)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
-
-#define TAB_L C(S(KC_TAB))
-#define TAB_R C(KC_TAB)
+#define TAB_L C(KC_PGUP)
+#define TAB_R C(KC_PGDN)
+#define CL_WIN A(KC_F4)
+#define CL_TAB C(KC_F4)
 
 #define SH_ESC LSFT_T(KC_ESC)
 #define BU_Z LT(_BUTTON, KC_Z)
@@ -57,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MC_4,     KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                          KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MC_5,
         MC_7,     KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                          KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    MC_6,
         LG_COLON, BU_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                          KC_K,    KC_H,    KC_COMM, KC_DOT,  BU_SLSH, LG_SCLN,
-                           _______, _______, LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, OSL(_MACRO),  _______, _______
+                           _______, _______, LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, LA_LAUNCH, _______, _______
     ),
 
     [_RUS] = LAYOUT(
@@ -93,11 +95,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______,  _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_VOLU,                                         KC_ESC,  KC_WH_D, KC_WH_U, KC_BSPC, KC_DEL,  _______,
-        _______, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_VOLD,                                         KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
-        _______, SPACE_L, SPACE_R, DF(_GAM), KC_PSCR, KC_MUTE,                                         KC_TAB,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______,
-                         _______,  _______, _______,  _______, _______, _______,     _______, _______, _______, CW_TOGG, _______, _______
+        _______, _______, _______, _______,  _______, _______,                                         _______, _______,  _______, _______, _______, _______,
+        KC_VOLU, CL_WIN,  SW_WIN,  TAB_L,    TAB_R,   CL_TAB,                                          KC_ESC,  DF(_GAM), _______, KC_BSPC, KC_DEL,  KC_PSCR,
+        KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT,  KC_DOWN, KC_UP,   KC_RGHT, A(KC_PSCR),
+        KC_MUTE, SPACE_L, SPACE_R, KC_APP,   KC_BTN1, S(KC_TAB),                                       KC_TAB,  KC_HOME,  KC_PGDN, KC_PGUP, KC_END,  G(S(KC_S)),
+                          _______,  _______, _______, _______, _______, _______,     _______, _______, _______, CW_TOGG,  _______, _______
     ),
 
     [_NUM] = LAYOUT(
@@ -110,9 +112,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MACRO] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, MC_20,   MC_22,   MC_22,   MC_23,   MC_24,                                           MC_25,   MC_26,   MC_27,   MC_28,   MC_29,   _______,
         _______, MC_10,   MC_11,   MC_12,   MC_13,   MC_14,                                           MC_15,   MC_16,   MC_17,   MC_18,   MC_19,   _______,
-        _______, MC_0,    MC_1,    MC_2,    MC_3,    MC_4,                                            MC_5,    MC_6,    MC_7,    MC_8,    MC_9,    _______,
+        _______, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), _______,
+        _______, MC_20,   MC_22,   MC_22,   MC_23,   MC_24,                                           MC_25,   MC_26,   MC_27,   MC_28,   MC_29,   _______,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
