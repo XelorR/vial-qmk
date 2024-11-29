@@ -18,7 +18,7 @@
 #define CL_TAB C(KC_F4)
 
 #define SH_ESC LSFT_T(KC_ESC)
-#define BU_Z LT(_BUTTON, KC_Z)
+#define BU_Z LT(_MOUSE, KC_Z)
 #define BU_SLSH LT(_BUTTON, KC_SLSH)
 #define BU_QUOTE LT(_BUTTON, KC_QUOTE)
 #define OSM_SFT OSM(MOD_LSFT)
@@ -96,9 +96,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         _______, _______, _______, _______,  _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        KC_VOLU, CL_WIN,  CL_TAB,  SW_TAB,   SW_WIN,  KC_ESC,                                          KC_ESC,  KC_HOME, KC_END,  KC_BSPC, KC_DEL,  KC_PSCR,
+        KC_VOLU, SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_ESC,                                          KC_ESC,  KC_WH_U, KC_WH_D, KC_BSPC, KC_DEL,  KC_PSCR,
         KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, A(KC_PSCR),
-        KC_MUTE, SPACE_L, SPACE_R, DF(_GAM), KC_BTN1, KC_TAB,                                          KC_TAB,  KC_PGUP, KC_PGDN, KC_WH_U, KC_WH_D, G(S(KC_S)),
+        KC_MUTE, SPACE_L, SPACE_R, DF(_GAM), KC_BTN1, KC_TAB,                                          KC_TAB,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  G(S(KC_S)),
                           _______, _______,  _______, _______, _______, _______,     _______, _______, KC_BTN1, CW_TOGG, _______, _______
     ),
 
@@ -119,11 +119,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_BUTTON] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______,    _______,   _______,    _______,
-        _______, C(KC_Q), C(KC_W), C(KC_E), C(KC_R), C(KC_T),                                         C(KC_Y), C(KC_U), C(KC_I),    C(KC_O),   C(KC_P),    _______,
-        _______, C(KC_A), C(KC_S), C(KC_D), C(KC_F), C(KC_G),                                         C(KC_H), C(KC_J), C(KC_K),    C(KC_L),   C(KC_SCLN), _______,
-        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), C(KC_B),                                         C(KC_N), C(KC_M), C(KC_COMM), C(KC_DOT), C(BU_SLSH), _______,
-                          _______, _______, KC_BTN3, KC_BTN1, KC_BTN2, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3, _______,    _______
+        _______,  _______, _______, _______, _______, _______,                                         _______, _______, _______,    _______,   _______,    _______,
+        A(KC_F4), C(KC_Q), C(KC_W), C(KC_F), C(KC_P), C(KC_B),                                         C(KC_J), C(KC_L), C(KC_U),    C(KC_Y),   C(KC_QUOT), _______,
+        _______,  C(KC_A), C(KC_R), C(KC_S), C(KC_T), C(KC_G),                                         C(KC_M), C(KC_N), C(KC_E),    C(KC_I),   C(KC_O),    _______,
+        _______,  C(KC_Z), C(KC_X), C(KC_C), C(KC_D), C(KC_V),                                         C(KC_K), C(KC_H), C(KC_COMM), C(KC_DOT), C(BU_SLSH), _______,
+                           _______, _______, KC_BTN3, KC_BTN1, KC_BTN2, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3, _______,    _______
+    ),
+
+    [_MOUSE] = LAYOUT(
+        _______,  _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______,    _______,
+        A(KC_F4), C(KC_Q), C(KC_W), C(KC_F), C(KC_P), C(KC_B),                                         C(KC_J), C(KC_L), C(KC_U), C(KC_Y), C(KC_QUOT), _______,
+        _______,  C(KC_A), C(KC_R), C(KC_S), C(KC_T), C(KC_G),                                         C(KC_M), KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,    _______,
+        _______,  C(KC_Z), C(KC_X), C(KC_C), C(KC_D), C(KC_V),                                         C(KC_K), KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R,    _______,
+                           _______, _______, KC_BTN3, KC_BTN1, KC_BTN2, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3, _______, _______
     ),
 };
 
