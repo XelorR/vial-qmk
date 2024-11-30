@@ -14,7 +14,46 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 ## Layers
 
+eng
+```
+! q w f p b   j l u y ' ?
+. a r s t g   m n e i o ,
+: z x c d v   k h , . / ;
+```
+
+rus
+```
+! й ц у к е   н г ш з х ?
+. ф ы в а п   р о л д ж ,
+: я ч с м и   т ь б ю э ;
+```
+
+sym
+```
+! & * ( ) ё   № \ щ < > ?
+. $ % ^ - +   ` ⇧ ⌃ ⌥ ⌘ ,
+: ! @ # _ =   ~ [ ] { } ;
+```
+
+nav
+```
 TODO
+```
+
+num
+```
+ 1  2  3  4  5     6  7  8  9  0
+ ⌘  ⌥  ⌃  ⇧ f11  f12  ⇧  ⌃  ⌥  ⌘
+f1 f2 f3 f4 f5    f6 f7 f8 f9 f0
+```
+
+game
+```
+   i  tab q w e r
+caps shft a s d f
+   m ctrl z x c v
+                ⌥ spc
+```
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
 
