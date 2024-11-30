@@ -95,11 +95,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        _______, _______, _______, _______,  _______, _______,                                         _______, _______,  _______,    _______, _______, _______,
-        KC_VOLU, SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_ESC,                                          KC_ESC,  DF(_GAM), C(KC_BSPC), KC_BSPC, KC_DEL,  KC_PSCR,
-        KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT,  KC_DOWN,    KC_UP,   KC_RGHT, A(KC_PSCR),
-        KC_MUTE, SPACE_L, SPACE_R, WRD_PRV,  WRD_NXT, KC_TAB,                                          KC_TAB,  KC_HOME,  KC_PGUP,    KC_PGDN, KC_END,  G(S(KC_S)),
-                          _______, _______,  _______, _______, _______, _______,     _______, _______, KC_BTN1, CW_TOGG,  _______,    _______
+        _______,   _______, _______, _______,  _______, _______,                                         _______, _______,  _______,    _______, _______, _______,
+        C(KC_SPC), SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_ESC,                                          KC_ESC,  DF(_GAM), C(KC_BSPC), KC_BSPC, KC_DEL,  KC_PSCR,
+        A(KC_SPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT,  KC_DOWN,    KC_UP,   KC_RGHT, A(KC_PSCR),
+        G(KC_SPC), SPACE_L, SPACE_R, WRD_PRV,  WRD_NXT, KC_TAB,                                          KC_TAB,  KC_HOME,  KC_PGUP,    KC_PGDN, KC_END,  G(S(KC_S)),
+                            _______, _______,  _______, _______, _______, _______,     _______, _______, KC_BTN1, CW_TOGG,  _______,    _______
     ),
 
     [_NUM] = LAYOUT(
@@ -112,9 +112,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MACRO] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
-        _______, MC_10,   MC_11,   MC_12,   MC_13,   MC_14,                                           MC_15,   MC_16,   MC_17,   MC_18,   MC_19,   _______,
-        _______, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), _______,
-        _______, MC_20,   MC_22,   MC_22,   MC_23,   MC_24,                                           MC_25,   MC_26,   MC_27,   MC_28,   MC_29,   _______,
+        _______, MC_10,   MC_11,   MC_12,   MC_13,   MC_14,                                           MC_15,   MC_16,   MC_17,   MC_18,   MC_19,   KC_VOLU,
+        _______, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), KC_VOLD,
+        _______, MC_20,   MC_22,   MC_22,   MC_23,   MC_24,                                           MC_25,   MC_26,   MC_27,   MC_28,   MC_29,   KC_MUTE,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
