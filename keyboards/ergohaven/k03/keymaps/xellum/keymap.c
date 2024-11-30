@@ -55,10 +55,10 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-        _______,  _______, _______, _______, _______,   _______,                                       _______, _______,   _______, _______, _______, _______,
-        MC_4,     KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                          KC_J,    KC_L,      KC_U,    KC_Y,    KC_QUOT, MC_5,
-        MC_7,     KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                          KC_M,    KC_N,      KC_E,    KC_I,    KC_O,    MC_6,
-        LG_COLON, BU_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                          KC_K,    KC_H,      KC_COMM, KC_DOT,  BU_SLSH, LG_SCLN,
+        _______, _______, _______, _______, _______,   _______,                                       _______, _______,   _______, _______, _______, _______,
+        MC_4,    KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                          KC_J,    KC_L,      KC_U,    KC_Y,    KC_QUOT, MC_5,
+        MC_7,    KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                          KC_M,    KC_N,      KC_E,    KC_I,    KC_O,    MC_6,
+        MC_8,    BU_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                          KC_K,    KC_H,      KC_COMM, KC_DOT,  BU_SLSH, MC_9,
                            _______, _______, LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, LA_LAUNCH, _______, _______
     ),
 
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   _______, _______, _______,  _______, _______,                                         _______, _______,  _______,    _______, _______, _______,
         C(KC_SPC), SW_TAB,  SW_WIN,  TAB_L,    TAB_R,   KC_ESC,                                          KC_ESC,  DF(_GAM), C(KC_BSPC), KC_BSPC, KC_DEL,  KC_PSCR,
         A(KC_SPC), OS_CMD,  OS_ALT,  OS_CTRL,  OS_SHFT, KC_ENT,                                          KC_ENT,  KC_LEFT,  KC_DOWN,    KC_UP,   KC_RGHT, A(KC_PSCR),
-        G(KC_SPC), SPACE_L, SPACE_R, WRD_PRV,  WRD_NXT, KC_TAB,                                          KC_TAB,  KC_HOME,  KC_PGUP,    KC_PGDN, KC_END,  G(S(KC_S)),
+        G(KC_SPC), SPACE_L, SPACE_R, WRD_PRV,  WRD_NXT, KC_TAB,                                          KC_TAB,  KC_HOME,  KC_PGDN,    KC_PGUP, KC_END,  G(S(KC_S)),
                             _______, _______,  _______, _______, _______, _______,     _______, _______, KC_BTN1, CW_TOGG,  _______,    _______
     ),
 
