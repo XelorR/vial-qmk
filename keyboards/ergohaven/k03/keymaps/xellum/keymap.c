@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______,  _______,  _______, _______, _______,                                           _______, _______, _______, _______, _______,  _______,
         S(KC_1),  LG_GRAVE, LG_AT,    LG_HASH, LG_DLR,  S(KC_5),                                           LG_CIRC, LG_AMPR, S(KC_8), LG_DQUO, LG_QUOTE, LG_QUES,
         LG_DOT,   LG_TILD,  LG_SLASH, S(KC_9), S(KC_0), S(KC_MINS),                                        LG_PIPE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,   LG_COMMA,
-        LG_COLON, KC_MINS,  KC_EQL,   LG_LT,   LG_GT,   S(KC_EQL),                                         KC_BSLS, LG_RBR,  LG_LBR,  LG_RCBR, LG_LCBR,  LG_SCLN,
+        LG_COLON, LG_LT,    LG_GT,    KC_MINS, KC_EQL,  S(KC_EQL),                                         KC_BSLS, LG_RBR,  LG_LBR,  LG_RCBR, LG_LCBR,  LG_SCLN,
                             _______,  _______, CW_TOGG, KC_BTN1,   _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
