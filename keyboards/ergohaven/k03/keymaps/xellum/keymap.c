@@ -87,11 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        _______,  _______, _______, _______, _______,    _______,                                           _______,  _______, _______, _______, _______, _______,
-        S(KC_1),  LG_AMPR, S(KC_8), S(KC_9), S(KC_0),    KC_GRV,                                            LG_NUM,   KC_BSLS, KC_O,    LG_LT,   LG_GT,   LG_QUES,
-        LG_DOT,   LG_DLR,  S(KC_5), LG_CIRC, KC_MINS,    S(KC_EQL),                                         LG_GRAVE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
-        LG_COLON, S(KC_1), LG_AT,   LG_HASH, S(KC_MINS), KC_EQL,                                            LG_TILD,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_SCLN,
-                           _______, _______, CW_TOGG,    KC_BTN1,   _______, _______,     _______, _______, _______,  _______,  _______, _______
+        _______,  _______,  _______,  _______, _______, _______,                                           _______, _______, _______, _______, _______,  _______,
+        S(KC_1),  LG_GRAVE, LG_AT,    LG_HASH, LG_DLR,  S(KC_5),                                           LG_CIRC, LG_AMPR, S(KC_8), LG_DQUO, LG_QUOTE, LG_QUES,
+        LG_DOT,   LG_TILD,  LG_SLASH, S(KC_9), S(KC_0), S(KC_MINS),                                        LG_PIPE, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,   LG_COMMA,
+        LG_COLON, KC_MINS,  KC_EQL,   LG_LT,   LG_GT,   S(KC_EQL),                                         KC_BSLS, LG_RBR,  LG_LBR,  LG_RCBR, LG_LCBR,  LG_SCLN,
+                            _______,  _______, CW_TOGG, KC_BTN1,   _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
     [_NAV] = LAYOUT(
