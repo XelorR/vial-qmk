@@ -13,6 +13,11 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 ## Layers
 
+thumb
+```
+lang space nav     num osmsft capsword
+```
+
 eng
 ```
 `  !  "  #  $  %     ^  ?  *  (  )  _
