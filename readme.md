@@ -43,7 +43,7 @@ sym + num
 nav + fn
 ```
 F11 F1 F2 F3 F4 F5    F6 F7 F8 F9 F10 F12
-vu  tt wt tp tn esc  esc hm ↑  ed del prnt
+vu  tt wt tp tn esc  esc hm  ↑ ed del prnt
 vd  G  A  C  S  ent  ent ←  ↓  → bs  A-pr
 mu ^z ^x ^c ^v  tab  tab pu pd ap gm  GS-s
                      btn gui
