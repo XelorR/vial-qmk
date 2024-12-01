@@ -60,7 +60,12 @@ game
    i  tab  q  w  e  r
 caps shft  a  s  d  f
    m ctrl  z  x  c  v
-                   alt spc
+                   alt spc gamefn
+```
+
+gamefn
+```
+TODO
 ```
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
