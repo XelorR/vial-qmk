@@ -88,9 +88,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT(
         LG_NUM,  KC_1,     KC_2,    KC_3,    KC_4,    KC_5,                                              KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    LG_QUOTE,
-        S(KC_1), KC_DEL,   KC_WH_L, KC_MS_U, KC_WH_R, S(KC_5),                                           KC_ESC,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_QUES,
-        LG_DOT,  KC_BSPC,  KC_MS_L, KC_MS_D, KC_MS_R, S(KC_MINS),                                        KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
-        LG_SCLN, DF(_GAM), KC_APP,  KC_WH_D, KC_WH_U, S(KC_EQL),                                         KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+        S(KC_1), KC_DEL,   KC_WH_L, KC_MS_U, KC_WH_R, KC_ESC,                                            KC_ESC,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_QUES,
+        LG_DOT,  KC_BSPC,  KC_MS_L, KC_MS_D, KC_MS_R, KC_ENT,                                            KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
+        LG_SCLN, DF(_GAM), KC_APP,  KC_WH_D, KC_WH_U, KC_TAB,                                            KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
                            MC_8,    MC_9,    _______, KC_BTN1,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
     ),
 
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                             KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F12,
         KC_VOLU, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,  KC_HOME, KC_UP,   KC_END,  KC_DEL,   KC_PSCR,
         KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,  KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,  A(KC_PSCR),
-        KC_MUTE, C(KC_Z), C(KC_X), C(KC_C), C(KC_D), KC_TAB,                                            KC_TAB,  KC_PGUP, KC_PGDN, KC_APP,  DF(_GAM), G(S(KC_S)),
+        KC_MUTE, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_TAB,                                            KC_TAB,  KC_PGUP, KC_PGDN, KC_APP,  DF(_GAM), G(S(KC_S)),
                           _______, _______, _______, _______, _______, _______,       _______, _______, KC_BTN1, _______, _______, _______
     ),
 
