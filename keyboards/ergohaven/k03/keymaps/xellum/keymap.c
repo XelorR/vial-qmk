@@ -104,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MACRO] = LAYOUT(
         _______, G(KC_1), G(KC_2),   G(KC_3), G(KC_4), G(KC_5),                                           G(KC_6), G(KC_7), G(KC_8),   G(KC_9),  G(KC_0), _______,
-        DM_PLY1, MC_30,   MC_32,     MC_32,   MC_33,   MC_34,                                             MC_35,   MC_36,   MC_37,     MC_38,    MC_39,   KC_MUTE,
+        DM_PLY1, MC_0,    MC_2,      MC_2,    MC_3,    MC_4,                                              MC_5,    MC_6,    MC_7,      MC_8,     MC_9,    KC_MUTE,
         DM_RSTP, MC_10,   MC_11,     MC_12,   MC_13,   MC_14,                                             MC_15,   MC_16,   MC_17,     MC_18,    MC_19,   KC_VOLD,
         DM_REC1, MC_20,   MC_22,     MC_22,   MC_23,   MC_24,                                             MC_25,   MC_26,   MC_27,     MC_28,    MC_29,   KC_VOLU,
                           G(KC_SPC), KC_LGUI, _______, _______, _______, _______,       _______, _______, _______, _______, A(KC_SPC), C(KC_SPC)
