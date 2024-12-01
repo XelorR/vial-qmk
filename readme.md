@@ -39,7 +39,7 @@ rus
 sym + num
 ```
 ~ G1 G2 G3 G4 G5      G6 G7 G8 G9 G0 num
-!  -  7  8  9  ÷     esc  &  @  () №  ?
+!  -  7  8  9  ÷     esc  &  @ ()  №  ?
 .  +  4  5  6  *     ent  S  C  A  G  ,
 ;  =  1  2  3  =     tab ^v ^c ^x ^z  \
       {  } alt 0             <  >
