@@ -55,11 +55,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-        KC_GRV,   S(KC_1), LG_DQUO, LG_HASH,  LG_DLR,    LG_PERC,                                       LG_CIRC, LG_QUES, S(KC_8), S(KC_9), S(KC_0), LG_GRAVE,
+        LG_GRAVE, S(KC_1), LG_DQUO, LG_HASH,  LG_DLR,    LG_PERC,                                       LG_CIRC, LG_QUES, S(KC_8), S(KC_9), S(KC_0), S(KC_MINS),
         MC_4,     KC_Q,    KC_W,    KC_F,     KC_P,      KC_B,                                          KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MC_5,
         MC_7,     KC_A,    KC_R,    KC_S,     KC_T,      KC_G,                                          KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    MC_6,
         LG_COLON, KC_Z,    KC_X,    KC_C,     KC_D,      KC_V,                                          KC_K,    KC_H,    KC_COMM, KC_DOT,  LG_PIPE, LG_SLASH,
-                           LG_AT,   LG_TILD,  LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, CW_TOGG, KC_MINS, KC_EQL
+                           LG_LBR,  LG_RBR,   LG_TOGGLE, KC_SPC, LA_NAV, _______,      _______, LA_SYM, OSM_SFT, CW_TOGG, KC_MINS, KC_EQL
     ),
 
     [_RUS] = LAYOUT(
@@ -87,11 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        LG_NUM,  KC_P1,    KC_P2,   KC_P3,   KC_P4,   KC_P5,                                             KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   KC_NUM,
-        S(KC_1), KC_DEL,   KC_WH_L, KC_MS_U, KC_WH_R, KC_ESC,                                            KC_ESC,  LG_LBR,  LG_RBR,  LG_LCBR, LG_RCBR, LG_QUES,
+        LG_TILD, KC_P1,    KC_P2,   KC_P3,   KC_P4,   KC_P5,                                             KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   KC_NUM,
+        S(KC_1), KC_DEL,   KC_WH_L, KC_MS_U, KC_WH_R, KC_ESC,                                            KC_ESC,  LG_AMPR, LG_AT,   MC_9,    LG_NUM,  LG_QUES,
         LG_DOT,  KC_BSPC,  KC_MS_L, KC_MS_D, KC_MS_R, KC_ENT,                                            KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
         LG_SCLN, DF(_GAM), KC_APP,  KC_WH_D, KC_WH_U, KC_TAB,                                            KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
-                           LG_AMPR, MC_9,    _______, KC_BTN1,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
+                           LG_LCBR, LG_RCBR, _______, KC_BTN1,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
     ),
 
     [_NAV] = LAYOUT(

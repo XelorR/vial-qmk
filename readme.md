@@ -16,29 +16,29 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 eng
 ```
-`  !  "  #  $  %     ^  ?  *  (  )  `
+`  !  "  #  $  %     ^  ?  *  (  )  _
 !  q  w  f  p  b     j  l  u  y  '  ?
 .  a  r  s  t  g     m  n  e  i  o  ,
 :  z  x  c  d  v     k  h  ,  .  |  /
-      @  ~                 -  =
+      [  ]                 -  =
 ```
 
 rus
 ```
-ё  !  "  #  $  %     ^  ?  *  (  )  `
+`  !  "  #  $  %     ^  ?  *  (  )  _
 !  й  ц  у  к  е     н  г  ш  з  х  ?
 .  ф  ы  в  а  п     р  о  л  д  ж  ,
 :  я  ч  с  м  и     т  ь  б  ю  э  /
-      @  ~                 -  =
+      [  ]                 -  =
 ```
 
 sym + num + mouse
 ```
-№  1  2  3  4  5     6  7  8  9  0  num
-! dl wl mu wr esc  esc  [  ]  {  }  ?
+~  1  2  3  4  5     6  7  8  9  0  num
+! dl wl mu wr esc  esc  &  @  () №  ?
 . bs ml md mr ent  ent  S  C  A  G  ,
 ; gm ap wd wu tab  tab ^v ^c ^x ^z  \
-     &  ...                <  >
+     {  }                  <  >
 ```
 
 nav + fn
