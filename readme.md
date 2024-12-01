@@ -43,10 +43,10 @@ sym + num + mouse
 
 nav + fn
 ```
-    F1 F2 F3 F4 F5    F6 F7 F8 F9 F10
-vu  tt wt tp tn esc  esc hm up ed del print
-vd  G  A  C  S  ent  ent lt dn rt bs  A-print
-mu ^z ^x ^c ^v  tab  tab pu pd ap gm  G-S-s
+      F1 F2 F3 F4 F5    F6 F7 F8 F9 F10
+volu  tt wt tp tn esc  esc hm up ed del print
+vold  G  A  C  S  ent  ent lt dn rt bs  A-print
+mute ^z ^x ^c ^v  tab  tab pu pd ap gm  G-S-s
 ```
 
 game
