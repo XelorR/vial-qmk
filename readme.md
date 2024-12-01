@@ -60,7 +60,7 @@ game
    i  tab  q  w  e  r
 caps shft  a  s  d  f
    m ctrl  z  x  c  v
-                   alt spc gamefn
+                alt spc gamefn
 ```
 
 gamefn
