@@ -87,11 +87,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        LG_TILD, KC_P1,    KC_P2,   KC_P3,   KC_P4,   KC_P5,                                             KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   KC_NUM,
-        S(KC_1), KC_DEL,   KC_WH_L, KC_MS_U, KC_WH_R, KC_ESC,                                            KC_ESC,  LG_AMPR, LG_AT,   MC_9,    LG_NUM,  LG_QUES,
-        LG_DOT,  KC_BSPC,  KC_MS_L, KC_MS_D, KC_MS_R, KC_ENT,                                            KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
-        LG_SCLN, DF(_GAM), KC_APP,  KC_WH_D, KC_WH_U, KC_TAB,                                            KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
-                           LG_LCBR, LG_RCBR, _______, KC_BTN1,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
+        LG_TILD, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), KC_NUM,
+        S(KC_1), KC_PMNS, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,                                         KC_ESC,  LG_AMPR, LG_AT,   MC_9,    LG_NUM,  LG_QUES,
+        LG_DOT,  KC_PPLS, KC_P4,   KC_P5,   KC_P6,   KC_PAST,                                         KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
+        LG_SCLN, KC_PEQL, KC_P1,   KC_P2,   KC_P3,   KC_EQL,                                          KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+                          LG_LCBR, LG_RCBR, KC_ALGR, KC_P0,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
     ),
 
     [_NAV] = LAYOUT(
@@ -99,15 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_VOLU, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,  KC_HOME, KC_UP,   KC_END,  KC_DEL,   KC_PSCR,
         KC_VOLD, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,  KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,  A(KC_PSCR),
         KC_MUTE, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), KC_TAB,                                            KC_TAB,  KC_PGUP, KC_PGDN, KC_APP,  DF(_GAM), G(S(KC_S)),
-                          _______, _______, _______, _______, _______, _______,       _______, _______, KC_BTN1, _______, _______, _______
-    ),
-
-    [_MACRO] = LAYOUT(
-        _______, G(KC_1), G(KC_2),   G(KC_3), G(KC_4), G(KC_5),                                           G(KC_6), G(KC_7), G(KC_8),   G(KC_9),  G(KC_0), _______,
-        DM_PLY1, MC_0,    MC_2,      MC_2,    MC_3,    MC_4,                                              MC_5,    MC_6,    MC_7,      MC_8,     MC_9,    KC_MUTE,
-        DM_RSTP, MC_10,   MC_11,     MC_12,   MC_13,   MC_14,                                             MC_15,   MC_16,   MC_17,     MC_18,    MC_19,   KC_VOLD,
-        DM_REC1, MC_20,   MC_22,     MC_22,   MC_23,   MC_24,                                             MC_25,   MC_26,   MC_27,     MC_28,    MC_29,   KC_VOLU,
-                          G(KC_SPC), KC_LGUI, _______, _______, _______, _______,       _______, _______, _______, _______, A(KC_SPC), C(KC_SPC)
+                          _______, _______, _______, _______, _______, _______,       _______, _______, KC_BTN1, KC_LGUI, _______, _______
     ),
 
 };
@@ -184,9 +176,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NAV, _MACRO);
-}
+// layer_state_t layer_state_set_user(layer_state_t state) {
+//     return update_tri_layer_state(state, _SYM, _NAV, _MACRO);
+// }
 
 // void led_set_keymap(uint8_t usb_led) {
 //   if (!(usb_led & (1<<USB_LED_NUM_LOCK))) {

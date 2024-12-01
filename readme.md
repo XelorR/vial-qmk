@@ -32,13 +32,13 @@ rus
       [  ]                 -  =
 ```
 
-sym + num + mouse
+sym + num
 ```
-~  1  2  3  4  5     6  7  8  9  0  num
-! dl wl mu wr esc  esc  &  @  () №  ?
-. bs ml md mr ent  ent  S  C  A  G  ,
-; gm ap wd wu tab  tab ^v ^c ^x ^z  \
-     {  }                  <  >
+~ G1 G2 G3 G4 G5    G6 G7 G8 G9 G0  num
+!  -  7  8  9  ÷   esc  &  @  () №  ?
+.  +  4  5  6  *   ent  S  C  A  G  ,
+;  =  1  2  3  =   tab ^v ^c ^x ^z  \
+      {  } alt 0           <  >
 ```
 
 nav + fn
