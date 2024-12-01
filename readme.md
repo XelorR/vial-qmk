@@ -35,18 +35,18 @@ rus
 sym + num + mouse
 ```
 №  1  2  3  4  5     6  7  8  9  0  '
-! dl w← m↑ w→ esc  esc  [  ]  {  }  ?
-. bs m← m↓ m→ ent  ent  S  C  A  G  ,
-; gm ap w↓ w↑ tab  tab ^v ^c ^x ^z  \
+! dl wl mu wr esc  esc  [  ]  {  }  ?
+. bs ml md mr ent  ent  S  C  A  G  ,
+; gm ap wd wu tab  tab ^v ^c ^x ^z  \
      3. 3`                 <  >
 ```
 
 nav + fn
 ```
     F1 F2 F3 F4 F5    F6 F7 F8 F9 F10
-vu  tt wt tp tn esc  esc hm ↑  ed del print
-vd  G  A  C  S  ent  ent ←  ↓  →  bs  A-print
-mu ^z ^x ^c ^v  tab  tab p↑ p↓ ap gm  G-S-s
+vu  tt wt tp tn esc  esc hm up ed del print
+vd  G  A  C  S  ent  ent lt dn rt bs  A-print
+mu ^z ^x ^c ^v  tab  tab pu pd ap gm  G-S-s
 ```
 
 game
@@ -55,7 +55,7 @@ game
    i  tab  q  w  e  r
 caps shft  a  s  d  f
    m ctrl  z  x  c  v
-                    ⌥ spc
+                   alt spc
 ```
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
