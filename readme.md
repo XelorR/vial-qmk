@@ -6,6 +6,7 @@
 - [Wellum](https://github.com/braindefender/wellum)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html)
+- [Раскладка Ильи Шепрута](https://optozorax.github.io/p/my-keyboard-layout/)
 
 Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for English and national (Russian), and it leads to the following challenges:
 
