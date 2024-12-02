@@ -87,10 +87,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
+        LG_TILD, G(KC_1),   G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), KC_NUM,
+        S(KC_1), KC_MINS,   KC_7,    KC_8,    KC_9,    LG_SLASH,                                        KC_ESC,  LG_AMPR, LG_AT,   MC_9,    LG_NUM,  LG_QUES,
+        LG_DOT,  S(KC_EQL), KC_4,    KC_5,    KC_6,    S(KC_8),                                         KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
+        LG_SCLN, KC_0,      KC_1,    KC_2,    KC_3,    KC_EQL,                                          KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+                            LG_LCBR, LG_RCBR, KC_ALGR, KC_0,    _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
+    ),
+
+    [_NUM] = LAYOUT(
         LG_TILD, G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                         G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), KC_NUM,
         S(KC_1), KC_PMNS, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,                                         KC_ESC,  LG_AMPR, LG_AT,   MC_9,    LG_NUM,  LG_QUES,
-        LG_DOT,  KC_PPLS, KC_P4,   KC_P5,   KC_P6,   KC_PAST,                                         KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
-        LG_SCLN, KC_PEQL, KC_P1,   KC_P2,   KC_P3,   KC_EQL,                                          KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+        LG_DOT,  KC_PPLS, KC_P4,   KC_P5,   KC_P6,   KC_PAST,                                         KC_PENT, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_COMMA,
+        LG_SCLN, KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_EQL,                                          KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
                           LG_LCBR, LG_RCBR, KC_ALGR, KC_P0,   _______, _______,     _______, _______, _______, _______, LG_LT,   LG_GT
     ),
 
@@ -176,9 +184,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-// layer_state_t layer_state_set_user(layer_state_t state) {
-//     return update_tri_layer_state(state, _SYM, _NAV, _MACRO);
-// }
+layer_state_t layer_state_set_user(layer_state_t state) {
+    return update_tri_layer_state(state, _SYM, _NAV, _NUM);
+}
 
 // void led_set_keymap(uint8_t usb_led) {
 //   if (!(usb_led & (1<<USB_LED_NUM_LOCK))) {
