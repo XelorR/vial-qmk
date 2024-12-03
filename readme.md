@@ -23,7 +23,7 @@ eng
 ```
 ~  `  "  #  $  %     ^  &  *  (  )  @
 !  q  w  f  p  b     j  l  u  y  '  ?
-.  a  r  s  t  g     m  n  e  i  o  ,
+,  a  r  s  t  g     m  n  e  i  o  .
 :  z  x  c  d  v     k  h  ,  .  |  /
       -  =                 <  >
 ```
@@ -32,16 +32,16 @@ rus (combos: щ = шз, ё = ке, ъ = ьб)
 ```
 ~  `  "  #  $  %     ^  &  *  (  )  @
 !  й  ц  у  к  е     н  г  ш  з  х  ?
-.  ф  ы  в  а  п     р  о  л  д  ж  ,
+,  ф  ы  в  а  п     р  о  л  д  ж  .
 :  я  ч  с  м  и     т  ь  б  ю  э  /
       -  =                 <  >
 ```
 
 sym + num (hold nav+sym for keypad version)
 ```
-№ G1 G2 G3 G4 G5      G6 G7 G8 G9 G0 num
-!  -  7  8  9  ÷     esc () [] {} <>  ?
-.  +  4  5  6  *     ent  S  C  A  G  ,
+№ G1 G2 G3 G4 G5      G6 G7 G8 G9 G0 {}
+!  -  7  8  9  ÷     esc () [] "" <>  ?
+,  +  4  5  6  *     ent  S  C  A  G  .
 ;  0  1  2  3  =     tab ^v ^c ^x ^z  \
       [  ] alt 0             {  }
 ```
