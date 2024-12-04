@@ -78,11 +78,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EN] = LAYOUT(
-        LG_TILD,  LG_GRAVE, LG_DQUO, LG_HASH, LG_DLR, LG_PERC,                                     LG_CIRC, LG_AMPR, S(KC_8), S(KC_9), S(KC_0), LG_AT,
-        MC_4,     KC_Q,     KC_W,    KC_F,    KC_P,   KC_B,                                        KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT, MC_5,
-        MC_6,     KC_A,     KC_R,    KC_S,    HS_T,   KC_G,                                        KC_M,    HS_N,    KC_E,    KC_I,    KC_O,    MC_7,
-        LG_COLON, KC_Z,     KC_X,    KC_C,    KC_D,   KC_V,                                        KC_K,    KC_H,    KC_COMM, KC_DOT,  BU_PIPE, LG_SLASH,
-                            LG_LT,   LG_GT,   LA_MED, LA_NAV,  LA_MOS, _______,   _______, LA_SYM, LA_NUM,  LA_FUN,  KC_MINS, KC_EQL
+        KC_GRV,   KC_1, KC_2,  KC_3,  KC_4,   KC_5,                                          KC_6,   KC_7,   KC_8,    KC_9,   KC_0,    KC_MINS,
+        MC_4,     KC_Q, KC_W,  KC_F,  KC_P,   KC_B,                                          KC_J,   KC_L,   KC_U,    KC_Y,   KC_QUOT, MC_5,
+        MC_6,     KC_A, KC_R,  KC_S,  HS_T,   KC_G,                                          KC_M,   HS_N,   KC_E,    KC_I,   KC_O,    MC_7,
+        LG_COLON, KC_Z, KC_X,  KC_C,  KC_D,   KC_V,                                          KC_K,   KC_H,   KC_COMM, KC_DOT, BU_PIPE, LG_SLASH,
+                        LG_LT, LG_GT, LA_MED, LA_NAV, LA_MOS, _______,      _______, LA_SYM, LA_NUM, LA_FUN, KC_MINS, KC_EQL
     ),
 
     [_RU] = LAYOUT(
@@ -111,14 +111,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                          KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F12,
-        DM_REC1, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   _______,                                        _______, KC_HOME, KC_UP,   KC_END,  KC_PGUP,  KC_PSCR,
-        DM_RSTP, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, LG_WORD,                                        CW_TOGG, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,  A(KC_PSCR),
-        DM_PLY1, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), _______,                                        _______, KC_SPC,  KC_APP,  LA_MAC,  DF(_GAM), G(S(KC_S)),
+        _______, SW_TAB,  SW_WIN,  TAB_L,   TAB_R,   _______,                                        _______, KC_HOME, KC_UP,   KC_END,  KC_PGUP,  _______,
+        _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, LG_WORD,                                        CW_TOGG, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,  _______,
+        _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), _______,                                        _______, KC_SPC,  KC_APP,  LA_MAC,  DF(_GAM), _______,
                           _______, _______, _______, _______, _______, _______,     _______, KC_ENT, KC_BSPC, KC_DEL,  _______, _______
     ),
 
     [_MOUSE] = LAYOUT(
-        KC_F11,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F12,
+        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______,                                         _______, KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, _______,
         _______, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, _______,                                         _______, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, _______,
         _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), _______,                                         _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
@@ -126,26 +126,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NUM] = LAYOUT(
-        LG_NUM,   KC_1,     KC_2,    KC_3,    KC_4,    KC_5,                                              KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        S(KC_1),  LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                            _______, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
-        LG_COMMA, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                            MC_9,    OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
-        LG_SCLN,  LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                           _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+        _______, _______,   _______, _______, _______, _______,                                           _______, _______, _______, _______, _______, _______,
+        _______, KC_MINS,   KC_7,    KC_8,   KC_9,     LG_SLASH,                                          _______, _______, _______, _______, _______, _______,
+        _______, S(KC_EQL), KC_4,    KC_5,   KC_6,     S(KC_8),                                           _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
+        _______, KC_0,      KC_1,    KC_2,   KC_3,     KC_EQL,                                            _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
                             _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______, _______, _______, _______
     ),
 
     [_SYM] = LAYOUT(
-        LG_NUM,   KC_1,     KC_2,    KC_3,    KC_4,    KC_5,                                             KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        S(KC_1),  LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                          _______, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
-        LG_COMMA, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                        MC_9,    OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
-        LG_SCLN,  LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
-                            _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_26,    MC_25, _______, _______, _______, _______, _______
+        LG_NUM,   S(KC_1), LG_AT,    LG_HASH,  LG_DLR,  LG_PERC,                                       LG_CIRC, LG_AMPR, S(KC_8), S(KC_9), S(KC_0), S(KC_MINS),
+        S(KC_1),  LG_AMPR, S(KC_8),  LG_HASH,  LG_DLR,  _______,                                       _______, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
+        LG_COMMA, LG_TILD, LG_GRAVE, LG_QUOTE, LG_DQUO, MC_9,                                          _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
+        LG_SCLN,  LG_LBR,  LG_RBR,   S(KC_9),  S(KC_0), _______,                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
+                           LG_LCBR,  LG_RCBR,  S(KC_9), S(KC_0), S(KC_MINS), MC_26,    MC_25, _______, _______, _______, _______, _______
     ),
 
     [_FN] = LAYOUT(
-        _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
-        _______, KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       _______, _______, _______, _______, _______, _______,
-        _______, KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
-        _______, KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+        _______, _______, _______, _______, _______, _______,                                       _______, _______, _______, _______, _______, _______,
+        _______, KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       _______, _______, _______, _______, _______, DM_REC2,
+        _______, KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  DM_RSTP,
+        _______, KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS,                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), DM_PLY2,
                           _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______
     ),
 
