@@ -65,6 +65,17 @@ enum layers {
     _BUTTON,
 };
 
+enum keycodes {
+    // Custom oneshot mod implementation with no timers.
+    OS_SHFT = SAFE_RANGE,
+    OS_CTRL,
+    OS_ALT,
+    OS_CMD,
+
+    SW_WIN,  // Switch to next window         (alt-tab)
+    SW_TAB,  // Switch to next browser tab    (ctrl-tab)
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EN] = LAYOUT(
         LG_TILD,  LG_GRAVE, LG_DQUO, LG_HASH, LG_DLR, LG_PERC,                                     LG_CIRC, LG_AMPR, S(KC_8), S(KC_9), S(KC_0), LG_AT,
@@ -87,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_I,    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,                                            _______, _______, KC_UP,   _______, KC_TAB,  KC_MUTE,
         KC_CAPS, KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,                                            _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_RSFT, KC_VOLD,
         KC_M,    KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,                                            _______, _______, _______, _______, KC_RCTL, KC_VOLU,
-                          _______, _______, KC_LALT, KC_SPC,  LA_GFN, _______,     _______, DF(_ENG), KC_SPC,  KC_PSCR, _______, _______
+                          _______, _______, KC_LALT, KC_SPC,  LA_GFN, _______,      _______, DF(_EN), KC_SPC,  KC_PSCR, _______, _______
     ),
 
     [_GFN] = LAYOUT(
