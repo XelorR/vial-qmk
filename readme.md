@@ -21,38 +21,38 @@ lang space nav     sym osmsft capsword
 
 eng
 ```
-~  `  "  #  $  %     ^  &  *  (  )  @
-!  q  w  f  p  b     j  l  u  y  '  ?
-,  a  r  s  t  g     m  n  e  i  o  .
-:  z  x  c  d  v     k  h  ,  .  |  /
-      <  >                 -  =
+`  1  2  3  4  5       6  7  8  9  0  -
+!  q  w  f  p  b       j  l  u  y  '  ?
+,  a  r  s  t  g       m  n  e  i  o  .
+:  z  x  c  d  v       k  h  ,  .  |  /
+      <  >                   -  =
 ```
 
 rus (combos: щ = шз, ё = ке, ъ = ьб)
 ```
-~  `  "  #  $  %     ^  &  *  (  )  @
-!  й  ц  у  к  е     н  г  ш  з  х  ?
-,  ф  ы  в  а  п     р  о  л  д  ж  .
-:  я  ч  с  м  и     т  ь  б  ю  э  /
-      <  >                 -  =
+ё  1  2  3  4  5       6  7  8  9  0  -
+!  й  ц  у  к  е       н  г  ш  з  х  ?
+,  ф  ы  в  а  п       р  о  л  д  ж  .
+:  я  ч  с  м  и       т  ь  б  ю  э  /
+      <  >                   -  =
 ```
 
-sym + num (hold nav+sym for keypad version)
+num
 ```
-№ G1 G2 G3 G4 G5      G6 G7 G8 G9 G0 num
-!  -  7  8  9  ÷     esc () [] {} <>  ?
-,  +  4  5  6  *     ent  S  C  A  G  .
-;  0  1  2  3  =     tab ^v ^c ^x ^z  \
-      [  ] alt ""            {  }
+`  1  2  3  4  5       6  7  8  9  0  -
+!  -  7  8  9  ÷                      ?
+,  +  4  5  6  *          S  C  A  G  .
+;  0  1  2  3  =         ^v ^c ^x ^z  \
+      <  >  .  0  -              
 ```
 
-nav + fn
+sym
 ```
-F11 F1 F2 F3 F4 F5    F6 F7 F8 F9 F10 F12
-vu  tt wt tp tn esc  esc hm  ↑ ed del prnt
-vd  G  A  C  S  ent  ent ←  ↓  → bs  A-pr
-mu ^z ^x ^c ^v  tab  tab pu pd ap gm  GS-s
-                     btn gui
+~  !  @  #  $  %       ^  &  *  (  )  _
+!  &  *  #  $  %       ^ () [] {} <>  ?
+,  ~  `  '  "  ""      @  S  C  A  G  .
+;  [  ]  (  )            ^v ^c ^x ^z  \
+      {  }        _              
 ```
 
 game
@@ -62,11 +62,6 @@ game
 caps shft  a  s  d  f
    m ctrl  z  x  c  v
                 alt spc gamefn
-```
-
-gamefn
-```
-TODO
 ```
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
@@ -83,4 +78,4 @@ Combos:
 
 ## Current version
 
-- [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/xellum/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_xellum.uf2)
+- [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/miryoku/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_miryoku.uf2)

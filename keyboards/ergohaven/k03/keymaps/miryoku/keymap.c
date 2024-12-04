@@ -127,9 +127,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NUM] = LAYOUT(
         _______, _______,   _______, _______, _______, _______,                                           _______, _______, _______, _______, _______, _______,
-        _______, KC_MINS,   KC_7,    KC_8,   KC_9,     LG_SLASH,                                          _______, _______, _______, _______, _______, _______,
-        _______, S(KC_EQL), KC_4,    KC_5,   KC_6,     S(KC_8),                                           _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
-        _______, KC_0,      KC_1,    KC_2,   KC_3,     KC_EQL,                                            _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
+        _______, KC_MINS,   KC_7,    KC_8,    KC_9,    LG_SLASH,                                          _______, _______, _______, _______, _______, _______,
+        _______, S(KC_EQL), KC_4,    KC_5,    KC_6,    S(KC_8),                                           _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  _______,
+        _______, KC_0,      KC_1,    KC_2,    KC_3,    KC_EQL,                                            _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), _______,
                             _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______, _______, _______, _______
     ),
 
@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         S(KC_1),  LG_AMPR, S(KC_8),  LG_HASH,  LG_DLR,  LG_PERC,                                       LG_CIRC, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
         LG_COMMA, LG_TILD, LG_GRAVE, LG_QUOTE, LG_DQUO, MC_9,                                          LG_AT,   OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
         LG_SCLN,  LG_LBR,  LG_RBR,   S(KC_9),  S(KC_0), _______,                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
-                           LG_LCBR,  LG_RCBR,  S(KC_9), S(KC_0), S(KC_MINS), MC_26,    MC_25, _______, _______, _______, _______, _______
+                           LG_LCBR,  LG_RCBR,  _______, _______, S(KC_MINS), MC_26,    MC_25, _______, _______, _______, _______, _______
     ),
 
     [_FN] = LAYOUT(
