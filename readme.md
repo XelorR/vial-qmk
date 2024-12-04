@@ -55,6 +55,13 @@ sym
       {  }        _              
 ```
 
+fun
+```
+ F12 F7 F8 F9 prnt                rec
+ F11 F4 F5 F6 scrl     S  C  A  G stop
+ F10 F1 F2 F3 paus    ^v ^c ^x ^z play
+```
+
 game
 ```
  esc    1  2  3  4  5
