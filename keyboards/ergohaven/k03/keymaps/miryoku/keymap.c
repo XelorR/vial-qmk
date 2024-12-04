@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT(
         LG_NUM,   KC_1,     KC_2,    KC_3,    KC_4,    KC_5,                                              KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
         S(KC_1),  LG_LBR,   KC_7,    KC_8,    KC_9,    LG_RBR,                                            _______, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
-        LG_COMMA, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                            _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
+        LG_COMMA, LG_SCLN,  KC_4,    KC_5,    KC_6,    KC_EQL,                                            MC_9,    OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
         LG_SCLN,  LG_GRAVE, KC_1,    KC_2,    KC_3,    KC_BSLS,                                           _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
                             _______, _______, LG_DOT,  KC_0,    KC_MINS, _______,       _______, _______, _______, _______, _______, _______
     ),
@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_SYM] = LAYOUT(
         LG_NUM,   KC_1,     KC_2,    KC_3,    KC_4,    KC_5,                                             KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
         S(KC_1),  LG_LCBR,  LG_AMPR, S(KC_8), S(KC_9), LG_RCBR,                                          _______, MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
-        LG_COMMA, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                        _______, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
+        LG_COMMA, LG_COLON, LG_DLR,  S(KC_5), LG_CIRC, S(KC_EQL),                                        MC_9,    OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
         LG_SCLN,  LG_TILD,  S(KC_1), LG_AT,   LG_HASH, S(KC_BSLS),                                       _______, C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
                             _______, _______, S(KC_9), S(KC_0),    S(KC_MINS), MC_26,    MC_25, _______, _______, _______, _______, _______
     ),
