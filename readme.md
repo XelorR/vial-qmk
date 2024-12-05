@@ -153,7 +153,13 @@ sym - [beakl z](http://thedarnedestthing.com/beakl%20zi%20revisited)
 
 sym - sunaku
 
-sym - miryoku
+sym - [miryoku](https://github.com/manna-harbour/miryoku)
+```
+    {  &  *  ( }                           
+    :  $  %  ^  +             S  C  A  G   
+    ~  !  @  #  |                          
+             (  )  _                 
+```
 
 sym - t34
 
