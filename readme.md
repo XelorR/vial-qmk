@@ -169,7 +169,12 @@ sym - [t34](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout
     =  <  >  !             =  &  (  )  _   
 ```
 
-sym - wellum
+sym - [wellum](https://github.com/braindefender/wellum)
+```
+    !  @  #  $  %          ^  &  *  (  )   
+    ~  `  '  "  -          +  S  C  A  G   
+    \  |  ;  ,  _          =  .  :  |  /   
+```
 
 sym - callum
 
