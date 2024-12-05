@@ -80,7 +80,7 @@ key voc
 | gam | | Gaming layer |
 | gfn | | Function layer for Gaming layer |
 
-comfort diagram
+comfort K03 diagram
 ```
  5  5  3  3  4  5          5  4  3  3  5  5
  4  3  2  2  2  4          4  2  2  2  3  4
