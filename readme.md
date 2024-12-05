@@ -122,13 +122,21 @@ must be placed on base layer
 , . sp S
 ```
 
-eng
+eng1
 ```
  `  1  2  3  4  5          6  7  8  9  0  -
  !  q  w  f  p  b          j  l  u  y  '  ?
  ,  a  r  s  t  g          m  n  e  i  o  .
  :  z  x  c  d  v          k  h  ,  .  |  /
        <  >                      -  =
+```
+
+eng2
+```
+    1  2  3  4  5          6  7  8  9  0
+    q  w  f  p  b          j  l  u  y  '
+    a  r  s  t  g          m  n  e  i  o
+    z  x  c  d  v          k  h  ,  .  |
 ```
 
 rus1 (combos: щ = шз, ё = ке, ъ = ьб)
@@ -140,6 +148,14 @@ rus1 (combos: щ = шз, ё = ке, ъ = ьб)
        <  >                      -  =
 ```
 
+rus2 (combos: щ = шз, ё = ке, ъ = ьб)
+```
+ ё  1  2  3  4  5          6  7  8  9  0
+    й  ц  у  к  е          н  г  ш  з  х
+    ф  ы  в  а  п          р  о  л  д  ж
+    я  ч  с  м  и          т  ь  б  ю  э  .
+```
+
 nav - my
 ```
 F11 F1 F2 F3 F4 F5         F6 F7 F8 F9 F10 F12
@@ -149,13 +165,20 @@ F11 F1 F2 F3 F4 F5         F6 F7 F8 F9 F10 F12
        __ __ __ __ __    E dl bs __ __
 ```
 
-num - my
+num1 - my
 ```
  `  1  2  3  4  5         6  7  8  9  0  -
  !  -  7  8  9  ÷                        ?
  ,  +  4  5  6  *            S  C  A  G  .
  ;  0  1  2  3  =           ^v ^c ^x ^z  \
        <  >  .  0  -                
+```
+
+num2 - my
+```
+   :q :w bn bp                *  /  %      
+    1  2  3  4  5          6  7  8  9  0   
+       j  k  ,                .  -  =  +   
 ```
 
 num - [beakl](http://ieants.cc/beakl/?i=3)
@@ -181,6 +204,13 @@ sym - my, 1
  ,  ~  `  '  "  ""        @  S  C  A  G  .
  ;  [  ]  (  )              ^v ^c ^x ^z  \
        {  }  ,     _                
+```
+
+sym - my, 2 (,. to combo)
+```
+    №  <  =  >  `          ^  [  _  ]  |   
+    \  (  -  )  +          %  {  ;  }  !   
+    #  *  :  /  $          @  "  ~  &  ?   
 ```
 
 sym - [ergohaven](https://ergohaven.xyz/k03)
@@ -238,11 +268,17 @@ sym - [callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/c
     +  |  @  /  %             \  &  ?  !   
 ```
 
-fun
+fun1, my
 ```
   F12 F7 F8 F9 ps                       rm
   F11 F4 F5 F6 sl            S  C  A  G sm
   F10 F1 F2 F3 pa           ^v ^c ^x ^z pm
+```
+
+fun2, my
+```
+   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
+            F11              F12
 ```
 
 game
