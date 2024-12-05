@@ -168,7 +168,7 @@ num - [beakl](http://ieants.cc/beakl/?i=3)
 
 num shifted - [beakl](http://ieants.cc/beakl/?i=3)
 ```
- @  $  #  %                  Y  X  Z
+    @  $  #  %               Y  X  Z
        !  [  ]  =         _  f  e  d
     &  $  #  %  |         {  c  b  a  }
     ;  ^  <  >               (  )  \
