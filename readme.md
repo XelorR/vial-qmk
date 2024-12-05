@@ -176,7 +176,12 @@ sym - [wellum](https://github.com/braindefender/wellum)
     \  |  ;  ,  _          =  .  :  |  /   
 ```
 
-sym - callum
+sym - [callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum)
+```
+    E  [  {  (  ~          ^  )  }  ]  `   
+    -  *  =  _  -          +  G  A  C  S   
+    +  |  @  /  %             \  &  ?  !   
+```
 
 fun
 ```
