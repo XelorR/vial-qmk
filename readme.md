@@ -7,6 +7,7 @@
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html)
 - [Раскладка Ильи Шепрута](https://optozorax.github.io/p/my-keyboard-layout/)
+- [Designing Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 
 Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for English and national (Russian), and it leads to the following challenges:
 
@@ -134,7 +135,7 @@ sym - my, 1
        {  }  ,     _                
 ```
 
-sym - ergohaven
+sym - [ergohaven](https://ergohaven.xyz/k03)
 ```
        @  $  #                   ^         
        <  =  >  `             [  _  ]      
