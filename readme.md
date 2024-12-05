@@ -12,63 +12,133 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 - Language switching button should also toggle layers (implemented [here](https://github.com/xelorr/xellum/blob/vial/keyboards/ergohaven/ergohaven_ruen.c#L20-L36) as layer_invert(1))
 
-## Layers
+## Layers ideas/collection
 
-thumb
+
+key voc
+
+| abbr | key symbol | key name |
+| ---- | ---------- | -------- |
+| S | ⇧ | OSM Shift |
+| C | ⌃ | OSM Control |
+| A | ⌥ | OSM Alt |
+| G | ⌘ | OSM Gui |
+| LS | ⇧ | Regular (non-sticky) Left Shift |
+| LC | ⌃ | Regular (non-sticky) Left Control |
+| LA | ⌥ | Regular (non-sticky) Left Alt/Option |
+| LG | ⌘ | Regular (non-sticky) Left Gui/Super/Win/Command |
+| RS | ⇧ | Regular (non-sticky) Right Shift |
+| RC | ⌃ | Regular (non-sticky) Right Control |
+| RA | ⌥ | Regular (non-sticky) AltGr |
+| RG | ⌘ | Regular (non-sticky) Right Gui/Super/Win/Command |
+| __ | | nothing/transition to previous layer |
+| E | ⎋ | Escape |
+| N | ↵ | Enter |
+| T | ⇥ | Tab |
+| sp | ␣ | Space |
+| bs | ⌫ | Backspace |
+| dl | ⌦ | Delete |
+| P | | Print Screen |
+| U | ↑ | Up |
+| D | ↓ | Down |
+| L | ← | Left |
+| R | → | Right |
+| ed | ↘ | End |
+| hm | ↖ | Home |
+| pd | ⇟ | Page Down |
+| pu | ⇞ | Page Up |
+| nl | | Num Lock |
+| sl | | Scroll Lock |
+| cl | ⇪ | Caps Lock |
+| cw | ⇪ | Caps Word |
+| lw | | RuEn Word |
+| lg | | Language toggle |
+| en | | Language set English |
+| ru | | Language set Russian |
+| pa | | Pause/Break |
+| rm | | Record macro |
+| pm | | Play recorded macro |
+| sm | | Stop recording macro |
+| st | | Switch Tab (sticky Ctrl-tab) |
+| sw | | Switch Window (sticky Alt-tab or Command-tab) || eng | | English alphas layer |
+| vu | | Volume up |
+| vd | | Volume down |
+| mu | | Mute |
+| ^c | | Copy |
+| ^v | | Paste |
+| ^x | | Cut |
+| ^z | | Undo |
+| rus | | Russian alphas layer |
+| nav | | navigation layer |
+| mos | | mouse/cursor layer |
+| sym | | symbol later |
+| mac | | macro/launcher layer |
+| but | | button layer |
+| num | | numbers layer |
+| med | | media layer |
+| fun | | F-row/function layer |
+| gam | | Gaming layer |
+| gfn | | Function layer for Gaming layer |
+
+comfort diagram
 ```
-lang space nav     sym osmsft capsword
+ 5  5  3  3  4  5          5  4  3  3  5  5
+ 4  3  2  2  2  4          4  2  2  2  3  4
+ 2  1  0  0  0  2          2  0  0  0  1  2
+ 3  3  2  2  1  4  5    5  4  1  2  2  3  3
+       3  3  2  0  1    1  0  2  3  3
 ```
 
 eng
 ```
-`  1  2  3  4  5       6  7  8  9  0  -
-!  q  w  f  p  b       j  l  u  y  '  ?
-,  a  r  s  t  g       m  n  e  i  o  .
-:  z  x  c  d  v       k  h  ,  .  |  /
-      <  >                   -  =
+ `  1  2  3  4  5          6  7  8  9  0  -
+ !  q  w  f  p  b          j  l  u  y  '  ?
+ ,  a  r  s  t  g          m  n  e  i  o  .
+ :  z  x  c  d  v          k  h  ,  .  |  /
+       <  >                      -  =
 ```
 
-rus (combos: щ = шз, ё = ке, ъ = ьб)
+rus1 (combos: щ = шз, ё = ке, ъ = ьб)
 ```
-ё  1  2  3  4  5       6  7  8  9  0  -
-!  й  ц  у  к  е       н  г  ш  з  х  ?
-,  ф  ы  в  а  п       р  о  л  д  ж  .
-:  я  ч  с  м  и       т  ь  б  ю  э  /
-      <  >                   -  =
+ ё  1  2  3  4  5          6  7  8  9  0  -
+ !  й  ц  у  к  е          н  г  ш  з  х  ?
+ ,  ф  ы  в  а  п          р  о  л  д  ж  .
+ :  я  ч  с  м  и          т  ь  б  ю  э  /
+       <  >                      -  =
 ```
 
 num
 ```
-`  1  2  3  4  5       6  7  8  9  0  -
-!  -  7  8  9  ÷                      ?
-,  +  4  5  6  *          S  C  A  G  .
-;  0  1  2  3  =         ^v ^c ^x ^z  \
-      <  >  .  0  -              
+ `  1  2  3  4  5         6  7  8  9  0  -
+ !  -  7  8  9  ÷                        ?
+ ,  +  4  5  6  *            S  C  A  G  .
+ ;  0  1  2  3  =           ^v ^c ^x ^z  \
+       <  >  .  0  -                
 ```
 
 sym
 ```
-~  !  @  #  $  %       ^  &  *  (  )  _
-!  &  *  #  $  %       ^ () [] {} <>  ?
-,  ~  `  '  "  ""      @  S  C  A  G  .
-;  [  ]  (  )            ^v ^c ^x ^z  \
-      {  }  ,     _              
+ ~  !  @  #  $  %         ^  &  *  (  )  _
+ !  &  *  #  $  %         ^ () [] {} <>  ?
+ ,  ~  `  '  "  ""        @  S  C  A  G  .
+ ;  [  ]  (  )              ^v ^c ^x ^z  \
+       {  }  ,     _                
 ```
 
 fun
 ```
- F12 F7 F8 F9 prnt                rec
- F11 F4 F5 F6 scrl     S  C  A  G stop
- F10 F1 F2 F3 paus    ^v ^c ^x ^z play
+  F12 F7 F8 F9 ps                       rm
+  F11 F4 F5 F6 sl            S  C  A  G sm
+  F10 F1 F2 F3 pa           ^v ^c ^x ^z pm
 ```
 
 game
 ```
- esc    1  2  3  4  5
-   i  tab  q  w  e  r
-caps shft  a  s  d  f
-   m ctrl  z  x  c  v
-                alt spc gamefn
+  es  1  2  3  4  5
+   i  T  q  w  e  r
+  cl  S  a  s  d  f
+   m  C  z  x  c  v
+               A sp gfn
 ```
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
