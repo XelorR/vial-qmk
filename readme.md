@@ -158,6 +158,22 @@ num - my
        <  >  .  0  -                
 ```
 
+num - [beakl](http://ieants.cc/beakl/?i=3)
+```
+       +  /  *  =            y  x  z  
+    -  5  2  3  :         ~  F  E  D  
+    7  .  1  0  4         {  C  B  A  }
+    ,  6  9  8               [  ]  %  
+```
+
+num shifted - [beakl](http://ieants.cc/beakl/?i=3)
+```
+ @  $  #  %                  Y  X  Z
+       !  [  ]  =         _  f  e  d
+    &  $  #  %  |         {  c  b  a  }
+    ;  ^  <  >               (  )  \
+```
+
 sym - my, 1
 ```
  ~  !  @  #  $  %         ^  &  *  (  )  _
@@ -173,6 +189,14 @@ sym - [ergohaven](https://ergohaven.xyz/k03)
        <  =  >  `             [  _  ]      
     \  (  -  )  +          %  {  ;  }  !   
        *  :  /                |  ~  &      
+```
+
+sym - [beakl](http://ieants.cc/beakl/?i=3)
+```
+       @  $  #                ~  _  `  
+       <  =  >                [  ^  ]  
+    \  (  -  )  +          %  {  ;  }  !
+       *  :  /                |  ~  &  
 ```
 
 sym - [beakl z](http://thedarnedestthing.com/beakl%20zi%20revisited)
