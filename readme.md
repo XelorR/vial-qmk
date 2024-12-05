@@ -19,10 +19,10 @@ key voc
 
 | abbr | key symbol | key name |
 | ---- | ---------- | -------- |
-| S | ⇧ | OSM Shift |
-| C | ⌃ | OSM Control |
-| A | ⌥ | OSM Alt |
-| G | ⌘ | OSM Gui |
+| S | ⇧ | OSM or OSSM Shift |
+| C | ⌃ | OSM or OSSM Control |
+| A | ⌥ | OSM or OSSM Alt |
+| G | ⌘ | OSM or OSSM Gui |
 | LS | ⇧ | Regular (non-sticky) Left Shift |
 | LC | ⌃ | Regular (non-sticky) Left Control |
 | LA | ⌥ | Regular (non-sticky) Left Alt/Option |
