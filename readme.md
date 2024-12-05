@@ -35,10 +35,10 @@ key voc
 | E | ⎋ | Escape |
 | N | ↵ | Enter |
 | T | ⇥ | Tab |
+| P | | Print Screen |
 | sp | ␣ | Space |
 | bs | ⌫ | Backspace |
 | dl | ⌦ | Delete |
-| P | | Print Screen |
 | U | ↑ | Up |
 | D | ↓ | Down |
 | L | ← | Left |
