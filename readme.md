@@ -40,6 +40,7 @@ key voc
 | sp | ␣ | Space |
 | bs | ⌫ | Backspace |
 | dl | ⌦ | Delete |
+| ap | | App/Menu |
 | U | ↑ | Up |
 | D | ↓ | Down |
 | L | ← | Left |
@@ -48,6 +49,9 @@ key voc
 | hm | ↖ | Home |
 | pd | ⇟ | Page Down |
 | pu | ⇞ | Page Up |
+| lb | | Left mouse button / button 1 |
+| rb | | Right mouse button / button 2 |
+| mb | | Miggle mouse button / button 3 |
 | nl | | Num Lock |
 | sl | | Scroll Lock |
 | cl | ⇪ | Caps Lock |
@@ -62,6 +66,10 @@ key voc
 | sm | | Stop recording macro |
 | st | | Switch Tab (sticky Ctrl-tab) |
 | sw | | Switch Window (sticky Alt-tab or Command-tab) |
+| pt | | Previous tab |
+| nt | | Next tab |
+| qt | | Close tab |
+| qw | | Close window |
 | vu | | Volume up |
 | vd | | Volume down |
 | mu | | Mute |
@@ -118,7 +126,16 @@ rus1 (combos: щ = шз, ё = ке, ъ = ьб)
        <  >                      -  =
 ```
 
-num
+nav - my
+```
+F11 F1 F2 F3 F4 F5         F6 F7 F8 F9 F10 F12
+ __ st sw pt nt qt         qw hm  U ed pu __
+ LG  G  A  C  S lw         cw  L  D  R pd RA
+ __ ^z ^x ^c ^c __ __   __ __  P ap MC GM __
+       __ __ __ __ __    E dl bs __ __
+```
+
+num - my
 ```
  `  1  2  3  4  5         6  7  8  9  0  -
  !  -  7  8  9  ÷                        ?
