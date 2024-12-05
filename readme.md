@@ -161,7 +161,12 @@ sym - [miryoku](https://github.com/manna-harbour/miryoku)
              (  )  _                 
 ```
 
-sym - t34
+sym - [t34](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)
+```
+    ~  +  *  %                #  .  @  ,   
+    |  {  }  -  \          `  ?  [  ]      
+    =  <  >  !             =  &  (  )  _   
+```
 
 sym - wellum
 
