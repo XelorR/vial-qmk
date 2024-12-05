@@ -61,7 +61,7 @@ key voc
 | pm | | Play recorded macro |
 | sm | | Stop recording macro |
 | st | | Switch Tab (sticky Ctrl-tab) |
-| sw | | Switch Window (sticky Alt-tab or Command-tab) || eng | | English alphas layer |
+| sw | | Switch Window (sticky Alt-tab or Command-tab) |
 | vu | | Volume up |
 | vd | | Volume down |
 | mu | | Mute |
@@ -69,17 +69,18 @@ key voc
 | ^v | | Paste |
 | ^x | | Cut |
 | ^z | | Undo |
-| rus | | Russian alphas layer |
-| nav | | navigation layer |
-| mos | | mouse/cursor layer |
-| sym | | symbol later |
-| mac | | macro/launcher layer |
-| but | | button layer |
-| num | | numbers layer |
-| med | | media layer |
-| fun | | F-row/function layer |
-| gam | | Gaming layer |
-| gfn | | Function layer for Gaming layer |
+| eng / EN | | English alphas layer |
+| rus / RU | | Russian alphas layer |
+| nav / NV | | navigation layer |
+| mos / MS | | mouse/cursor layer |
+| sym / SY | | symbol later |
+| mac / MC | | macro/launcher layer |
+| but / BU | | button layer |
+| num / NU | | numbers layer |
+| med / ME | | media layer |
+| fun / FN | | F-row/function layer |
+| gam / GM | | Gaming layer |
+| gfn / GF | | Function layer for Gaming layer |
 
 comfort K03 diagram
 ```
