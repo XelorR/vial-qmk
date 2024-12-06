@@ -176,9 +176,9 @@ num1 - my
 
 num2 - my
 ```
-   :q :w :bn :bp                *  /  %      
+   :q :w :bn :bp           :  *  /  %      
     1  2  3  4  5          6  7  8  9  0   
-       j  k  ,                .  -  =  +   
+   Sg  j  k  ,                .  -  =  +   
 ```
 
 num - [beakl](http://ieants.cc/beakl/?i=3)
