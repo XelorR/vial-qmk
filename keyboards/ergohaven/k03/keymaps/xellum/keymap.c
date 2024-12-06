@@ -23,6 +23,23 @@
 #define BU_QUOTE LT(_BUTTON, KC_QUOTE)
 #define OSM_SFT OSM(MOD_LSFT)
 
+#define HG_1 LGUI_T(KC_1)
+#define HA_2 LALT_T(KC_2)
+#define HC_3 LCTL_T(KC_3)
+#define HC_4 LSFT_T(KC_4)
+#define HC_7 LSFT_T(KC_7)
+#define HC_8 LCTL_T(KC_8)
+#define HA_9 LALT_T(KC_9)
+#define HG_0 LGUI_T(KC_0)
+#define HG_F1 LGUI_T(KC_F1)
+#define HA_F2 LALT_T(KC_F2)
+#define HC_F3 LCTL_T(KC_F3)
+#define HC_F4 LSFT_T(KC_F4)
+#define HC_F7 LSFT_T(KC_F7)
+#define HC_F8 LCTL_T(KC_F8)
+#define HA_F9 LALT_T(KC_F9)
+#define HG_F10 LGUI_T(KC_F10)
+
 enum layers {
     _ENG,
     _RUS,
@@ -64,9 +81,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RUS] = LAYOUT(
         _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______,  _______,
-        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_P,    KC_LBRC,  _______,
+        KC_GRV,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_P,    KC_LBRC,  _______,
         _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  _______,
-        _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOTE, _______,
+        _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOTE, KC_SLSH,
                           _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
     ),
 
@@ -95,11 +112,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NUM] = LAYOUT(
-        LG_NUM,  G(KC_1), G(KC_2), G(KC_3), G(KC_4), G(KC_5),                                          G(KC_6), G(KC_7), G(KC_8), G(KC_9), G(KC_0), KC_NUM,
-        S(KC_1), KC_PMNS, KC_P7,   KC_P8,   KC_P9,   KC_PSLS,                                          KC_ESC,  KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, LG_QUES,
-        KC_PCMM, KC_PPLS, KC_P4,   KC_P5,   KC_P6,   KC_PAST,                                          KC_PENT, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_PDOT,
-        LG_SCLN, KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_EQL,                                           KC_TAB,  KC_BTN1, KC_BTN2, KC_BTN3, KC_APP,  KC_BSLS,
-                          LG_LBR,  LG_RBR,  KC_ALGR, MC_9,    _______, MC_20,         MC_21, _______,  _______, _______, LG_LCBR, LG_RCBR
+        KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,                                    KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,  
+        KC_NO, MC_0,    MC_1,    MC_2,    MC_3,     KC_NO,                                    KC_NO, S(KC_8), KC_NO,   S(KC_5), KC_NO,     KC_NO, 
+        KC_NO, HG_1,    HA_2,    HC_3,    HS_4,     KC_5,                                     KC_6,  HS_7,    HC_8,    HA_9,    HG_0,      KC_NO,
+        KC_NO, S(KC_G), KC_J,    KC_K,    LG_COMMA, KC_NO,                                    KC_NO, LG_DOT,  KC_MINS, KC_EQL,  S(KC_EQL), KC_NO, 
+                        KC_NO,   KC_NO,   KC_NO,    KC_NO, _______, MC_20,   MC_21, _______,  KC_NO, KC_NO,   KC_NO,   KC_NO
     ),
 
     [_NAV] = LAYOUT(
