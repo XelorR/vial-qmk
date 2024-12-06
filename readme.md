@@ -176,7 +176,7 @@ num1 - my
 
 num2 - my
 ```
-   :q :w :bn :bp           :  *  /  %      
+   :q :w :bn :bp           :  *  /  %  №   
     1  2  3  4  5          6  7  8  9  0   
    Sg  j  k  ,                .  -  =  +   
 ```
@@ -208,9 +208,9 @@ sym - my, 1
 
 sym - my, 2 (,. to combo)
 ```
-    №  <  =  >  `          ^  [  _  ]  '   
+    '  <  =  >  `          ^  [  _  ]  "   
     \  (  -  )  +          %  {  ;  }  !   
-    #  *  :  /  $          @  "  ~  &  ?   
+    #  *  :  /  $          @  |  ~  &  ?   
 ```
 
 sym - [ergohaven](https://ergohaven.xyz/k03)
