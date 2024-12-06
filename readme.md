@@ -96,6 +96,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 <details>
 
 <summary>K03 relative effort grid</summary>
+
 ```
  5  5  4  3  4  6          6  4  3  4  5  5
  4  3  3  2  2  4          4  2  2  3  3  4
