@@ -93,7 +93,9 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-comfort K03 diagram
+<details>
+
+<summary>K03 relative effort grid</summary>
 ```
  5  5  4  3  4  6          6  4  3  4  5  5
  4  3  3  2  2  4          4  2  2  3  3  4
@@ -101,6 +103,8 @@ comfort K03 diagram
  3  3  2  2  1  4  6    6  4  1  2  2  3  3
        4  4  3  0  1    1  0  3  4  4
 ```
+
+</details>
 
 eng (combos: ,=cd .=h, lg=ei)
 ```
@@ -134,14 +138,14 @@ sym
                 _                    
 ```
 
-num
+num (tap-holds: GACS=1234 SCAG=7890)
 ```
    :q :w :bn :bp           :  *  /  %  №   
     1  2  3  4  5          6  7  8  9  0   
    Sg  j  k  ,                .  -  =  +   
 ```
 
-fun
+fun (tap-holds: GACS=F1F2F3F4 SCAG=F7F8F9F10)
 ```
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
             F11              F12
