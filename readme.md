@@ -213,6 +213,14 @@ sym - my, 2 (,. to combo)
     #  *  :  /  $          @  |  ~  &  ?   
 ```
 
+sym - my, 3 (,. to combo)
+```
+    [  ]  <  >  ;          `  '  "  -  =   
+    !  @  #  $  %          ^  &  *  (  )   
+    {  }  :  /  \          №  |  ~  +  ?   
+                _                    
+```
+
 sym - [ergohaven](https://ergohaven.xyz/k03)
 ```
        @  $  #                   ^         
