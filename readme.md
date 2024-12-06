@@ -13,10 +13,11 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 - Language switching button should also toggle layers (implemented [here](https://github.com/xelorr/xellum/blob/vial/keyboards/ergohaven/ergohaven_ruen.c#L20-L36) as layer_invert(1))
 
-## Layers ideas/collection
+## Layers
 
+<details>
 
-key voc
+<summary>key voc</summary>
 
 | abbr | key symbol | key name |
 | ---- | ---------- | -------- |
@@ -90,6 +91,8 @@ key voc
 | gam / GM | | Gaming layer |
 | gfn / GF | | Function layer for Gaming layer |
 
+</details>
+
 comfort K03 diagram
 ```
  5  5  4  3  4  6          6  4  3  4  5  5
@@ -98,6 +101,64 @@ comfort K03 diagram
  3  3  2  2  1  4  6    6  4  1  2  2  3  3
        4  4  3  0  1    1  0  3  4  4
 ```
+
+eng (combos: ,=cd .=h, lg=ei)
+```
+    1  2  3  4  5          6  7  8  9  0
+    q  w  f  p  b          j  l  u  y  '
+    a  r  s  t  g          m  n  e  i  o
+    z  x  c  d  v          k  h  ,  .  /
+```
+
+rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд)
+```
+ ё  1  2  3  4  5          6  7  8  9  0
+    й  ц  у  к  е          н  г  ш  з  х
+    ф  ы  в  а  п          р  о  л  д  ж
+    я  ч  с  м  и          т  ь  б  ю  э  .
+```
+
+nav
+```
+F11 F1 F2 F3 F4 F5         F6 F7 F8 F9 F10 F12
+    st sw pt nt  E          E hm  U ed dl   
+     G  A  C  S  N          N  L  D  R bs   
+    ^z ^x ^c ^c  T          T pu pd MC GM   
+```
+
+sym
+```
+    №  <  =  >  `          ^  [  "  ]  '   
+    \  (  -  )  +          %  {  ;  }  !   
+    #  *  :  /  $          @  |  ~  &  ?   
+                _                    
+```
+
+num
+```
+   :q :w :bn :bp           :  *  /  %  №   
+    1  2  3  4  5          6  7  8  9  0   
+   Sg  j  k  ,                .  -  =  +   
+```
+
+fun
+```
+   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
+            F11              F12
+```
+
+gam
+```
+  es  1  2  3  4  5
+   i  T  q  w  e  r
+  cl  S  a  s  d  f
+   m  C  z  x  c  v
+               A sp gfn
+```
+
+<details>
+
+<summary>other layers collection to review and get inspiration</summary>
 
 blank layer to copy
 ```
@@ -114,7 +175,7 @@ __ __ __ __ __ __         __ __ __ __ __ __
 __ __ __ __ __ __         __ __ __ __ __ __
 __ __ __ __ __ __         __ __ __ __ __ __
 __ __ __ __ __ __ __   __ __ __ __ __ __ __
-      __ __ __ sp __   __ __ __ __ __
+      __ __ __ sp __   __  S __ __ __
 ```
 
 must be placed on base layer
@@ -131,14 +192,6 @@ eng1
        <  >                      -  =
 ```
 
-eng2
-```
-    1  2  3  4  5          6  7  8  9  0
-    q  w  f  p  b          j  l  u  y  '
-    a  r  s  t  g          m  n  e  i  o
-    z  x  c  d  v          k  h  ,  .  |
-```
-
 rus1 (combos: щ = шз, ё = ке, ъ = ьб)
 ```
  ё  1  2  3  4  5          6  7  8  9  0  -
@@ -146,14 +199,6 @@ rus1 (combos: щ = шз, ё = ке, ъ = ьб)
  ,  ф  ы  в  а  п          р  о  л  д  ж  .
  :  я  ч  с  м  и          т  ь  б  ю  э  /
        <  >                      -  =
-```
-
-rus2 (combos: щ = шз, ё = ке, ъ = ьб)
-```
- ё  1  2  3  4  5          6  7  8  9  0
-    й  ц  у  к  е          н  г  ш  з  х
-    ф  ы  в  а  п          р  о  л  д  ж
-    я  ч  с  м  и          т  ь  б  ю  э  .
 ```
 
 nav - my
@@ -172,13 +217,6 @@ num1 - my
  ,  +  4  5  6  *            S  C  A  G  .
  ;  0  1  2  3  =           ^v ^c ^x ^z  \
        <  >  .  0  -                
-```
-
-num2 - my
-```
-   :q :w :bn :bp           :  *  /  %  №   
-    1  2  3  4  5          6  7  8  9  0   
-   Sg  j  k  ,                .  -  =  +   
 ```
 
 num - [beakl](http://ieants.cc/beakl/?i=3)
@@ -284,20 +322,7 @@ fun1, my
   F10 F1 F2 F3 pa           ^v ^c ^x ^z pm
 ```
 
-fun2, my
-```
-   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
-            F11              F12
-```
-
-game
-```
-  es  1  2  3  4  5
-   i  T  q  w  e  r
-  cl  S  a  s  d  f
-   m  C  z  x  c  v
-               A sp gfn
-```
+</details>
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
 
