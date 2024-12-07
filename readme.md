@@ -20,95 +20,95 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 <summary>key voc</summary>
 
-| abbr | key symbol | key name |
-| ---- | ---------- | -------- |
-| ◇ | | Holding to keep layer activated |
-| S | ⇧ | OSM or OSSM Shift |
-| C | ⌃ | OSM or OSSM Control |
-| A | ⌥ | OSM or OSSM Alt |
-| G | ⌘ | OSM or OSSM Gui |
-| LS | ⇧ | Regular (non-sticky) Left Shift |
-| LC | ⌃ | Regular (non-sticky) Left Control |
-| LA | ⌥ | Regular (non-sticky) Left Alt/Option |
-| LG | ⌘ | Regular (non-sticky) Left Gui/Super/Win/Command |
-| RS | ⇧ | Regular (non-sticky) Right Shift |
-| RC | ⌃ | Regular (non-sticky) Right Control |
-| RA | ⌥ | Regular (non-sticky) AltGr |
-| RG | ⌘ | Regular (non-sticky) Right Gui/Super/Win/Command |
-| __ | | nothing/transition to previous layer |
-| E | ⎋ | Escape |
-| N | ↵ | Enter |
-| T | ⇥ | Tab |
-| P | | Print Screen |
-| sp | ␣ | Space |
-| bs | ⌫ | Backspace |
-| dl | ⌦ | Delete |
-| ap | | App/Menu |
-| U | ↑ | Up |
-| D | ↓ | Down |
-| L | ← | Left |
-| R | → | Right |
-| ed | ↘ | End |
-| hm | ↖ | Home |
-| pd | ⇟ | Page Down |
-| pu | ⇞ | Page Up |
-| lb | | Left mouse button / button 1 |
-| rb | | Right mouse button / button 2 |
-| mb | | Miggle mouse button / button 3 |
-| mu | | Mouse cursor up |
-| md | | Mouse cursor down |
-| ml | | Mouse cursor left |
-| mr | | Mouse cursor right |
-| wu | | Mouse wheel up |
-| wd | | Mouse wheel down |
-| wl | | Mouse wheel left |
-| wr | | Mouse wheel right |
-| Wu | | Focus up window |
-| Wd | | Focus down window |
-| Wl | | Focus left window |
-| Wr | | Focus right window |
-| Wc | | Vim window close |
-| Wh | | Window split horisontally |
-| Wv | | Window split vertcally |
-| nl | | Num Lock |
-| sl | | Scroll Lock |
-| cl | ⇪ | Caps Lock |
-| cw | ⇪ | Caps Word |
-| lw | | RuEn Word |
-| lg | | Language toggle |
-| en | | Language set English |
-| ru | | Language set Russian |
-| pa | | Pause/Break |
-| rm | | Record macro |
-| pm | | Play recorded macro |
-| sm | | Stop recording macro |
-| st | | Switch Tab (sticky Ctrl-tab) |
-| sw | | Switch Window (sticky Alt-tab or Command-tab) |
-| pt | | Previous tab |
-| nt | | Next tab |
-| ns | | Next space |
-| ps | | Next space |
-| qt | | Close tab |
-| qw | | Close window |
-| vu | | Volume up |
-| vd | | Volume down |
-| mt | | Mute |
-| ^c | | Copy |
-| ^v | | Paste |
-| ^x | | Cut |
-| ^z | | Undo |
-| eng / EN | | English alphas layer |
-| rus / RU | | Russian alphas layer |
-| nav / NV | | navigation layer |
-| mos / MS | | mouse/cursor layer |
-| sym / SY | | symbol later |
-| mac / MC | | macro/launcher layer |
-| but / BU | | button layer |
-| num / NU | | numbers layer |
-| med / ME | | media layer |
-| fun / FN | | F-row/function layer |
-| gam / GM | | Gaming layer |
-| gfn / GF | | Function layer for Gaming layer |
+| abbr     | key symbol | key name                                         |
+| -------- | ---------- | ------------------------------------------------ |
+| ◇        |            | Holding to keep layer activated                  |
+| S        | ⇧          | OSM or OSSM Shift                                |
+| C        | ⌃          | OSM or OSSM Control                              |
+| A        | ⌥          | OSM or OSSM Alt                                  |
+| G        | ⌘          | OSM or OSSM Gui                                  |
+| LS       | ⇧          | Regular (non-sticky) Left Shift                  |
+| LC       | ⌃          | Regular (non-sticky) Left Control                |
+| LA       | ⌥          | Regular (non-sticky) Left Alt/Option             |
+| LG       | ⌘          | Regular (non-sticky) Left Gui/Super/Win/Command  |
+| RS       | ⇧          | Regular (non-sticky) Right Shift                 |
+| RC       | ⌃          | Regular (non-sticky) Right Control               |
+| RA       | ⌥          | Regular (non-sticky) AltGr                       |
+| RG       | ⌘          | Regular (non-sticky) Right Gui/Super/Win/Command |
+| __       |            | nothing/transition to previous layer             |
+| E        | ⎋          | Escape                                           |
+| N        | ↵          | Enter                                            |
+| T        | ⇥          | Tab                                              |
+| P        |            | Print Screen                                     |
+| sp       | ␣          | Space                                            |
+| bs       | ⌫          | Backspace                                        |
+| dl       | ⌦          | Delete                                           |
+| ap       |            | App/Menu                                         |
+| U        | ↑          | Up                                               |
+| D        | ↓          | Down                                             |
+| L        | ←          | Left                                             |
+| R        | →          | Right                                            |
+| ed       | ↘          | End                                              |
+| hm       | ↖          | Home                                             |
+| pd       | ⇟          | Page Down                                        |
+| pu       | ⇞          | Page Up                                          |
+| lb       |            | Left mouse button / button 1                     |
+| rb       |            | Right mouse button / button 2                    |
+| mb       |            | Miggle mouse button / button 3                   |
+| mu       |            | Mouse cursor up                                  |
+| md       |            | Mouse cursor down                                |
+| ml       |            | Mouse cursor left                                |
+| mr       |            | Mouse cursor right                               |
+| wu       |            | Mouse wheel up                                   |
+| wd       |            | Mouse wheel down                                 |
+| wl       |            | Mouse wheel left                                 |
+| wr       |            | Mouse wheel right                                |
+| Wu       |            | Focus up window                                  |
+| Wd       |            | Focus down window                                |
+| Wl       |            | Focus left window                                |
+| Wr       |            | Focus right window                               |
+| Wc       |            | Vim window close                                 |
+| Wh       |            | Window split horisontally                        |
+| Wv       |            | Window split vertcally                           |
+| nl       |            | Num Lock                                         |
+| sl       |            | Scroll Lock                                      |
+| cl       | ⇪          | Caps Lock                                        |
+| cw       | ⇪          | Caps Word                                        |
+| lw       |            | RuEn Word                                        |
+| lg       |            | Language toggle                                  |
+| en       |            | Language set English                             |
+| ru       |            | Language set Russian                             |
+| pa       |            | Pause/Break                                      |
+| rm       |            | Record macro                                     |
+| pm       |            | Play recorded macro                              |
+| sm       |            | Stop recording macro                             |
+| st       |            | Switch Tab (sticky Ctrl-tab)                     |
+| sw       |            | Switch Window (sticky Alt-tab or Command-tab)    |
+| pt       |            | Previous tab                                     |
+| nt       |            | Next tab                                         |
+| ns       |            | Next space                                       |
+| ps       |            | Next space                                       |
+| qt       |            | Close tab                                        |
+| qw       |            | Close window                                     |
+| vu       |            | Volume up                                        |
+| vd       |            | Volume down                                      |
+| mt       |            | Mute                                             |
+| ^c       |            | Copy                                             |
+| ^v       |            | Paste                                            |
+| ^x       |            | Cut                                              |
+| ^z       |            | Undo                                             |
+| eng / EN |            | English alphas layer                             |
+| rus / RU |            | Russian alphas layer                             |
+| nav / NV |            | navigation layer                                 |
+| mos / MS |            | mouse/cursor layer                               |
+| sym / SY |            | symbol later                                     |
+| mac / MC |            | macro/launcher layer                             |
+| but / BU |            | button layer                                     |
+| num / NU |            | numbers layer                                    |
+| med / ME |            | media layer                                      |
+| fun / FN |            | F-row/function layer                             |
+| gam / GM |            | Gaming layer                                     |
+| gfn / GF |            | Function layer for Gaming layer                  |
 
 </details>
 
@@ -127,7 +127,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h lg=ei; z - mouse vim, / - mouse layer)
+eng (combos: ,=cd .=h lg=ei)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o
@@ -135,7 +135,7 @@ eng (combos: ,=cd .=h lg=ei; z - mouse vim, / - mouse layer)
                sp NV   SY  S         
 ```
 
-rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; я - vim layer, э - mouse layer)
+rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж
@@ -165,22 +165,6 @@ nav (GM is OSL, NC is TG, if not specified then MO)
     G  A  C  S cw          N  L  D  R bs   
    ps ns st sw lw          T pu pd MC GM   
                 N  ◇   NU lb
-```
-
-vim
-```
-      ^a  k ^e                  Wu         
-       h  j  l            :q Wl Wd Wr :w   
-    ◇ ^x ^c ^v               Wh Wv Wc      
-                            
-```
-
-mos
-```
-                          wu wl mu wr dl   
-                          wd ml md mr bs   
-                             ^v ^c ^x  ◇
-                       rb lb
 ```
 
 sym
@@ -391,6 +375,22 @@ fun2 (tap-holds: GACS=F1F2F3F4 SCAG=F7F8F9F10)
 ```
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
             F11              F12
+```
+
+vim
+```
+      ^a  k ^e                  Wu         
+       h  j  l            :q Wl Wd Wr :w   
+    ◇ ^x ^c ^v               Wh Wv Wc      
+                            
+```
+
+mos
+```
+                          wu wl mu wr dl   
+                          wd ml md mr bs   
+                             ^v ^c ^x  ◇
+                       rb lb
 ```
 
 </details>

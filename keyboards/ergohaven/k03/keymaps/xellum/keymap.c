@@ -9,6 +9,7 @@
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 #define LA_LAUNCH OSL(_MACRO)
+#define LA_MAC LT(_MACRO,KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
@@ -77,18 +78,18 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-        KC_NO, KC_1, KC_2,  KC_3,  KC_4,  KC_5,                             KC_6,    KC_7,    KC_8,    KC_9,   KC_0,    KC_NO,
-        KC_NO, KC_Q, KC_W,  KC_F,  KC_P,  KC_B,                             KC_J,    KC_L,    KC_U,    KC_Y,   KC_QUOT, KC_NO,
-        KC_NO, KC_A, KC_R,  KC_S,  KC_T,  KC_G,                             KC_M,    KC_N,    KC_E,    KC_I,   KC_O,    KC_NO,
-        KC_NO, VI_Z, KC_X,  KC_C,  KC_D,  KC_V,                             KC_K,    KC_H,    KC_COMM, KC_DOT, MS_SLSH, KC_NO,
-                     KC_NO, KC_NO, KC_NO, KC_SPC, LA_NAV, KC_NO,     KC_NO, LA_SYM,  OSM_SFT, KC_NO, KC_NO, KC_NO
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                            KC_NO,  KC_NO,   KC_NO,   KC_NO,  KC_NO,   KC_NO,
+        KC_NO, KC_Q,  KC_W,  KC_F,  KC_P,  KC_B,                             KC_J,   KC_L,    KC_U,    KC_Y,   KC_QUOT, KC_NO,
+        KC_NO, KC_A,  KC_R,  KC_S,  KC_T,  KC_G,                             KC_M,   KC_N,    KC_E,    KC_I,   KC_O,    KC_NO,
+        KC_NO, KC_Z,  KC_X,  KC_C,  KC_D,  KC_V,                             KC_K,   KC_H,    KC_COMM, KC_DOT, KC_SLSH, KC_NO,
+                      KC_NO, KC_NO, KC_NO, KC_SPC, LA_NAV, KC_NO,     KC_NO, LA_SYM, OSM_SFT, KC_NO,   KC_NO,  KC_NO
     ),
 
     [_RUS] = LAYOUT(
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                       KC_NO,   KC_NO, KC_NO,   KC_NO,  KC_NO,    KC_NO,
         KC_NO, KC_Q,  KC_W,  KC_E,  KC_R,  KC_T,                                        KC_Y,    KC_U,  KC_I,    KC_P,   KC_LBRC,  KC_NO,
         KC_NO, KC_A,  KC_S,  KC_D,  KC_F,  KC_G,                                        KC_H,    KC_J,  KC_K,    KC_L,   KC_SCLN,  KC_NO,
-        KC_NO, VI_Z,  KC_X,  KC_C,  KC_V,  KC_B,                                        KC_N,    KC_M,  KC_COMM, KC_DOT, MS_QUOTE, KC_SLSH,
+        KC_NO, KC_Z,  KC_X,  KC_C,  KC_V,  KC_B,                                        KC_N,    KC_M,  KC_COMM, KC_DOT, KC_QUOTE, KC_SLSH,
                       KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,     KC_NO, _______, _______, KC_NO, KC_NO,   KC_NO
     ),
 
@@ -102,8 +103,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_GFN] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,                                     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_U,    KC_I,    KC_O,    KC_P,   KC_T,                                      DM_REC2, _______, _______, _______, _______, KC_NO,
-        KC_NO,   KC_1,    KC_2,    KC_3,    KC_4,   KC_G,                                      DM_RSTP, _______, _______, _______, _______, KC_NO,
+        KC_NO,   KC_ESC,  KC_5,    KC_6,    KC_7,   KC_8,                                      DM_REC2, _______, _______, _______, _______, KC_NO,
+        KC_NO,   KC_LALT, KC_1,    KC_2,    KC_3,   KC_4,                                      DM_RSTP, _______, _______, _______, _______, KC_NO,
         KC_NO,   KC_G,    KC_J,    KC_I,    KC_M,   KC_T,                                      DM_PLY2, _______, _______, _______, _______, KC_NO,
                           KC_NO,   KC_NO,   KC_NO,  KC_ENT, _______, KC_NO,     KC_NO, LA_NUM, _______, KC_NO,   KC_NO,   KC_NO
     ),
@@ -116,21 +117,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          KC_NO,    KC_NO,   KC_NO,   KC_ENT,  _______, KC_NO,       KC_NO, LA_NUM, KC_BTN1, KC_NO,   KC_NO,   KC_NO
     ),
 
-    [_VIM] = LAYOUT(
-        KC_NO, KC_NO,   C(KC_A), KC_K,  C(KC_E), KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO,   KC_H,    KC_J,  KC_L,    KC_NO,                                      KC_NO,   KC_NO, MC_3,  KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,                                      MC_4,    MC_0,  MC_1,  MC_2,  MC_5,  KC_NO,
-        KC_NO, _______, CUT,     COPY,  PASTE,   KC_NO,                                      KC_NO,   MC_6,  MC_7,  MC_8,  KC_NO, KC_NO,
-                        KC_NO,   KC_NO, KC_NO,   _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
-    ),
+    // [_VIM] = LAYOUT(
+    //     KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    //     KC_NO, KC_NO,   C(KC_A), KC_K,  C(KC_E), KC_NO,                                      KC_NO,   KC_NO, MC_3,  KC_NO, KC_NO, KC_NO,
+    //     KC_NO, KC_NO,   KC_H,    KC_J,  KC_L,    KC_NO,                                      MC_4,    MC_0,  MC_1,  MC_2,  MC_5,  KC_NO,
+    //     KC_NO, _______, CUT,     COPY,  PASTE,   KC_NO,                                      KC_NO,   MC_6,  MC_7,  MC_8,  KC_NO, KC_NO,
+    //                     KC_NO,   KC_NO, KC_NO,   _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
+    // ),
 
-    [_MOUSE] = LAYOUT(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_U, KC_WH_L, KC_MS_U, KC_WH_R, KC_DEL,  KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_D, KC_MS_L, KC_MS_D, KC_MS_R, KC_BSPC, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   PASTE,   COPY,    CUT,     _______, KC_NO,
-                      KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,     KC_NO,  KC_BTN2, KC_BTN1, KC_NO,   KC_NO,   KC_NO
-    ),
+    // [_MOUSE] = LAYOUT(
+    //     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+    //     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_U, KC_WH_L, KC_MS_U, KC_WH_R, KC_DEL,  KC_NO,
+    //     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_D, KC_MS_L, KC_MS_D, KC_MS_R, KC_BSPC, KC_NO,
+    //     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   PASTE,   COPY,    CUT,     _______, KC_NO,
+    //                   KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,     KC_NO,  KC_BTN2, KC_BTN1, KC_NO,   KC_NO,   KC_NO
+    // ),
 
     [_SYM] = LAYOUT(
         KC_NO, KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                             KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
@@ -150,7 +151,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MACRO] = LAYOUT(
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, MC_0,  MC_1,  MC_2,  MC_3,  MC_4,                                       MC_5,    MC_6,  MC_7,  MC_8,  MC_9,  KC_NO, 
         KC_NO, MC_10, MC_11, MC_12, MC_13, MC_14,                                      MC_15,   MC_16, MC_17, MC_18, MC_19, KC_NO, 
         KC_NO, MC_20, MC_22, MC_22, MC_23, MC_24,                                      MC_25,   MC_26, MC_27, MC_28, MC_29, KC_NO, 
                       KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
