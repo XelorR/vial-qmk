@@ -9,7 +9,7 @@
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 #define LA_LAUNCH OSL(_MACRO)
-#define LA_MAC LT(_MACRO,KC_SPC)
+#define LA_MAC OSM(_MACRO)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
         KC_NO, A(KC_F4), C(KC_F4), TAB_L,   TAB_R,   KC_PSCR,                                      KC_ESC,  KC_HOME, KC_UP,   KC_END,  KC_DEL,   KC_NO,
         KC_NO, OS_CMD,   OS_ALT,   OS_CTRL, OS_SHFT, CW_TOGG,                                      KC_ENT,  KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,  KC_NO,
-        KC_NO, SPACE_L,  SPACE_R,  SW_TAB,  SW_WIN,  LG_WORD,                                      KC_TAB,  KC_PGUP, KC_PGDN, KC_APP,  DF(_GAM), KC_NO,
+        KC_NO, SPACE_L,  SPACE_R,  SW_TAB,  SW_WIN,  LG_WORD,                                      KC_TAB,  KC_PGUP, KC_PGDN, LA_MAC,  DF(_GAM), KC_NO,
                          KC_NO,    KC_NO,   KC_NO,   KC_ENT,  _______, KC_NO,       KC_NO, LA_NUM, KC_BTN1, KC_NO,   KC_NO,   KC_NO
     ),
 
