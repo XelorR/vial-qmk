@@ -58,7 +58,7 @@ enum layers {
     _FN,
     _MACRO,
     _BUTTON,
-    _VI,
+    _VIM,
     _13,
     _14,
     _ALT,
