@@ -117,10 +117,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_VIM] = LAYOUT(
-        KC_NO, KC_NO,   C(KC_A), KC_K,  C(KC_E), KC_NO,                             KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO,   KC_H,    KC_J,  KC_L,    KC_NO,                             KC_NO,   KC_NO,   KC_NO, MC_3,  KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,                             KC_NO,   MC_4,    MC_0,  MC_1,  MC_2,  MC_5,  KC_NO,
-        KC_NO, _______, CUT,     COPY,  PASTE,   KC_NO,                             KC_NO,   KC_NO,   MC_6,  MC_7,  MC_8,  KC_NO, KC_NO,
+        KC_NO, KC_NO,   C(KC_A), KC_K,  C(KC_E), KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO,   KC_H,    KC_J,  KC_L,    KC_NO,                                      KC_NO,   KC_NO, MC_3,  KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,                                      MC_4,    MC_0,  MC_1,  MC_2,  MC_5,  KC_NO,
+        KC_NO, _______, CUT,     COPY,  PASTE,   KC_NO,                                      KC_NO,   MC_6,  MC_7,  MC_8,  KC_NO, KC_NO,
                         KC_NO,   KC_NO, KC_NO,   _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
     ),
 
@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_U, KC_WH_L, KC_MS_U, KC_WH_R, KC_DEL,  KC_NO,
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_WH_D, KC_MS_L, KC_MS_D, KC_MS_R, KC_BSPC, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        _______, PASTE,   COPY,    CUT,     _______, KC_NO,
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                        KC_NO,   PASTE,   COPY,    CUT,     _______, KC_NO,
                       KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,     KC_NO,  KC_BTN2, KC_BTN1, KC_NO,   KC_NO,   KC_NO
     ),
 
