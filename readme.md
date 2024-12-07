@@ -159,7 +159,7 @@ gfn
                 N  ◇   NU            
 ```
 
-nav (GM is OSL, NC is TG, if not specified than MO)
+nav (GM is OSL, NC is TG, if not specified then MO)
 ```
    qw qt pt nt  P          E hm  U ed dl   
     G  A  C  S cw          N  L  D  R bs   
