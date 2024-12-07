@@ -53,6 +53,14 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | lb | | Left mouse button / button 1 |
 | rb | | Right mouse button / button 2 |
 | mb | | Miggle mouse button / button 3 |
+| mu | | Mouse cursor up |
+| md | | Mouse cursor down |
+| ml | | Mouse cursor left |
+| mr | | Mouse cursor right |
+| wu | | Mouse wheel up |
+| wd | | Mouse wheel down |
+| wl | | Mouse wheel left |
+| wr | | Mouse wheel right |
 | nl | | Num Lock |
 | sl | | Scroll Lock |
 | cl | ⇪ | Caps Lock |
@@ -69,6 +77,8 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | sw | | Switch Window (sticky Alt-tab or Command-tab) |
 | pt | | Previous tab |
 | nt | | Next tab |
+| ns | | Next space |
+| ps | | Next space |
 | qt | | Close tab |
 | qw | | Close window |
 | vu | | Volume up |
@@ -95,8 +105,9 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 <details>
 
-<summary>K03 relative effort grid</summary>
+<summary>Effort grids</summary>
 
+[Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03)
 ```
  5  5  4  3  4  6          6  4  3  4  5  5
  4  3  3  2  2  4          4  2  2  3  3  4
@@ -107,68 +118,76 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h, lg=ei)
+eng (combos: ,=cd .=h, lg=ei; z - mouse layer)
 ```
-    1  2  3  4  5          6  7  8  9  0
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o
     z  x  c  d  v          k  h  ,  .  /
                sp NV   SY  S         
 ```
 
-rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд)
+rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд; я - mouse layer)
 ```
-    1  2  3  4  5          6  7  8  9  0
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж
-    я  ч  с  м  и          т  ь  б  ю  э  .
+    я  ч  с  м  и          т  ь  б  ю  э
                sp NV   SY  S         
 ```
 
 gam
 ```
- i  T  q  w  e  r               up     T vu
-cl  S  a  s  d  f            lt dn rt  S vd
- m  C  z  x  c  v                      C vm
+    T  q  w  e  r               up     T   
+    S  a  s  d  f            lt dn rt  S   
+    C  z  x  c  v                      C   
                sp GF   EN  P
 ```
 
 gfn
 ```
-mr  E  5  6  7  8                          
-ms  A  1  2  3  4                          
-mp  g  j  i  m  t                          
-                E                    
+    E  5  6  7  8                          
+    A  1  2  3  4                          
+    g  j  i  m  t                          
+                N      NU            
 ```
 
 nav
 ```
-mr st sw pt nt  E          E hm  U ed dl vu
-ms  G  A  C  S  N          N  L  D  R bs vd
-mp ^z ^x ^c ^c  T          T pu pd MC GM vm
-                       NU lb
+   qw qt pt nt  P          E hm  U ed dl   
+    G  A  C  S cw          N  L  D  R bs   
+   ps ns st sw lw          T pu pd MC GM   
+                N      NU lb
+```
+
+mos
+```
+                           E wl mu wr dl   
+                           N ml md mr bs   
+      ^x ^c ^v             T wu wd         
+                       rb lb
 ```
 
 sym
 ```
-mr  №  <  =  >  `          ^  [  "  ]  ' vu
-ms  \  (  -  )  +          %  {  ;  }  ! vd
-mp  #  *  :  /  $          @  |  ~  &  ? vm
+    №  <  =  >  `          ^  [  "  ]  '   
+    \  (  -  )  +          %  {  ;  }  !   
+    #  *  :  /  $          @  |  ~  &  ?   
                 _ NU                 
 ```
 
 num
 ```
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
-    1  2  3  4  5          6  7  8  9  0   
-    G  A  C  S F11        F12 S  C  A  G   
+    1  2  3  4 F11       F12  7  8  9  0   
+    G  A  C  5 vd         vu  6  C  A  G   
+                                     
 ```
 
 mac
 ```
-   __ __ __ __ __         __ __ __ __ __
+                                        
    10 11 12 13 14         15 16 17 18 19   
    20 21 22 23 24         25 26 27 28 29   
+                                     
 ```
 
 <details>
