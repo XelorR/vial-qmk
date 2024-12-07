@@ -119,7 +119,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h, lg=ei; z - mouse layer)
+eng (combos: ,=cd .=h lg=ei; z - mouse layer)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o
@@ -127,7 +127,7 @@ eng (combos: ,=cd .=h, lg=ei; z - mouse layer)
                sp NV   SY  S         
 ```
 
-rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд; я - mouse layer)
+rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; я - mouse layer)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж
