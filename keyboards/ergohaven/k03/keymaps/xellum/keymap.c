@@ -133,11 +133,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        KC_NO, KC_NO,     KC_NO, KC_NO, KC_NO, KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO, KC_MINS,   KC_7,  KC_8,  KC_9,  LG_SLASH,                                        KC_ESC,  MC_0,    MC_1,    MC_2,    MC_3,    LG_QUES,
-        KC_NO, S(KC_EQL), KC_4,  KC_5,  KC_6,  S(KC_8),                                         KC_ENT,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  LG_DOT,
-        KC_NO, KC_0,      KC_1,  KC_2,  KC_3,  KC_EQL,                                          KC_TAB,  C(KC_V), C(KC_C), C(KC_X), C(KC_Z), KC_BSLS,
-                          KC_NO, KC_NO, KC_NO, MC_9,   _______, MC_26,         MC_25, _______,  _______, KC_NO,   KC_NO,   KC_NO
+        KC_NO, KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                             KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
+        KC_NO, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    LG_GRAVE,                                          LG_CIRC, LG_LBR,  LG_DQUO, LG_RBR,  LG_QUOTE, KC_NO,
+        KC_NO, KC_BSLS, S(KC_9), KC_MINS,  S(KC_0),  S(KC_EQL),                                         LG_PERC, LG_LCBR, LG_SCLN, LG_RCBR, S(KC_1),  KC_NO,
+        KC_NO, LG_HASH, S(KC_8), LG_COLON, LG_SLASH, LG_DLR,                                            LG_AT,   LG_PIPE, LG_TILD, LG_AMPR, LG_QUES,  KC_NO,
+                        KC_NO,   KC_NO,    KC_NO,    S(KC_MINS), LA_NUM, MC_26,         MC_25, _______, _______, KC_NO,   KC_NO,   KC_NO
     ),
 
     [_NUM] = LAYOUT(
