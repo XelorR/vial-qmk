@@ -130,7 +130,7 @@ gam
  i  T  q  w  e  r               up     T vu
 cl  S  a  s  d  f            lt dn rt  S vd
  m  C  z  x  c  v                      C vm
-               sp gfn  EN  P
+               sp GF   EN  P
 ```
 
 gfn
@@ -146,6 +146,7 @@ nav
 mr st sw pt nt  E          E hm  U ed dl vu
 ms  G  A  C  S  N          N  L  D  R bs vd
 mp ^z ^x ^c ^c  T          T pu pd MC GM vm
+                       NU lb
 ```
 
 sym
@@ -153,7 +154,7 @@ sym
 mr  №  <  =  >  `          ^  [  "  ]  ' vu
 ms  \  (  -  )  +          %  {  ;  }  ! vd
 mp  #  *  :  /  $          @  |  ~  &  ? vm
-                _                    
+                _ NU                 
 ```
 
 num
