@@ -26,7 +26,7 @@
 #define UNDO C(KC_Z)
 #define CUT  C(KC_X)
 #define COPY C(KC_C)
-#define PAST C(KC_V)
+#define PASTE C(KC_V)
 
 #define HG_1 LGUI_T(KC_1)
 #define HA_2 LALT_T(KC_2)
@@ -117,11 +117,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_VIM] = LAYOUT(
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                      KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
+        KC_NO, KC_NO,   C(KC_A), KC_K,  C(KC_E), KC_NO,                             KC_NO,   KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO,   KC_H,    KC_J,  KC_L,    KC_NO,                             KC_NO,   KC_NO,   KC_NO, MC_3,  KC_NO, KC_NO, KC_NO,
+        KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_NO,                             KC_NO,   MC_4,    MC_0,  MC_1,  MC_2,  MC_5,  KC_NO,
+        KC_NO, _______, CUT,     COPY,  PASTE,   KC_NO,                             KC_NO,   KC_NO,   MC_6,  MC_7,  MC_8,  KC_NO, KC_NO,
+                        KC_NO,   KC_NO, KC_NO,   _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
     ),
 
     [_MOUSE] = LAYOUT(
