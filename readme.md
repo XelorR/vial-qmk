@@ -145,8 +145,8 @@ rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; я - vim layer, э -
 
 gam
 ```
-    T  q  w  e  r               up     T   
-    S  a  s  d  f            lt dn rt  S   
+    T  q  w  e  r                U     T   
+    S  a  s  d  f             L  D  R  S   
     C  z  x  c  v                      C   
                sp GF   EN  P
 ```
