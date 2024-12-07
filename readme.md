@@ -153,9 +153,9 @@ gam
 
 gfn
 ```
-    E  5  6  7  8                          
-    A  1  2  3  4                          
-    g  j  i  m  t                          
+    E  5  6  7  8         mr               
+    A  1  2  3  4         ms               
+    g  j  i  m  t         mp               
                 N  ◇   NU            
 ```
 

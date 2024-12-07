@@ -18,10 +18,15 @@
 #define CL_TAB C(KC_F4)
 
 #define SH_ESC LSFT_T(KC_ESC)
-#define BU_Z LT(_MOUSE, KC_Z)
-#define BU_SLSH LT(_BUTTON, KC_SLSH)
-#define BU_QUOTE LT(_BUTTON, KC_QUOTE)
+#define VI_Z LT(_VIM, KC_Z)
+#define MS_SLSH LT(_MOUSE, KC_SLSH)
+#define MS_QUOTE LT(_MOUSE, KC_QUOTE)
 #define OSM_SFT OSM(MOD_LSFT)
+
+#define UNDO C(KC_Z)
+#define CUT  C(KC_X)
+#define COPY C(KC_C)
+#define PAST C(KC_V)
 
 #define HG_1 LGUI_T(KC_1)
 #define HA_2 LALT_T(KC_2)
@@ -53,7 +58,7 @@ enum layers {
     _FN,
     _MACRO,
     _BUTTON,
-    _12,
+    _VI,
     _13,
     _14,
     _ALT,
@@ -75,17 +80,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_1, KC_2,  KC_3,  KC_4,  KC_5,                             KC_6,    KC_7,    KC_8,    KC_9,   KC_0,    KC_NO,
         KC_NO, KC_Q, KC_W,  KC_F,  KC_P,  KC_B,                             KC_J,    KC_L,    KC_U,    KC_Y,   KC_QUOT, KC_NO,
         KC_NO, KC_A, KC_R,  KC_S,  KC_T,  KC_G,                             KC_M,    KC_N,    KC_E,    KC_I,   KC_O,    KC_NO,
-        KC_NO, KC_Z, KC_X,  KC_C,  KC_D,  KC_V,                             KC_K,    KC_H,    KC_COMM, KC_DOT, KC_SLSH, KC_NO,
+        KC_NO, VI_Z, KC_X,  KC_C,  KC_D,  KC_V,                             KC_K,    KC_H,    KC_COMM, KC_DOT, MS_SLSH, KC_NO,
                      KC_NO, KC_NO, KC_NO, LA_SPC, LA_NAV, KC_NO,     KC_NO, LA_SYM,  OSM_SFT, KC_NO, KC_NO, KC_NO
     ),
 
     [_RUS] = LAYOUT(
-        _______, _______, _______, _______, _______, _______,                                         _______, _______, _______, _______, _______,  _______,
-        _______, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                            KC_Y,    KC_U,    KC_I,    KC_P,    KC_LBRC,  _______,
-        _______, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                            KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN,  _______,
-        _______, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                                            KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOTE, KC_SLSH,
-                          _______, _______, _______, _______, _______, _______,     _______, _______, _______, _______, _______, _______
-    ),
+        KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                       KC_NO,   KC_NO, KC_NO,   KC_NO,  KC_NO,    KC_NO,
+        KC_NO, KC_Q,  KC_W,  KC_E,  KC_R,  KC_T,                                        KC_Y,    KC_U,  KC_I,    KC_P,   KC_LBRC,  KC_NO,
+        KC_NO, KC_A,  KC_S,  KC_D,  KC_F,  KC_G,                                        KC_H,    KC_J,  KC_K,    KC_L,   KC_SCLN,  KC_NO,
+        KC_NO, VI_Z,  KC_X,  KC_C,  KC_V,  KC_B,                                        KC_N,    KC_M,  KC_COMM, KC_DOT, MS_QUOTE, KC_SLSH,
+                      KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,     KC_NO, _______, _______, KC_NO, KC_NO,   KC_NO
+    ),,
 
     [_GAM] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
@@ -96,10 +101,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_GFN] = LAYOUT(
-        _______, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                                            _______,  _______, _______, _______, _______, _______,
-        DM_REC1, KC_U,    KC_I,    KC_O,    KC_P,    KC_T,                                            _______,  KC_F8,   KC_F9,   _______, _______, DM_REC2,
-        DM_RSTP, KC_J,    KC_K,    KC_L,    KC_BTN1, KC_G,                                            KC_F1,    KC_F5,   KC_F6,   KC_F7,   _______, DM_RSTP,
-        DM_PLY1, KC_M,    KC_Y,    KC_H,    KC_N,    KC_B,                                            _______,  _______, _______, _______, _______, DM_PLY2,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        DM_REC1, KC_U,    KC_I,    KC_O,    KC_P,    KC_T,                                            DM_REC2,  KC_F8,   KC_F9,   _______, _______, DM_REC2,
+        DM_RSTP, KC_J,    KC_K,    KC_L,    KC_BTN1, KC_G,                                            DM_RSTP,  KC_F5,   KC_F6,   KC_F7,   _______, DM_RSTP,
+        DM_PLY1, KC_M,    KC_Y,    KC_H,    KC_N,    KC_B,                                            DM_PLY2,  _______, _______, _______, _______, DM_PLY2,
                           _______, _______, KC_ESC,  KC_ENT,  _______, _______,     _______, _______, _______,  _______, _______,  _______
     ),
 
