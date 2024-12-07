@@ -22,6 +22,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 | abbr | key symbol | key name |
 | ---- | ---------- | -------- |
+| ◇ | | Holding to keep layer activated |
 | S | ⇧ | OSM or OSSM Shift |
 | C | ⌃ | OSM or OSSM Control |
 | A | ⌥ | OSM or OSSM Alt |
@@ -62,6 +63,13 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | wd | | Mouse wheel down |
 | wl | | Mouse wheel left |
 | wr | | Mouse wheel right |
+| Wu | | Focus up window |
+| Wd | | Focus down window |
+| Wl | | Focus left window |
+| Wr | | Focus right window |
+| Wc | | Vim window close |
+| Wh | | Window split horisontally |
+| Wv | | Window split vertcally |
 | nl | | Num Lock |
 | sl | | Scroll Lock |
 | cl | ⇪ | Caps Lock |
@@ -119,7 +127,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h lg=ei; z - mouse layer)
+eng (combos: ,=cd .=h lg=ei; z - mouse vim, / - mouse layer)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o
@@ -127,7 +135,7 @@ eng (combos: ,=cd .=h lg=ei; z - mouse layer)
                sp NV   SY  S         
 ```
 
-rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; я - mouse layer)
+rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; я - vim layer, э - mouse layer)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж
@@ -148,22 +156,30 @@ gfn
     E  5  6  7  8                          
     A  1  2  3  4                          
     g  j  i  m  t                          
-                N      NU            
+                N  ◇   NU            
 ```
 
-nav
+nav (GM is OSL, NC is TG, if not specified than MO)
 ```
    qw qt pt nt  P          E hm  U ed dl   
     G  A  C  S cw          N  L  D  R bs   
    ps ns st sw lw          T pu pd MC GM   
-                N      NU lb
+                N  ◇   NU lb
+```
+
+vim
+```
+      ^a  k ^e                  Wu         
+       h  j  l            :q Wl Wd Wr :w   
+    ◇ ^x ^c ^v               Wh Wv Wc      
+                            
 ```
 
 mos
 ```
-                           E wl mu wr dl   
-                           N ml md mr bs   
-      ^x ^c ^v             T wu wd         
+                          wu wl mu wr dl   
+                          wd ml md mr bs   
+                             ^v ^c ^x  ◇
                        rb lb
 ```
 
@@ -172,7 +188,7 @@ sym
     №  <  =  >  `          ^  [  "  ]  '   
     \  (  -  )  +          %  {  ;  }  !   
     #  *  :  /  $          @  |  ~  &  ?   
-                _ NU                 
+                _ NU    ◇            
 ```
 
 num
@@ -180,7 +196,7 @@ num
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
     1  2  3  4 F11       F12  7  8  9  0   
     G  A  C  5 vd         vu  6  C  A  G   
-                                     
+                   ◇    ◇            
 ```
 
 mac
