@@ -125,6 +125,22 @@ rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд)
                sp NV   SY  S         
 ```
 
+gam
+```
+ i  T  q  w  e  r               up     T vu
+cl  S  a  s  d  f            lt dn rt  S vd
+ m  C  z  x  c  v                      C vm
+               sp gfn  EN  P
+```
+
+gfn
+```
+mr  E  5  6  7  8                          
+ms  A  1  2  3  4                          
+mp  g  j  i  m  t                          
+                E                    
+```
+
 nav
 ```
 mr st sw pt nt  E          E hm  U ed dl vu
@@ -145,22 +161,6 @@ num
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
     1  2  3  4  5          6  7  8  9  0   
     G  A  C  S F11        F12 S  C  A  G   
-```
-
-gam
-```
- i  T  q  w  e  r               up     T vu
-cl  S  a  s  d  f            lt dn rt  S vd
- m  C  z  x  c  v                      C vm
-               sp gfn  EN  P
-```
-
-gfn
-```
-mr  E  5  6  7  8                          
-ms  A  1  2  3  4                          
-mp  g  j  i  m  t                          
-                E                    
 ```
 
 <details>
