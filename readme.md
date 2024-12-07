@@ -73,7 +73,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | qw | | Close window |
 | vu | | Volume up |
 | vd | | Volume down |
-| mu | | Mute |
+| mt | | Mute |
 | ^c | | Copy |
 | ^v | | Paste |
 | ^x | | Cut |
@@ -113,52 +113,54 @@ eng (combos: ,=cd .=h, lg=ei)
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o
     z  x  c  d  v          k  h  ,  .  /
+               sp NV   SY  S         
 ```
 
 rus (combos: щ = шз ё = ке ъ = хз ,=см .=ьб, lg=лд)
 ```
- ё  1  2  3  4  5          6  7  8  9  0
+    1  2  3  4  5          6  7  8  9  0
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж
     я  ч  с  м  и          т  ь  б  ю  э  .
+               sp NV   SY  S         
 ```
 
 nav
 ```
-F11 F1 F2 F3 F4 F5         F6 F7 F8 F9 F10 F12
-    st sw pt nt  E          E hm  U ed dl   
-     G  A  C  S  N          N  L  D  R bs   
-    ^z ^x ^c ^c  T          T pu pd MC GM   
+mr st sw pt nt  E          E hm  U ed dl vu
+ms  G  A  C  S  N          N  L  D  R bs vd
+mp ^z ^x ^c ^c  T          T pu pd MC GM vm
 ```
 
 sym
 ```
-    №  <  =  >  `          ^  [  "  ]  '   
-    \  (  -  )  +          %  {  ;  }  !   
-    #  *  :  /  $          @  |  ~  &  ?   
+mr  №  <  =  >  `          ^  [  "  ]  ' vu
+ms  \  (  -  )  +          %  {  ;  }  ! vd
+mp  #  *  :  /  $          @  |  ~  &  ? vm
                 _                    
 ```
 
-num (tap-holds: GACS=1234 SCAG=7890)
+num
 ```
-   :q :w :bn :bp           :  *  /  %  №   
+   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
     1  2  3  4  5          6  7  8  9  0   
-   Sg  j  k  ,                .  -  =  +   
-```
-
-fun (tap-holds: GACS=F1F2F3F4 SCAG=F7F8F9F10)
-```
-   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
-            F11              F12
+    G  A  C  S F11        F12 S  C  A  G   
 ```
 
 gam
 ```
-  es  1  2  3  4  5
-   i  T  q  w  e  r
-  cl  S  a  s  d  f
-   m  C  z  x  c  v
-               A sp gfn
+ i  T  q  w  e  r               up     T vu
+cl  S  a  s  d  f            lt dn rt  S vd
+ m  C  z  x  c  v                      C vm
+               sp gfn  EN  P
+```
+
+gfn
+```
+mr  E  5  6  7  8                          
+ms  A  1  2  3  4                          
+mp  g  j  i  m  t                          
+                E                    
 ```
 
 <details>
@@ -224,6 +226,13 @@ num1 - my
        <  >  .  0  -                
 ```
 
+num2 (tap-holds: GACS=1234 SCAG=7890)
+```
+   :q :w :bn :bp           :  *  /  %  №   
+    1  2  3  4  5          6  7  8  9  0   
+   Sg  j  k  ,                .  -  =  +   
+```
+
 num - [beakl](http://ieants.cc/beakl/?i=3)
 ```
        +  /  *  =            y  x  z  
@@ -238,6 +247,13 @@ num shifted - [beakl](http://ieants.cc/beakl/?i=3)
        !  [  ]  =         _  f  e  d
     &  $  #  %  |         {  c  b  a  }
     ;  ^  <  >               (  )  \
+```
+
+num - [wellum](https://github.com/braindefender/wellum)
+```
+    1  2  3  4  5          6  7  8  9  0   
+    G  A  C  S F11        F12 S  C  A  G   
+   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
 ```
 
 sym - my, 1
@@ -325,6 +341,12 @@ fun1, my
   F12 F7 F8 F9 ps                       rm
   F11 F4 F5 F6 sl            S  C  A  G sm
   F10 F1 F2 F3 pa           ^v ^c ^x ^z pm
+```
+
+fun2 (tap-holds: GACS=F1F2F3F4 SCAG=F7F8F9F10)
+```
+   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10
+            F11              F12
 ```
 
 </details>

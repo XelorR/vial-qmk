@@ -88,11 +88,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_GAM] = LAYOUT(
-        KC_ESC,  KC_1,    KC_2,    KC_3,     KC_4,    KC_5,                                            _______, _______, _______, _______, _______, _______,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_I,    KC_TAB,  KC_Q,    KC_W,     KC_E,    KC_R,                                            _______, _______, KC_UP,   _______, KC_TAB,  KC_MUTE,
         KC_CAPS, KC_LSFT, KC_A,    KC_S,     KC_D,    KC_F,                                            _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_RSFT, KC_VOLD,
         KC_M,    KC_LCTL, KC_Z,    KC_X,     KC_C,    KC_V,                                            _______, _______, _______, _______, KC_RCTL, KC_VOLU,
-                          _______, _______,  KC_LALT, KC_SPC,  LA_GFN, _______,     _______, DF(_ENG), KC_SPC,  KC_PSCR, _______, _______
+                          _______, _______,  _______, KC_SPC,  LA_GFN, _______,     _______, DF(_ENG), KC_PSCR, _______, _______, _______
     ),
 
     [_GFN] = LAYOUT(
