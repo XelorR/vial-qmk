@@ -8,6 +8,7 @@
 - [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html)
 - [Раскладка Ильи Шепрута](https://optozorax.github.io/p/my-keyboard-layout/)
 - [Designing Symbol Layer](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
+- [T-34 keyboard layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)
 
 Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for English and national (Russian), and it leads to the following challenges:
 
