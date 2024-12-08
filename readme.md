@@ -146,7 +146,7 @@ rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд)
 gam
 ```
     T  q  w  e  r                U     T   
-    S  a  s  d  f             L  D  R  S   
+cl  S  a  s  d  f             L  D  R  S   
     C  z  x  c  v                      C   
                sp GF   EN  P
 ```
@@ -161,16 +161,16 @@ gfn
 
 nav (GM is OSL, MC is TG, if not specified then MO)
 ```
-   qw qt pt nt  P          E hm  U ed dl   
-    G  A  C  S cw          N  L  D  R bs   
-   ps ns st sw lw          T pu pd MC GM   
+   qw qt pt nt GM          E hm  U ed dl   
+LG  G  A  C  S cw          N  L  D  R bs  P
+   ps ns st sw lw          T pu pd MC      
                 N  ◇   NU lb
 ```
 
 sym
 ```
     №  <  =  >  `          ^  [  "  ]  '   
-    \  (  -  )  +          %  {  ;  }  !   
+ ,  \  (  -  )  +          %  {  ;  }  !  .
     #  *  :  /  $          @  |  ~  &  ?   
                 _ NU    ◇  C         
 ```
