@@ -393,6 +393,22 @@ mos
                        rb lb
 ```
 
+num3
+```
+                                            
+    1  2  3  4                7  8  9  0   
+             5                6            
+                   ◇    ◇            
+```
+
+fun3
+```
+                                            
+   F1 F2 F3 F4 F11       F12 F7 F8 F9 F10  
+            F5               F6            
+                   ◇    ◇            
+```
+
 </details>
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
