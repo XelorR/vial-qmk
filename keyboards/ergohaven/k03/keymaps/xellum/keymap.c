@@ -9,7 +9,7 @@
 #define LA_NUM MO(_NUM)
 #define LA_GFN MO(_GFN)
 #define LA_LAUNCH OSL(_MACRO)
-#define LA_MAC LT(_MAC,KC_SPC)
+#define LA_MAC LT(_MACRO,KC_SPC)
 
 #define SPACE_L C(G(KC_LEFT))
 #define SPACE_R C(G(KC_RGHT))
