@@ -138,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    LG_GRAVE,                                          LG_CIRC, LG_LBR,  LG_DQUO, LG_RBR,  LG_QUOTE, KC_NO,
         KC_NO, KC_BSLS, S(KC_9), KC_MINS,  S(KC_0),  S(KC_EQL),                                         LG_PERC, LG_LCBR, LG_SCLN, LG_RCBR, S(KC_1),  KC_NO,
         KC_NO, LG_HASH, S(KC_8), LG_COLON, LG_SLASH, LG_DLR,                                            LG_AT,   LG_PIPE, LG_TILD, LG_AMPR, LG_QUES,  KC_NO,
-                        KC_NO,   KC_NO,    KC_NO,    S(KC_MINS), LA_NUM, MC_26,         MC_25, _______, _______, KC_NO,   KC_NO,   KC_NO
+                        KC_NO,   KC_NO,    KC_NO,    S(KC_MINS), LA_NUM, MC_26,         MC_25, _______, OS_CTRL, KC_NO,   KC_NO,   KC_NO
     ),
 
     [_NUM] = LAYOUT(
