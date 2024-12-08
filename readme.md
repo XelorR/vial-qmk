@@ -127,20 +127,20 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h lg=ei)
+eng (combos: ,=cd .=h lg=ei; LTs: sp/MC T/NV N/SY)
 ```
     q  w  f  p  b          j  l  u  y  '
  ,  a  r  s  t  g          m  n  e  i  o  .
     z  x  c  d  v          k  h  ,  .  /
-               sp NV   SY  S         
+               MC NV   SY  S         
 ```
 
-rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд)
+rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; LTs: sp/MC T/NV N/SY)
 ```
     й  ц  у  к  е          н  г  ш  з  х
  ,  ф  ы  в  а  п          р  о  л  д  ж  .
     я  ч  с  м  и          т  ь  б  ю  э
-               sp NV   SY  S         
+               MC NV   SY  S         
 ```
 
 gam
@@ -161,9 +161,9 @@ gfn
 
 nav (GM is OSL, MC is TG, if not specified then MO)
 ```
-   qw qt pt nt GM          E hm  U ed dl   
-LG  G  A  C  S cw          N  L  D  R bs  P
-   ps ns st sw lw          T pu pd MC      
+   qw sw pt nt GM          E hm  U ed dl   
+LG  G  A  C  S lw         cw  L  D  R bs  P
+   ^z ^x ^c ^v ps         ns pu pd MC      
                 N  ◇   NU lb
 ```
 
@@ -188,6 +188,7 @@ mac
    M0 M1 M2 M3 M4         M5 M6 M7 M8 M9   
    10 11 12 13 14         15 16 17 18 19   
    20 21 22 23 24         25 26 27 28 29   
+                ◇
                                      
 ```
 
