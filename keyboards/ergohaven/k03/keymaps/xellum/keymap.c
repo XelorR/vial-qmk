@@ -153,7 +153,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
         KC_NO, MC_0,  MC_1,  MC_2,  MC_3,  MC_4,                                       MC_5,    MC_6,  MC_7,  MC_8,  MC_9,  KC_NO, 
         KC_NO, MC_10, MC_11, MC_12, MC_13, MC_14,                                      MC_15,   MC_16, MC_17, MC_18, MC_19, KC_NO, 
-        KC_NO, MC_20, MC_22, MC_22, MC_23, MC_24,                                      MC_25,   MC_26, MC_27, MC_28, MC_29, KC_NO, 
+        KC_NO, MC_20, MC_21, MC_22, MC_23, MC_24,                                      MC_25,   MC_26, MC_27, MC_28, MC_29, KC_NO, 
                       KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
     ),
 };
