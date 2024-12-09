@@ -410,6 +410,22 @@ fun3
                    ◇    ◇            
 ```
 
+sym4 (ёщь are SCA tap-holds)
+```
+       7  8  9                -  +  =      
+    0  1  2  3  *          /  ё  щ  ъ LG   
+       4  5  6                !  ,  .  ?
+                   ◇   FN            
+```
+
+fun4
+```
+  F12 F7 F8 F9              M10 11 12 13   
+  F10 F1 F2 F3                S  C  A  G   
+  F11 F4 F5 F6              M14 15 16 17
+                   ◇    ◇            
+```
+
 </details>
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
