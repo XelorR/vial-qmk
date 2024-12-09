@@ -127,26 +127,26 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: ,=cd .=h lg=ei; LTs: sp/MC T/NV N/SY)
+eng (combos: lg=ei; LTs: sp/NV T/NU N/SY)
 ```
     q  w  f  p  b          j  l  u  y  '
- ,  a  r  s  t  g          m  n  e  i  o  .
+    a  r  s  t  g          m  n  e  i  o   
     z  x  c  d  v          k  h  ,  .  /
-               MC NV   SY  S         
+               NV NU   SY  S         
 ```
 
-rus (combos: щ=шз ё=ке ъ=хз ,=см .=ьб lg=лд; LTs: sp/MC T/NV N/SY)
+rus (combos: lg=лд; LTs: sp/NV T/NU N/SY)
 ```
     й  ц  у  к  е          н  г  ш  з  х
- ,  ф  ы  в  а  п          р  о  л  д  ж  .
+    ф  ы  в  а  п          р  о  л  д  ж   
     я  ч  с  м  и          т  ь  б  ю  э
-               MC NV   SY  S         
+               NV NU   SY  S         
 ```
 
 gam
 ```
     T  q  w  e  r                U     T   
-cl  S  a  s  d  f             L  D  R  S   
+    S  a  s  d  f             L  D  R  S   
     C  z  x  c  v                      C   
                sp GF   EN  P
 ```
@@ -156,40 +156,39 @@ gfn
     E  5  6  7  8         mr               
     A  1  2  3  4         ms               
     g  j  i  m  t         mp               
-                N  ◇   NU            
+                N  ◇   FN            
 ```
 
 nav (GM is OSL, MC is TG, if not specified then MO)
 ```
    qw sw pt nt GM          E hm  U ed dl   
-LG  G  A  C  S lw         cw  L  D  R bs  P
-   ^z ^x ^c ^v ps         ns pu pd MC      
+    G  A  C  S lw         cw  L  D  R bs   
+   ^z ^x ^c ^v ps         ns pu pd         
                 N  ◇   NU lb
 ```
 
 sym
 ```
-    №  <  =  >  `          ^  [  "  ]  '   
- ,  \  (  -  )  +          %  {  ;  }  !  .
-    #  *  :  /  $          @  |  ~  &  ?   
-                _ NU    ◇  C         
+       <  =  >             ^  [  _  ]      
+    \  (  -  )  +          %  {  ;  }  #   
+       *  :  /  $          @  |  ~  &      
+                  FN    ◇  C         
 ```
 
-num
+num (ёщь are SCA tap-holds)
 ```
-   F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
-    1  2  3  4 F11       F12  7  8  9  0   
-    G  A  C  5 vd         vu  6  C  A  G   
+    *  7  8  9  =             `  "  '  №   
+    0  1  2  3  +             ё  щ  ъ LG   
+    /  4  5  6  -             !  ,  .  ?
+                   ◇   FN            
+```
+
+fun
+```
+  F12 F7 F8 F9 vu           M10 11 12 13   
+  F10 F1 F2 F3 vd             S  C  A  G   
+  F11 F4 F5 F6 mu           M14 15 16 17
                    ◇    ◇            
-```
-
-mac
-```
-   M0 M1 M2 M3 M4         M5 M6 M7 M8 M9   
-   10 11 12 13 14         15 16 17 18 19   
-   20 21 22 23 24         25 26 27 28 29   
-                ◇
-                                     
 ```
 
 <details>
@@ -410,7 +409,7 @@ fun3
                    ◇    ◇            
 ```
 
-sym4 (ёщь are SCA tap-holds)
+num4 (ёщь are SCA tap-holds)
 ```
        7  8  9                -  +  =      
     0  1  2  3  *          /  ё  щ  ъ LG   
