@@ -127,23 +127,23 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-eng (combos: lg=ei; LTs: sp/NV T/NU N/SY)
+EN (combos: lg=ei; LTs: T/NU N/SY)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o   
     z  x  c  d  v          k  h  ,  .  /
-               NV NU   SY  S         
+               sp NV   SY  S         
 ```
 
-rus (combos: lg=лд; LTs: sp/NV T/NU N/SY)
+RU (combos: lg=лд; LTs: T/NU N/SY)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж   
     я  ч  с  м  и          т  ь  б  ю  э
-               NV NU   SY  S         
+               sp NV   SY  S         
 ```
 
-gam
+GM
 ```
     T  q  w  e  r                U     T   
     S  a  s  d  f             L  D  R  S   
@@ -151,7 +151,7 @@ gam
                sp GF   EN  P
 ```
 
-gfn
+GF
 ```
     E  5  6  7  8         mr               
     A  1  2  3  4         ms               
@@ -159,15 +159,15 @@ gfn
                 N  ◇   FN            
 ```
 
-nav (GM is DF)
+NV (GM is DF)
 ```
    qw sw pt nt GM          E hm  U ed dl   
     G  A  C  S lw         cw  L  D  R bs   
    ^z ^x ^c ^v ps         ns pu pd         
-                N  ◇   NU lb
+                N  ◇   FN lb
 ```
 
-sym
+SY
 ```
        <  =  >             ^  [  _  ]      
     \  (  -  )  +          %  {  ;  }  #   
@@ -175,15 +175,21 @@ sym
                   FN    ◇  C         
 ```
 
-num (ёщь are SCA tap-holds)
+NU
 ```
-    *  7  8  9  =             `  "  '  №   
-    0  1  2  3  +             ё  щ  ъ LG   
-    /  4  5  6  -             !  ,  .  ?
-                   ◇   FN            
+    *  7  8  9  =                          
+    0  1  2  3  +             ◇ LC LA      
+    /  4  5  6  -                       
 ```
 
-fun
+BU
+```
+                              `  "  '  №   
+      LA LC  ◇                ё  щ  ъ LG   
+                              !  ,  .  ?
+```
+
+FN
 ```
   F12 F7 F8 F9 vu           M10 11 12 13   
   F10 F1 F2 F3 vd             S  C  A  G   
