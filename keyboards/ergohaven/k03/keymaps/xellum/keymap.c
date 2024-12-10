@@ -116,9 +116,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,      KC_NO,
-        KC_NO, A(KC_F4), SW_WIN,  TAB_L,   TAB_R,   DF(_GAM),                                     KC_ESC,  KC_HOME, KC_UP,   KC_END,  KC_DEL,     KC_NO,
-        KC_NO, OS_CMD,   OS_ALT,  OS_CTRL, OS_SHFT, LG_WORD,                                      CW_TOGG, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,    KC_NO,
-        KC_NO, UNDO,     CUT,     COPY,    PASTE,   SPACE_L,                                      SPACE_R, KC_PGUP, KC_PGDN, KC_PSCR, G(S(KC_S)), KC_NO,
+        KC_NO, A(KC_F4), SW_WIN,  TAB_L,   TAB_R,   DF(_GAM),                                     KC_NO,  KC_HOME, KC_UP,   KC_END,  KC_DEL,     KC_NO,
+        KC_NO, OS_CMD,   OS_ALT,  OS_CTRL, OS_SHFT, KC_ESC,                                       KC_ESC, KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,    KC_NO,
+        KC_NO, SPACE_L,  SPACE_R, LG_WORD, CW_TOGG, KC_NO,                                        KC_NO,   KC_PGUP, KC_PGDN, KC_PSCR, G(S(KC_S)), KC_NO,
                          KC_NO,   KC_NO,   KC_NO,   KC_ENT,  _______, KC_NO,       KC_NO, LA_FUN, KC_BTN1, KC_NO,   KC_NO,   KC_NO
     ),
 
@@ -143,7 +143,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO,   LG_LT,   KC_EQL,   LG_GT,    KC_NO,                                             LG_CIRC, LG_LBR,  S(KC_MINS), LG_RBR,  KC_NO,   KC_NO,
         KC_NO, KC_BSLS, S(KC_9), KC_MINS,  S(KC_0),  S(KC_EQL),                                         LG_PERC, LG_LCBR, LG_SCLN,    LG_RCBR, LG_HASH, KC_NO,
         KC_NO, KC_NO,   S(KC_8), LG_COLON, LG_SLASH, LG_DLR,                                            LG_AT,   LG_PIPE, LG_TILD,    LG_AMPR, KC_NO,   KC_NO,
-                        KC_NO,   KC_NO,    KC_NO,    S(KC_MINS), LA_FUN, MC_26,         MC_25, _______, OS_CTRL, KC_NO,   KC_NO,      KC_NO
+                        KC_NO,   KC_NO,    KC_NO,    KC_SPC,    LA_FUN, MC_26,          MC_25, _______, OS_CTRL, KC_NO,   KC_NO,      KC_NO
     ),
 
     [_NUM] = LAYOUT(

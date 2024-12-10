@@ -163,9 +163,9 @@ GF
 
 NV (GM is DF)
 ```
-   qw sw pt nt GM          E hm  U ed dl   
-    G  A  C  S lw         cw  L  D  R bs   
-   ^z ^x ^c ^v ps         ns pu pd  P      
+   qw sw pt nt GM            hm  U ed dl   
+    G  A  C  S  E          E  L  D  R bs   
+   ps ns lw cw               pu pd  P      
                 N  ◇   FN lb
 ```
 
@@ -182,7 +182,7 @@ SY
        <  =  >             ^  [  _  ]      
     \  (  -  )  +          %  {  ;  }  #   
        *  :  /  $          @  |  ~  &      
-                  FN    ◇  C         
+               sp FN    ◇  C         
 ```
 
 NU
