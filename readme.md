@@ -127,7 +127,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-EN (combos: lg=ei; LTs: T/NU N/SY)
+EN (combos: lg=ei; LTs: T/NU N/SY; LTs on alphas: z/MS t/BU n/NU)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o   
@@ -135,7 +135,7 @@ EN (combos: lg=ei; LTs: T/NU N/SY)
                sp NV   SY  S         
 ```
 
-RU (combos: lg=лд; LTs: T/NU N/SY)
+RU (combos: lg=лд; LTs: T/NU N/SY; LTs on alphas: я/MS а/BU о/NU)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж   
@@ -165,6 +165,14 @@ NV (GM is DF)
     G  A  C  S lw         cw  L  D  R bs   
    ^z ^x ^c ^v ps         ns pu pd         
                 N  ◇   FN lb
+```
+
+MS
+```
+                             wl mu wr dl   
+                             ml md mr bs   
+    ◇ ^x ^c ^v               wu wd      
+                       rb lb
 ```
 
 SY
@@ -435,15 +443,9 @@ fun4
 
 ## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
 
-Macros:
-```json
-"macro": [[["text", ":q"], ["tap", "KC_ENTER"]], [["text", ":w"], ["tap", "KC_ENTER"]], [["text", ":bp"], ["tap", "KC_ENTER"]], [["text", ":bn"], ["tap", "KC_ENTER"]], [["text", ":bc"], ["tap", "KC_ENTER"]], [["tap", "USER16", "KC_SPACE"]], [["tap", "USER15", "KC_SPACE", "OSM(MOD_LSFT)"]], [], [], [], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Terminal"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Files"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Sublime Text"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Browser"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Calculator"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Vial"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Outlook"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Telegram"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Excel"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "KC_LGUI"], ["delay", 200], ["text", "Visual Studio Code"], ["delay", 200], ["tap", "KC_ENTER"]], [["tap", "LGUI(KC_R)"], ["delay", 500], ["text", "shutdown -s -f -t 00"], ["delay", 100], ["tap", "KC_ENTER"]], [["tap", "LGUI(KC_R)"], ["delay", 500], ["text", "shutdown -r -f -t 00"], ["delay", 100], ["tap", "KC_ENTER"]], [], [], [], [["text", "some useless pass"]], [["text", "some useless pass"]], [], [], [["text", "https://monkeytype.com/"], ["tap", "KC_ENTER"]], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
-```
+REMOVED
 
-Combos:
-```json
-"combo": [["KC_I", "KC_P", "KC_NO", "KC_NO", "KC_O"], ["KC_R", "KC_T", "KC_NO", "KC_NO", "KC_GRAVE"], ["KC_LBRACKET", "KC_P", "KC_NO", "KC_NO", "KC_RBRACKET"], ["KC_K", "KC_L", "KC_NO", "KC_NO", "USER08"], ["KC_E", "KC_I", "KC_NO", "KC_NO", "USER08"], ["KC_C", "KC_V", "KC_NO", "KC_NO", "USER16"], ["KC_C", "KC_D", "KC_NO", "KC_NO", "USER16"], ["KC_M", "KC_COMMA", "KC_NO", "KC_NO", "USER15"], ["KC_H", "KC_COMMA", "KC_NO", "KC_NO", "USER15"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"], ["KC_NO", "KC_NO", "KC_NO", "KC_NO", "KC_NO"]]
-```
+Just setup combos for LG_TOGGLE, for both EN and RU
 
 ## Current version
 
