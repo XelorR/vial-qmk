@@ -163,7 +163,7 @@ NV (GM is DF)
 ```
    qw sw pt nt GM          E hm  U ed dl   
     G  A  C  S lw         cw  L  D  R bs   
-   ^z ^x ^c ^v ps         ns pu pd         
+   ^z ^x ^c ^v ps         ns pu pd  P      
                 N  ◇   FN lb
 ```
 
