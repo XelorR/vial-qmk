@@ -165,8 +165,8 @@ NV (GM is DF)
 ```
    qw sw pt nt GM            hm  U ed dl   
     G  A  C  S  E          E  L  D  R bs   
-   ps ns lw cw               pu pd  P      
-                N  ◇   FN lb
+   ps ns lw cw  N          N pu pd  P      
+                   ◇   FN lb
 ```
 
 MS
