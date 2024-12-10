@@ -4,8 +4,8 @@
 #include "oneshot.h"
 #include "swapper.h"
 
-#define LA_SYM LT(_SYM,KC_ENT)
-#define LA_NAV LT(_NAV,KC_TAB)
+#define LA_SYM LT(_SYM,KC_ESC)
+#define LA_NAV LT(_NAV,KC_ENT)
 #define NU_J LT(_NUM,KC_J)
 #define NU_N LT(_NUM,KC_N)
 #define BU_T LT(_BUTTON,KC_T)
@@ -116,9 +116,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,                                         KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,      KC_NO,
-        KC_NO, A(KC_F4), SW_WIN,  TAB_L,   TAB_R,   DF(_GAM),                                      KC_NO,    KC_HOME, KC_UP,   KC_END,  KC_DEL,     KC_NO,
-        KC_NO, OS_CMD,   OS_ALT,  OS_CTRL, OS_SHFT, KC_ESC,                                        KC_ESC,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,    KC_NO,
-        KC_NO, SPACE_L,  SPACE_R, LG_WORD, CW_TOGG, KC_ENT,                                        KC_ENT,   KC_PGUP, KC_PGDN, KC_PSCR, G(S(KC_S)), KC_NO,
+        KC_NO, A(KC_F4), SW_WIN,  TAB_L,   TAB_R,   DF(_GAM),                                      KC_ESC,   KC_HOME, KC_UP,   KC_END,  KC_DEL,     KC_NO,
+        KC_NO, OS_CMD,   OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                        KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC,    KC_NO,
+        KC_NO, SPACE_L,  SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                        KC_TAB,   KC_PGUP, KC_PGDN, KC_PSCR, G(S(KC_S)), KC_NO,
                          KC_NO,   KC_NO,   KC_NO,   _______,  _______, KC_NO,       KC_NO, LA_FUN, KC_BTN1,  KC_NO,   KC_NO,   KC_NO
     ),
 

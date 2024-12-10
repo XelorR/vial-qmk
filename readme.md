@@ -129,7 +129,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-EN (combos: lg=ei; LTs: T/NU N/SY; LTs on alphas: z/MS t/BU n/NU)
+EN (combos: lg=ei; LTs: N/NU E/SY; LTs on alphas: z/MS t/BU n/NU)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o   
@@ -137,7 +137,7 @@ EN (combos: lg=ei; LTs: T/NU N/SY; LTs on alphas: z/MS t/BU n/NU)
                sp NV   SY  S         
 ```
 
-RU (combos: lg=лд; LTs: T/NU N/SY; LTs on alphas: я/MS а/BU о/NU)
+RU (combos: lg=лд; LTs: N/NU E/SY; LTs on alphas: я/MS а/BU о/NU)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж   
@@ -163,9 +163,9 @@ GF
 
 NV (GM is DF)
 ```
-   qw sw pt nt GM            hm  U ed dl   
-    G  A  C  S  E          E  L  D  R bs   
-   ps ns lw cw  N          N pu pd  P      
+   qw sw pt nt GM          E hm  U ed dl   
+    G  A  C  S  N          N  L  D  R bs   
+   ps ns lw cw  T          T pu pd  P      
                    ◇   FN lb
 ```
 
