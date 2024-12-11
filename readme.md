@@ -111,6 +111,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | fun / FN |            | F-row/function layer                             |
 | gam / GM |            | Gaming layer                                     |
 | gfn / GF |            | Function layer for Gaming layer                  |
+| alt / AL |            | Alt symbol layer                                 |
 
 </details>
 
@@ -129,20 +130,20 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-EN (combos: lg=ei; LTs: z/MS t/BU n/NU)
+EN (combos: lg=ei; LTs: z/MS t/AL n/AL a/SY o/SY)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o   
     z  x  c  d  v          k  h  ,  .  /
-               sp NV   SY  S         
+               sp NV   NU  S         
 ```
 
-RU (combos: lg=лд; LTs: я/MS а/BU о/NU)
+RU (combos: lg=лд; LTs: я/MS а/AL о/AL ф/SY ж/SY)
 ```
     й  ц  у  к  е          н  г  ш  з  х
     ф  ы  в  а  п          р  о  л  д  ж   
     я  ч  с  м  и          т  ь  б  ю  э
-               sp NV   SY  S         
+               sp NV   NU  S         
 ```
 
 GM
@@ -179,31 +180,32 @@ MS
 
 SY
 ```
-       <  =  >             ^  [  _  ]      
-    \  (  -  )  +          %  {  ;  }  #   
+       <  =  >             ^  ]  _  [      
+    \  (  -  )  +          %  }  ;  {  #   
        *  :  /  $          @  |  ~  &      
-               sp FN    ◇  C         
+               sp       A  C         
 ```
 
 NU
 ```
-    *  7  8  9  =                          
-    0  1  2  3  +             ◇ LC LA LG   
-    /  4  5  6  -                  RA   
+       4  5  6  =                *         
+    0  1  2  3  -          +  S  C  A  G   
+       7  8  9                /  ,  .  ?
+               sp FN    ◇            
 ```
 
-BU
+AL
 ```
-                              `  "  '      
-   LG LA LC  ◇                ё  щ  ъ  №   
-      RA                      !  ,  .  ?
+                                           
+    `  '  "  ◇                ◇  ё  щ  ъ   
+    !                         !  ,  .  ?
 ```
 
 FN
 ```
-  F12 F7 F8 F9 vu           M10 11 12 13   
+  F11 F4 F5 F6 vu           M10 11 12 13   
   F10 F1 F2 F3 vd             S  C  A  G   
-  F11 F4 F5 F6 mu           M14 15 16 17
+  F12 F7 F8 F9 mu           M14 15 16 17
                    ◇    ◇            
 ```
 
