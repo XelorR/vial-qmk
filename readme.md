@@ -300,6 +300,13 @@ num - [wellum](https://github.com/braindefender/wellum)
    F1 F2 F3 F4 F5         F6 F7 F8 F9 F10   
 ```
 
+num - [callum](https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum)
+```
+    7  5  3  1  9          8  0  2  4  6   
+    G  A  C  S F11        F10 S  C  A  G   
+   F7 F5 F3 F1 F9         F8 F12 F2 F4 F6   
+```
+
 sym - my, 1
 ```
  ~  !  @  #  $  %         ^  &  *  (  )  _
