@@ -153,7 +153,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT(
         KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,     KC_NO,    KC_NO,    KC_NO,  KC_NO,   KC_NO, 
         KC_NO, KC_NO, KC_7,  KC_8,  KC_9,  KC_EQL,                                     KC_NO,     LG_SLASH, S(KC_8),  LG_NUM, KC_NO,   KC_NO, 
-        KC_NO, KC_NO, KC_1,  KC_2,  KC_3,  KC_MINS,                                    S(KC_EQL), OS_SHFT,  OS_CTRL,  OS_ALT, KC_CMD,  KC_NO,
+        KC_NO, KC_NO, KC_1,  KC_2,  KC_3,  KC_MINS,                                    S(KC_EQL), OS_SHFT,  OS_CTRL,  OS_ALT, OS_CMD,  KC_NO,
         KC_NO, KC_NO, KC_4,  KC_5,  KC_6,  KC_NO,                                      KC_NO,     S(KC_1),  LG_COMMA, LG_DOT, LG_QUES, KC_NO, 
                       KC_NO, KC_NO, KC_NO, _______,   LA_FUN, KC_NO,   KC_NO, _______, _______,   KC_NO,    KC_NO,    KC_NO
     ),
