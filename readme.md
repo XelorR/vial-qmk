@@ -203,9 +203,9 @@ AL
 
 FN
 ```
-  F11 F4 F5 F6 vu           M10 11 12 13   
-  F10 F1 F2 F3 vd             S  C  A  G   
-  F12 F7 F8 F9 mu           M14 15 16 17
+  F11 F4 F5 F6 vu         mr M10 11 12 13  
+  F10 F1 F2 F3 vd         ms  S  C  A  G   
+  F12 F7 F8 F9 mu         mp M14 15 16 17
                    ◇    ◇            
 ```
 

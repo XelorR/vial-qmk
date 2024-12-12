@@ -167,11 +167,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_FN] = LAYOUT(
-        KC_NO, KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,                                     KC_NO, KC_NO,   KC_NO,   KC_NO,  KC_NO,  KC_NO,
-        KC_NO, KC_F12, KC_F7, KC_F8, KC_F9, KC_VOLU,                                   KC_NO, MC_10,   MC_11,   MC_12,  MC_13,  KC_NO,
-        KC_NO, KC_F10, KC_F1, KC_F2, KC_F3, KC_VOLD,                                   KC_NO, OS_SHFT, OS_CTRL, OS_ALT, OS_CMD, KC_NO,
-        KC_NO, KC_F11, KC_F4, KC_F5, KC_F6, KC_MUTE,                                   KC_NO, MC_14,   MC_15,   MC_16,  MC_17,  KC_NO,
-                       KC_NO, KC_NO, KC_NO, KC_NO,   _______, KC_NO,   KC_NO, _______, KC_NO, KC_NO,   KC_NO,   KC_NO
+        KC_NO, KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO,                                     KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,  KC_NO,
+        KC_NO, KC_F12, KC_F7, KC_F8, KC_F9, KC_VOLU,                                   DM_REC1, MC_10,   MC_11,   MC_12,  MC_13,  KC_NO,
+        KC_NO, KC_F10, KC_F1, KC_F2, KC_F3, KC_VOLD,                                   DM_RSTP, OS_SHFT, OS_CTRL, OS_ALT, OS_CMD, KC_NO,
+        KC_NO, KC_F11, KC_F4, KC_F5, KC_F6, KC_MUTE,                                   DM_PLY1, MC_14,   MC_15,   MC_16,  MC_17,  KC_NO,
+                       KC_NO, KC_NO, KC_NO, KC_NO,   _______, KC_NO,   KC_NO, _______, KC_NO,   KC_NO,   KC_NO,   KC_NO
     ),
 
     // [_MACRO] = LAYOUT(
