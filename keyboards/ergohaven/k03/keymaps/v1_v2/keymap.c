@@ -4,6 +4,10 @@
 #include "oneshot.h"
 #include "swapper.h"
 
+#define LA_NUM MO(_NUM)
+#define LA_NAV MO(_NAV)
+#define LA_MED MO(_MED)
+
 enum layers {
     _ENG,
     _RUS,
@@ -12,11 +16,11 @@ enum layers {
     _NAV,
     _SYM,
     _NUM,
-    _MEDIA,
-    _MOUSE,
-    _FN,
-    _MACRO,
-    _BUTTON,
+    _MED,
+    _MOU,
+    _FUN,
+    _MAC,
+    _BUT,
     _VIM,
     _13,
     _14,
@@ -39,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           KC_GRV,   KC_1,    KC_2,    KC_3,     KC_4,     KC_5,                                          KC_6,     KC_7,      KC_8,     KC_9,   KC_0,    KC_BSPC, \
           KC_ESC,   KC_Q,    KC_W,    KC_F,     KC_P,     KC_B,                                          KC_J,     KC_L,      KC_U,     KC_Y,   KC_QUOT, KC_BSLS, \
           KC_TAB,   SY_A,    KC_R,    KC_S,     AL_T,     KC_G,                                          KC_M,     AL_N,      KC_E,     KC_I,   SY_O,    KC_QUOT, \
-          KC_LSFT,  MO_Z,    KC_X,    KC_C,     KC_D,     KC_V,                                          KC_K,     KC_H,      KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT, \
-                             KC_LGUI, KC_LALT,  KC_LCTL,  MO(_NAV), KC_SPC, KC_MUTE,    KC_HOME, KC_ENT, MO(_NUM), LG_TOGGLE, KC_RALT,  KC_RGUI \
+          OS_SHFT,  MO_Z,    KC_X,    KC_C,     KC_D,     KC_V,                                          KC_K,     KC_H,      KC_COMM,  KC_DOT, KC_SLSH, OS_SHFT, \
+                             OS_CMD,  OS_ALT,   OS_CTRL,  LA_NAV, KC_SPC, KC_MUTE,      KC_HOME, KC_ENT, LA_NUM,   LG_TOGGLE, KC_RALT,  KC_RGUI \
         ),
 
         [_RUS] = LAYOUT(
@@ -56,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          _______, _______, KC_HOME, KC_UP,   KC_END,   KC_INS,                                           KC_PGUP, KC_7,    KC_8,    KC_9,   _______, _______,
          _______, _______, KC_LEFT, KC_DOWN, KC_RIGHT, KC_ENT,                                           KC_PGDN, KC_4,    KC_5,    KC_6,   _______, _______,
          _______, _______, PREVWRD, CW_TOGG, NEXTWRD,  KC_DEL,                                           KC_PSCR, KC_1,    KC_2,    KC_3,   _______, _______,
-                           _______, _______, _______, _______, _______, _______,       _______, _______, ADJUST, _______,  KC_0, _______\
+                           _______, _______, _______, _______, _______, _______,       _______, _______, LA_MED,  _______,  KC_0, _______\
         ),
 
         [_NUM] = LAYOUT( \
@@ -64,10 +68,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          _______, _______, KC_LT,   KC_EQL,  KC_GT,   KC_GRV,                                            _______, KC_LBRC, KC_UNDS, KC_RBRC, _______,  _______,
          _______, KC_BSLS, KC_LPRN, KC_MINS, KC_RPRN, KC_PLUS,                                           KC_PERC, KC_LCBR, KC_SCLN, KC_RCBR, KC_EXLM,  _______,
          _______, _______, KC_ASTR, KC_COLN, KC_SLSH, _______,                                           _______, KC_PIPE, KC_TILD, KC_AMPR, _______,  _______,
-                           _______, _______, _______, ADJUST, _______, _______,        _______, _______, _______, _______, _______, _______ \
+                           _______, _______, _______, LA_MED,  _______, _______,        _______, _______, _______, _______, _______, _______ \
         ),
 
-      [_MEDIA] = LAYOUT(
+      [_MED] = LAYOUT(
         QK_BOOT, _______, _______, _______, _______, _______,                                            _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______,                                            _______, _______, _______, _______, DM_PLY1, DM_REC1,
         _______, _______, _______, _______, _______, _______,                                            _______, KC_VOLD, KC_MUTE, KC_VOLU, DM_PLY2, DM_REC2,
