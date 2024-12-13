@@ -120,13 +120,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           TAB_L,   TAB_R,   _______, _______, LG_COMMA, _______,        _______, LG_DOT, _______, _______, SPACE_L, SPACE_R
 
        ),
-    [_ALT] = LAYOUT(
-        KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,                                    KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_NO, 
-        KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,                                    KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_NO, 
-        KC_NO, _______, LG_QUOTE, LG_GRAVE, LG_DQUO, KC_NO,                                    KC_NO, LG_COMMA, LG_DOT,  LG_QUES, _______, KC_NO,
-        KC_NO, KC_NO,   KC_NO,    S(KC_8),  LG_HASH, KC_NO,                                    KC_NO, KC_NO,    S(KC_1), KC_NO,   KC_NO, KC_NO, 
-                        KC_NO,    KC_NO,    KC_NO,   KC_NO, KC_NO, KC_NO,        KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO,   KC_NO
-    ),
+        [_ALT] = LAYOUT(
+            KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,                                    KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_NO, 
+            KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,                                    KC_NO, KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_NO, 
+            KC_NO, _______, LG_QUOTE, LG_GRAVE, LG_DQUO, KC_NO,                                    KC_NO, LG_COMMA, LG_DOT,  LG_QUES, _______, KC_NO,
+            KC_NO, KC_NO,   KC_NO,    S(KC_8),  LG_HASH, KC_NO,                                    KC_NO, KC_NO,    S(KC_1), KC_NO,   KC_NO, KC_NO, 
+                            KC_NO,    KC_NO,    KC_NO,   KC_NO, KC_NO, KC_NO,        KC_NO, KC_NO, KC_NO, KC_NO,    KC_NO,   KC_NO
+        ),
 
 };
 
