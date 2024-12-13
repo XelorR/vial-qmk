@@ -89,8 +89,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                            KC_6,     KC_7,          KC_8,      KC_9,    KC_0,    KC_BSPC,
         KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,     KC_L,          KC_U,      KC_Y,    KC_QUOT, KC_DEL,
-      LG_COMMA,  KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,     KC_N,          KC_E,      KC_I,    KC_O,    LG_DOT,
-      LG_SET_RU, MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,     KC_H,          KC_COMM,   KC_DOT,  LG_DOT,  LG_SET_EN,
+        KC_TAB,  KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,     KC_N,          KC_E,      KC_I,    KC_O,    KC_ENT,
+      LG_SET_RU, MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,     KC_H,          KC_COMM,   KC_DOT,  KC_SCLN, LG_SET_EN,
                           KC_LGUI, KC_LALT, KC_LCTL, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM(MOD_LSFT), OSM(MOD_RCTL), KC_LBRC,   KC_RBRC
     ),
 
@@ -143,11 +143,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        _______, _______, _______, _______,  _______,  _______,                                             _______, _______, _______,    _______,  _______, _______,
-        _______, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    LG_GRAVE,                                            LG_CIRC, LG_DQUO, KC_UNDS,    LG_QUOTE, KC_NO,   _______,
-        LG_HASH, KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_LCBR, LG_SCLN,    LG_RCBR,  KC_EXLM, LG_QUES,
-        _______, LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE, LG_TILD,    LG_AMPR,  KC_NO,   _______,
-                          _______, _______,  _______,  _______,  LA_FUN, _______,         _______, _______, _______, _______, _______,    _______
+        _______, _______, _______, _______,  _______,  _______,                                             _______, _______,  _______, _______,  _______, _______,
+        _______, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    LG_GRAVE,                                            LG_CIRC, LG_DQUO,  KC_UNDS, LG_QUOTE, KC_NO,   _______,
+        _______, KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_COMMA, LG_SCLN, LG_DOT,   KC_EXLM, _______,
+        _______, LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE,  LG_TILD, LG_AMPR,  LG_QUES, _______,
+                          _______, _______,  _______,  _______,  LA_FUN, _______,         _______, _______, _______, _______,  _______, _______
     ),
 
     // [_NUM] = LAYOUT(
