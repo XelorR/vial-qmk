@@ -57,11 +57,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [_ENG] = LAYOUT( \
-          KC_GRV,  KC_1, KC_2,   KC_3,    KC_4,    KC_5,                                          KC_6,   KC_7,    KC_8,    KC_9,   KC_0,    KC_DEL, \
-          KC_ESC,  KC_Q, KC_W,   KC_F,    KC_P,    KC_B,                                          KC_J,   KC_L,    KC_U,    KC_Y,   KC_SCLN, KC_DEL, \
-          KC_BSPC, AL_A, KC_R,   KC_S,    KC_T,    KC_G,                                          KC_M,   KC_N,    KC_E,    KC_I,   AL_O,    KC_QUOT, \
-          OS_SHFT, MO_Z, KC_X,   KC_C,    KC_D,    KC_V,                                          KC_K,   KC_H,    KC_COMM, KC_DOT, KC_LALT, OS_SHFT, \
-                         KC_GRV, KC_LGUI, OS_CTRL, LA_NAV, KC_SPC, KC_MUTE,      KC_HOME, KC_ENT, LA_SYM, OS_CTRL, KC_LBRC, KC_RBRC \
+          KC_GRV,        KC_1,   KC_2,    KC_3,    KC_4,   KC_5,                                  KC_6,   KC_7,          KC_8,    KC_9,   KC_0,    KC_DEL, \
+          KC_ESC,        KC_Q,   KC_W,    KC_F,    KC_P,   KC_B,                                  KC_J,   KC_L,          KC_U,    KC_Y,   KC_SCLN, KC_DEL, \
+          KC_BSPC,       AL_A,   KC_R,    KC_S,    KC_T,   KC_G,                                  KC_M,   KC_N,          KC_E,    KC_I,   AL_O,    KC_QUOT, \
+          OSM(MOD_LSFT), MO_Z,   KC_X,    KC_C,    KC_D,   KC_V,                                  KC_K,   KC_H,          KC_COMM, KC_DOT, KC_LALT, OSM(MOD_LSFT), \
+                         KC_GRV, KC_LGUI, KC_LCTL, LA_NAV, KC_SPC, KC_MUTE,      KC_HOME, KC_ENT, LA_SYM, OSM(MOD_RCTL), KC_LBRC, KC_RBRC \
         ),
 
         [_RUS] = LAYOUT(
