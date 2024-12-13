@@ -143,10 +143,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        _______, _______, _______, _______,  _______,  _______,                                             _______, _______, _______,    _______, _______, _______,
-        _______, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    KC_NO,                                               LG_CIRC, LG_LBR,  S(KC_MINS), LG_RBR,  KC_NO,   _______,
-        _______, KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_LCBR, LG_SCLN,    LG_RCBR, KC_EXLM, LG_QUES,
-        _______, LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE, LG_TILD,    LG_AMPR, KC_NO,   _______,
+        _______, _______, _______, _______,  _______,  _______,                                             _______, _______, _______,    _______,  _______, _______,
+        _______, LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    LG_GRAVE,                                            LG_CIRC, LG_DQUO, KC_UNDS,    LG_QUOTE, KC_NO,   _______,
+        LG_HASH, KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_LCBR, LG_SCLN,    LG_RCBR,  KC_EXLM, LG_QUES,
+        _______, LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE, LG_TILD,    LG_AMPR,  KC_NO,   _______,
                           _______, _______,  _______,  _______,  LA_FUN, _______,         _______, _______, _______, _______, _______,    _______
     ),
 
