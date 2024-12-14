@@ -134,16 +134,16 @@ EN (combos: lg=ei; LTs: z/MS t/AL n/AL a/SY o/SY)
 ```
     q  w  f  p  b          j  l  u  y  '
     a  r  s  t  g          m  n  e  i  o   
-    z  x  c  d  v          k  h  ,  .  /
-               sp NV   NU  S         
+    z  x  c  d  v          k  h  [  ]  /
+            RU sp NV   NU  S EN      
 ```
 
 RU (combos: lg=лд; LTs: я/MS а/AL о/AL ф/SY ж/SY)
 ```
-    й  ц  у  к  е          н  г  ш  з  х
+    й  ц  у  к  е          н  г  ш  щ  з
     ф  ы  в  а  п          р  о  л  д  ж   
     я  ч  с  м  и          т  ь  б  ю  э
-               sp NV   NU  S         
+            RU sp NV   NU  S EN      
 ```
 
 GM
@@ -166,7 +166,7 @@ NV (GM is DF)
 ```
    qw sw pt nt  E          E hm  U ed dl   
     G  A  C  S  N          N  L  D  R bs   
-   ps ns lw cw  T          T pu pd  P GM   
+   ps ns lw cw  T          T pu pd ap  P   
                    ◇   FN lb
 ```
 
@@ -180,25 +180,10 @@ MS
 
 SY
 ```
-       <  =  >             ^  ]  _  [      
-    \  (  -  )  +          %  }  ;  {  #   
-       *  :  /  $          @  |  ~  &      
+    №  <  =  >  ё          ^  "  _  х  ъ   
+    \  (  -  )  +          %  ,  ;  .  !   
+    #  *  :  /  $          @  |  ~  &  ?   
                sp  G    A  C         
-```
-
-NU
-```
-       4  5  6  =             /  *  №      
-    0  1  2  3  -          +  S  C  A  G   
-       7  8  9                !  ,  .  ?
-               sp FN    ◇            
-```
-
-AL
-```
-          '                      ё  щ  ъ   
-    !  `  "  ◇                ◇  ,  .  ?   
-       *  #                      -  _   
 ```
 
 FN
