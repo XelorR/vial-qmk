@@ -17,7 +17,7 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 - Language switching button should also toggle layers (implemented [here](https://github.com/xelorr/xellum/blob/vial/keyboards/ergohaven/ergohaven_ruen.c#L20-L38) as layer_invert(1))
 - Ctrl-xcv are differently placed for different layouts (solved by placing ^x ^c ^v on mouse layer)
-- As there are 33 letters and one special symbol (№) in russian, totalling 34 buttons required for symbols only and without punctuation (decided to have ёхъ,. in symbol layer and э replacing the dot)
+- As there are 33 letters and one special symbol (№) in russian, totalling 34 buttons required for symbols only and without punctuation (decided to have ёхъ,. in symbol layer and э to replace russian dot)
 
 ## Layers
 
