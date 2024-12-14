@@ -102,19 +102,19 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | ^v       |            | Paste                                            |
 | ^x       |            | Cut                                              |
 | ^z       |            | Undo                                             |
-| eng / EN |            | English alphas layer                             |
-| rus / RU |            | Russian alphas layer                             |
-| nav / NV |            | navigation layer                                 |
-| mos / MS |            | mouse/cursor layer                               |
-| sym / SY |            | symbol later                                     |
-| mac / MC |            | macro/launcher layer                             |
-| but / BU |            | button layer                                     |
-| num / NU |            | numbers layer                                    |
-| med / ME |            | media layer                                      |
-| fun / FN |            | F-row/function layer                             |
-| gam / GM |            | Gaming layer                                     |
-| gfn / GF |            | Function layer for Gaming layer                  |
-| alt / AL |            | Alt symbol layer                                 |
+|  EN      |            | English alphas layer                             |
+|  RU      |            | Russian alphas layer                             |
+|  NV      |            | navigation layer                                 |
+|  MS      |            | mouse/cursor layer                               |
+|  SY      |            | symbol later                                     |
+|  MC      |            | macro/launcher layer                             |
+|  BU      |            | button layer                                     |
+|  NU      |            | numbers layer                                    |
+|  ME      |            | media layer                                      |
+|  FN      |            | F-row/function layer                             |
+|  GM      |            | Gaming layer                                     |
+|  GF      |            | Function layer for Gaming layer                  |
+|  AL      |            | Alt symbol layer                                 |
 
 </details>
 
