@@ -150,21 +150,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_NO,   KC_NO,    KC_NO,    KC_SPC,  LA_FUN, KC_NO,            KC_NO,   _______, _______, KC_NO,    KC_NO,   KC_NO
     ),
 
-    // [_NUM] = LAYOUT(
-    //     _______, _______, _______, _______, _______, _______,                                            _______,   _______,  _______,  _______, _______, _______,
-    //     _______, KC_NO,   KC_7,    KC_8,    KC_9,    KC_EQL,                                             KC_NO,     LG_SLASH, S(KC_8),  LG_NUM,  KC_NO,   _______, 
-    //     _______, KC_NO,   KC_1,    KC_2,    KC_3,    KC_MINS,                                            S(KC_EQL), OS_SHFT,  OS_CTRL,  OS_ALT,  OS_CMD,  _______,
-    //     _______, KC_NO,   KC_4,    KC_5,    KC_6,    KC_NO,                                              KC_NO,     S(KC_1),  LG_COMMA, LG_DOT,  LG_QUES, _______, 
-    //                       _______, _______, _______, _______, LA_FUN, _______,         _______, _______, _______,   _______,  _______,  _______
-    // ),
-
-    // [_ALT] = LAYOUT(
-    //     _______, _______, _______,  _______,  _______, _______,                                            _______, _______, _______,  _______,    _______, _______, 
-    //     _______, KC_NO,   KC_NO,    LG_QUOTE, KC_NO,   KC_NO,                                              KC_NO,   KC_NO,   KC_GRV,   KC_O,       KC_RBRC, _______, 
-    //     _______, S(KC_1), LG_GRAVE, LG_DQUO,  _______, KC_NO,                                              KC_NO,   _______, LG_COMMA, LG_DOT,     LG_QUES, _______,
-    //     _______, KC_NO,   S(KC_8),  LG_HASH,  KC_NO,   KC_NO,                                              KC_NO,   KC_NO,   KC_MINS,  S(KC_MINS), KC_NO,   _______, 
-    //                       _______,  _______,  _______, _______, _______, _______,        _______, _______, _______, _______, _______,  _______
-    // ),
 
     [_FN] = LAYOUT(
         KC_NO, MC_10, MC_11,   MC_12,   MC_13,   MC_14,                                         MC_15,   MC_16,   MC_17,   MC_18,   MC_19,    KC_NO,
@@ -174,13 +159,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       KC_NO,   KC_NO,   _______, _______, _______, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
     ),
 
-    // [_MACRO] = LAYOUT(
-    //     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                                      KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-    //     KC_NO, MC_0,  MC_1,  MC_2,  MC_3,  MC_4,                                       MC_5,    MC_6,  MC_7,  MC_8,  MC_9,  KC_NO, 
-    //     KC_NO, MC_10, MC_11, MC_12, MC_13, MC_14,                                      MC_15,   MC_16, MC_17, MC_18, MC_19, KC_NO, 
-    //     KC_NO, MC_20, MC_21, MC_22, MC_23, MC_24,                                      MC_25,   MC_26, MC_27, MC_28, MC_29, KC_NO, 
-    //                   KC_NO, KC_NO, KC_NO, _______, _______, KC_NO,    KC_NO, _______, _______, KC_NO, KC_NO, KC_NO
-    // ),
 };
 
 #ifdef ENCODER_MAP_ENABLE
