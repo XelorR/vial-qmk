@@ -188,9 +188,9 @@ SY
 
 FN
 ```
-  F11 F4 F5 F6 vu         mr M10 11 12 13  
-  F10 F1 F2 F3 vd         ms  S  C  A  G   
-  F12 F7 F8 F9 mu         mp M14 15 16 17
+   F1 F2 F3 F4 F5          F6 F7 F8 F9 F10  
+    1  2  3  4  5          6  7  8  9  0   
+   M1 mu vd vu F11        F12 rm sm pm GM  
                    ◇    ◇            
 ```
 
