@@ -437,12 +437,6 @@ fun4
 
 </details>
 
-## Macros and Combos to paste (as I don't know how to pre-configure it in firmware)
-
-REMOVED
-
-Just setup combos for LG_TOGGLE, for both EN and RU
-
 ## Current version
 
 - [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/xellum/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_xellum.uf2)
