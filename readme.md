@@ -178,7 +178,7 @@ GM
 T  q  w  e  r                U     T
 S  a  s  d  f             L  D  R  S
 C  z  x  c  v                      C
-           sp GF   EN  P
+         A sp GF   EN  P  N
 ```
 
 GF
