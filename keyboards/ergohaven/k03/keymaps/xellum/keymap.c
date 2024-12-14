@@ -167,11 +167,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ),
 
     [_FN] = LAYOUT(
-        KC_NO,   MC_10,   MC_11,   MC_12,   MC_13,   MC_14,                                         MC_15,   MC_16,   MC_17,    MC_18, MC_19,    KC_NO,
-        KC_NO,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_VOLU,                                       DM_REC1, KC_7,    KC_8,     KC_9,  LG_NUM,   KC_NO,
-        KC_NO,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_VOLD,                                       DM_RSTP, KC_4,    KC_5,     KC_6,  DF(_GAM), KC_NO,
-        KC_NO,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_MUTE,                                       DM_PLY1, KC_1,    KC_2,     KC_3,  KC_0,     KC_NO,
-                          _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______,  _______
+        KC_NO, MC_10, MC_11,   MC_12,   MC_13,   MC_14,                                         MC_15,   MC_16,   MC_17,   MC_18,   MC_19,    KC_NO,
+        KC_NO, KC_F1, KC_F2,   KC_F3,   KC_F4,   KC_F5,                                         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_NO,
+        KC_NO, KC_1,  KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_NO,
+        KC_NO, MC_10, KC_MUTE, KC_VOLD, KC_VOLU, KC_F11,                                        KC_F12,  DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
+                      _______, _______, _______, _______, _______, _______,   _______, _______, _______, _______, _______, _______
     ),
 
     // [_MACRO] = LAYOUT(
