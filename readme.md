@@ -135,66 +135,66 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 EN (LTs: z/MS)
 ```
-    q  w  f  p  b          j  l  u  y  '
-    a  r  s  t  g          m  n  e  i  o   
-    z  x  c  d  v          k  h  [  ]  /
-            RU sp NV   NU  S EN      
+q  w  f  p  b          j  l  u  y  '
+a  r  s  t  g          m  n  e  i  o
+z  x  c  d  v          k  h  [  ]  /
+        RU sp NV   NU  S EN
 ```
 
 RU (LTs: я/MS)
 ```
-    й  ц  у  к  е          н  г  ш  щ  з
-    ф  ы  в  а  п          р  о  л  д  ж   
-    я  ч  с  м  и          т  ь  б  ю  э
-            RU sp NV   NU  S EN      
+й  ц  у  к  е          н  г  ш  щ  з
+ф  ы  в  а  п          р  о  л  д  ж
+я  ч  с  м  и          т  ь  б  ю  э
+        RU sp NV   NU  S EN
 ```
 
 GM
 ```
-    T  q  w  e  r                U     T   
-    S  a  s  d  f             L  D  R  S   
-    C  z  x  c  v                      C   
-               sp GF   EN  P
+T  q  w  e  r                U     T
+S  a  s  d  f             L  D  R  S
+C  z  x  c  v                      C
+           sp GF   EN  P
 ```
 
 GF
 ```
-    E  5  6  7  8         mr               
-    A  1  2  3  4         ms               
-    g  j  i  m  t         mp               
-                N  ◇   FN            
+E  5  6  7  8         mr   
+A  1  2  3  4         ms   
+g  j  i  m  t         mp   
+            N  ◇   FN
 ```
 
 NV (GM is DF)
 ```
-   qw sw pt nt  E          E hm  U ed dl   
-    G  A  C  S  N          N  L  D  R bs   
-   ps ns lw cw  T          T pu pd ap  P   
-                   ◇   FN lb
+qw sw pt nt  E          E hm  U ed dl
+ G  A  C  S  N          N  L  D  R bs
+ps ns lw cw  T          T pu pd ap  P
+                ◇   FN lb
 ```
 
 MS
 ```
-                             wl mu wr dl   
-                             ml md mr bs   
-    ◇ ^x ^c ^v               wu wd      
-                       rb lb
+                         wl mu wr dl
+                         ml md mr bs
+◇ ^x ^c ^v               wu wd      
+                   rb lb
 ```
 
 SY
 ```
-    №  <  =  >  ё          ^  "  _  х  ъ   
-    \  (  -  )  +          %  ,  ;  .  !   
-    #  *  :  /  $          @  |  ~  &  ?   
-               sp FN    ◇            
+№  <  =  >  ё          ^  "  _  х  ъ
+\  (  -  )  +          %  ,  ;  .  !
+#  *  :  /  $          @  |  ~  &  ?
+           sp FN    ◇
 ```
 
 FN
 ```
-   F1 F2 F3 F4 F5          F6 F7 F8 F9 F10  
-    1  2  3  4  5          6  7  8  9  0   
-   M1 mu vd vu F11        F12 rm sm pm GM  
-                   ◇    ◇            
+F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
+ 1  2  3  4  5          6  7  8  9  0 
+M1 mu vd vu F11        F12 rm sm pm GM
+                ◇    ◇
 ```
 
 ## Current version
