@@ -149,6 +149,30 @@ RU (LTs: я/MS)
         RU sp NV   NU  S EN
 ```
 
+SY
+```
+№  <  =  >  ё          ^  "  _  х  ъ
+\  (  -  )  +          %  ,  ;  .  !
+#  *  :  /  $          @  |  ~  &  ?
+           sp FN    ◇
+```
+
+NV (GM is DF)
+```
+qw sw pt nt  E          E hm  U ed dl
+ G  A  C  S  N          N  L  D  R bs
+ps ns lw cw  T          T pu pd ap  P
+                ◇   FN lb
+```
+
+FN
+```
+F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
+ 1  2  3  4  5          6  7  8  9  0 
+M1 mu vd vu F11        F12 rm sm pm GM
+                ◇    ◇
+```
+
 GM
 ```
 T  q  w  e  r                U     T
@@ -165,36 +189,12 @@ g  j  i  m  t         mp
             N  ◇   FN
 ```
 
-NV (GM is DF)
-```
-qw sw pt nt  E          E hm  U ed dl
- G  A  C  S  N          N  L  D  R bs
-ps ns lw cw  T          T pu pd ap  P
-                ◇   FN lb
-```
-
 MS
 ```
                          wl mu wr dl
                          ml md mr bs
 ◇ ^x ^c ^v               wu wd      
                    rb lb
-```
-
-SY
-```
-№  <  =  >  ё          ^  "  _  х  ъ
-\  (  -  )  +          %  ,  ;  .  !
-#  *  :  /  $          @  |  ~  &  ?
-           sp FN    ◇
-```
-
-FN
-```
-F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
- 1  2  3  4  5          6  7  8  9  0 
-M1 mu vd vu F11        F12 rm sm pm GM
-                ◇    ◇
 ```
 
 ## Current version
