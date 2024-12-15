@@ -161,7 +161,7 @@ NV
 ```
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
-ps ns lw cw  T          T pu pd ap  P
+ps ns lw cw  T          T pu pd LA LG
                 ◇   FN lb MC
 ```
 
@@ -169,7 +169,7 @@ FN
 ```
 F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
  1  2  3  4  5          6  7  8  9  0 
-M1 mu vd vu F11        F12 rm sm pm GM
+ P mu vd vu F11        F12 rm sm pm GM
                 ◇    ◇
 ```
 
