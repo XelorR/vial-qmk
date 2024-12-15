@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,                                           KC_NO,         KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,
        KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,          KC_L,      KC_U,    KC_Y,    KC_QUOT, KC_NO,
        KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,          KC_N,      KC_E,    KC_I,    KC_O,    KC_NO,
-       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,          KC_H,      KC_LBRC, KC_RBRC, LG_AT,   KC_NO,
+       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,          KC_H,      KC_MINS, KC_LBRC, KC_RBRC, KC_NO,
                           KC_NO,   KC_NO,   LG_SET_RU, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM(MOD_LSFT), LG_SET_EN, KC_NO,   KC_NO
     ),
 
