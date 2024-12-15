@@ -118,31 +118,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_NO, KC_NO, _______, KC_ENT, _______, KC_NO,     KC_NO, LA_NUM, _______, _______, KC_NO,   KC_NO
     ),
 
-    [_NAV] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,  KC_DEL,  KC_NO,
-        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_NO,
-        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, KC_APP,  KC_PSCR, KC_NO,
-                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,            KC_NO, LA_NUM, KC_BTN1,  _______, KC_NO,   KC_NO
-    ),
-
-
-    [_MOUSE] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_WH_L, KC_MS_U, KC_WH_R, KC_DEL,  KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_MS_L, KC_MS_D, KC_MS_R, KC_BSPC, KC_NO,
-        KC_NO,   _______, CUT,     COPY,    PASTE,   KC_NO,                                        KC_NO,   KC_WH_U, KC_WH_D, KC_NO,   KC_NO,   KC_NO,
-                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,     KC_NO,  KC_BTN2, KC_BTN1, KC_BTN3, KC_NO,   KC_NO
-    ),
-
     [_SYM] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,    KC_NO,   KC_NO,    KC_NO,   KC_NO,
         KC_NO,   LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    KC_GRV,                                              LG_CIRC, LG_DQUO,  KC_UNDS, KC_LBRC,  KC_RBRC, KC_NO,
         KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_COMMA, LG_SCLN, LG_DOT,   KC_EXLM, KC_NO,
         KC_NO,   LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE,  LG_TILD, LG_AMPR,  LG_QUES, KC_NO,
-                          KC_NO,   KC_NO,    KC_NO,    KC_SPC,  LA_NUM, KC_NO,            KC_NO,   _______, _______, KC_NO,    KC_NO,   KC_NO
+                          KC_NO,   KC_NO,    KC_NO,    KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, KC_NO,    KC_NO,   KC_NO
     ),
 
+    [_NAV] = LAYOUT(
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,  KC_DEL,  KC_NO,
+        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_NO,
+        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, KC_APP,  KC_PSCR, KC_NO,
+                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,           KC_NO, _______, KC_BTN1,  _______, KC_NO,   KC_NO
+    ),
 
     [_NUM] = LAYOUT(
         KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,                                         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
@@ -150,6 +140,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_1,  KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_NO,
         KC_NO, MC_10, KC_MUTE, KC_VOLD, KC_VOLU, KC_F11,                                        KC_F12,  DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
                       KC_NO,   KC_NO,   _______, _______, _______, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
+    ),
+
+    [_MOUSE] = LAYOUT(
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_WH_L, KC_MS_U, KC_WH_R, KC_DEL,  KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                        KC_NO,   KC_MS_L, KC_MS_D, KC_MS_R, KC_BSPC, KC_NO,
+        KC_NO,   _______, CUT,     COPY,    PASTE,   KC_NO,                                        KC_NO,   KC_WH_U, KC_WH_D, KC_NO,   KC_NO,   KC_NO,
+                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,     KC_NO,  KC_BTN2, KC_BTN1, KC_BTN3, KC_NO,   KC_NO
     ),
 
 };
