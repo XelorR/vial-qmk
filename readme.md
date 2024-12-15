@@ -154,7 +154,7 @@ SY
 №  <  =  >  ё          ^  "  _  х  ъ
 \  (  -  )  +          %  ,  ;  .  !
 #  *  :  /  $          @  |  ~  &  ?
-           sp FN    ◇
+        LC sp FN    ◇
 ```
 
 NV (GM is DF)
@@ -162,7 +162,7 @@ NV (GM is DF)
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
 ps ns lw cw  T          T pu pd ap  P
-                ◇   FN lb
+                ◇   FN lb MC
 ```
 
 FN
