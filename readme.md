@@ -157,7 +157,7 @@ SY
         LC sp FN    ◇
 ```
 
-NV (GM is DF)
+NV
 ```
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
