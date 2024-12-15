@@ -194,7 +194,7 @@ MS
                          wl mu wr dl
                          ml md mr bs
 ◇ ^x ^c ^v               wu wd      
-                   rb lb
+                   rb lb mb
 ```
 
 MC
