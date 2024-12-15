@@ -197,6 +197,14 @@ MS
                    rb lb
 ```
 
+MC
+```
+M0 M1 M2 M3 M4         M5 M6 M7 M8 M9 
+10 11 12 13 14         15 16 17 18 10 
+20 21 22 23 24         25 26 27 28 20 
+          ◇
+```
+
 ## Current version
 
 - [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/xellum/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_xellum.uf2)
