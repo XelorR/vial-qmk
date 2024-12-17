@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,                                           KC_NO,         KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,
        KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,          KC_L,      KC_U,    KC_Y,    KC_QUOT, KC_NO,
        KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,          KC_N,      KC_E,    KC_I,    KC_O,    KC_NO,
-       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,          KC_H,      KC_MINS, KC_LBRC, KC_RBRC, KC_NO,
+       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,          KC_H,      LG_AT,   LG_LCBR, LG_RCBR, KC_NO,
                           KC_NO,   KC_NO,   LG_SET_RU, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM(MOD_LSFT), LG_SET_EN, KC_NO,   KC_NO
     ),
 
@@ -120,10 +120,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,    KC_NO,   KC_NO,    KC_NO,   KC_NO,
-        KC_NO,   LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    KC_GRV,                                              LG_CIRC, LG_DQUO,  KC_UNDS, KC_LBRC,  KC_RBRC, KC_NO,
-        KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_PERC, LG_COMMA, LG_SCLN, LG_DOT,   KC_EXLM, KC_NO,
-        KC_NO,   LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_AT,   LG_PIPE,  LG_TILD, LG_AMPR,  LG_QUES, KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO,   KC_LBRC, LG_LT,   KC_EQL,   LG_GT,    KC_GRV,                                              LG_CIRC, LG_LBR,   KC_UNDS, LG_RBR,  KC_RBRC, KC_NO,
+        KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_DQUO, LG_COMMA, LG_SCLN, LG_DOT,  KC_EXLM, KC_NO,
+        KC_NO,   LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_PERC, LG_PIPE,  LG_TILD, LG_AMPR, LG_QUES, KC_NO,
                           KC_NO,   KC_NO,    KC_LCTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, KC_NO,    KC_NO,   KC_NO
     ),
 

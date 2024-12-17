@@ -137,7 +137,7 @@ EN (LTs: z/MS)
 ```
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
-z  x  c  d  v          k  h  -  [  ]
+z  x  c  d  v          k  h  @  {  }
         RU sp NV   NU  S EN
 ```
 
@@ -151,9 +151,9 @@ RU (LTs: я/MS)
 
 SY
 ```
-№  <  =  >  ё          ^  "  _  х  ъ
-\  (  -  )  +          %  ,  ;  .  !
-#  *  :  /  $          @  |  ~  &  ?
+х  <  =  >  ё          ^  [  _  ]  ъ
+\  (  -  )  +          "  ,  ;  .  !
+#  *  :  /  $          %  |  ~  &  ?
         LC sp FN    ◇
 ```
 
