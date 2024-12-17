@@ -162,7 +162,7 @@ NV
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
 ps ns lw cw  T          T pu pd LA LG
-                ◇   FN lb MC
+            MC  ◇   FN lb MC
 ```
 
 FN
