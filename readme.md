@@ -138,7 +138,7 @@ EN (LTs: z/MS)
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
 z  x  c  d  v          k  h  @  {  }
-        RU sp NV   NU  S EN
+        LC sp NV   NU  S lg
 ```
 
 RU (LTs: я/MS)
@@ -146,7 +146,7 @@ RU (LTs: я/MS)
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
 я  ч  с  м  и          т  ь  б  ю  э
-        RU sp NV   NU  S EN
+        LC sp NV   NU  S lg
 ```
 
 SY
@@ -178,7 +178,7 @@ GM
 T  q  w  e  r                U     T
 S  a  s  d  f             L  D  R  S
 C  z  x  c  v                      C
-         A sp GF   EN  P  N
+        LA sp GF   EN  P  N
 ```
 
 GF
