@@ -27,6 +27,7 @@
 #define SPACE_R C(G(KC_RGHT))
 #define TAB_L C(S(KC_TAB))
 #define TAB_R C(KC_TAB)
+#define CL_WIN A(KC_F4)
 
 #define BU_Z LT(_BUTTON, KC_Z)
 #define BU_SLSH LT(_BUTTON, KC_SLSH)
