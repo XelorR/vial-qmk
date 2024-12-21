@@ -165,7 +165,7 @@ ps ns lw cw  T          T pu pd LA LG
             MC  ◇   FN lb MC
 ```
 
-FN
+NU
 ```
 F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
  1  2  3  4  5          6  7  8  9  0 
@@ -204,6 +204,116 @@ M0 M1 M2 M3 M4         M5 M6 M7 M8 M9
 20 21 22 23 24         25 26 27 28 20 
                            ◇
 ```
+
+<details>
+
+<summary>Experimental layers</summary>
+
+things to consider:
+
+- ru extra letters (хъёэ)
+  - combo
+  - layer
+- ruen punctuation
+  - layer
+  - side
+  - thumb
+  - combo
+- lang switching
+  - thumb
+  - side
+  - combo
+- modifiers for all layers
+  - layer
+  - thumb
+  - side
+- OSM Shift
+  - thumb
+  - side
+  - mod tap
+  - combo
+  - tap dance
+  - layer
+- enter, tab, escape
+  - layer
+  - thumb
+  - side
+
+thumbs
+
+```
+E sp T  N bs dl
+E sp T  N  S  х
+E sp T  N  [  ]
+E sp [  ]  S  A
+E sp х  ъ  S  ё
+E sp T  ,  S  .
+E sp ,  .  S lg
+E sp T  [  S  ]
+```
+
+EN
+```
+q  w  f  p  b          j  l  u  y  '
+a  r  s  t  g          m  n  e  i  o
+z  x  c  d  v          k  h  @  ~  /
+         E sp  T    ,  S  .
+```
+
+RU
+```
+й  ц  у  к  е          н  г  ш  щ  з
+ф  ы  в  а  п          р  о  л  д  ж
+я  ч  с  м  и          т  ь  б  ю  э
+         E sp  T    ,  S  .
+```
+
+SY ({;}! are also SCAG via tap dance)
+```
+№  <  =  >  ё          ^  х  _  ъ  '
+\  (  -  )  +          "  {  ;  }  !
+#  *  :  /  $          %  |  ~  &  ?
+                    ◇      
+```
+
+missing
+```
+          
+```
+
+NU
+```
+/  4  5  6  =                       
+0  1  2  3  -          №  S  C  A  G
+*  7  8  9  +                       
+                       ◇   
+```
+
+NU
+```
+5  6  7  8  9                       
+1  2  3  4  0          №  S  C  A  G
+/  -  +  =  *                       
+                       ◇   
+```
+
+NU
+```
+                       9  5  6  7  8
+G  A  C  S  №          0  1  2  3  4
+                       *  -  +  =  /
+               ◇           
+```
+
+FN
+```
+F11 F4 F5 F6  P                       
+F10 F1 F2 F3 GM             S  C  A  G
+F12 F7 F8 F9 MC                       
+                            ◇
+```
+
+</details>
 
 ## Current version
 
