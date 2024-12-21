@@ -25,12 +25,12 @@ jobs:
       id: build
       run: |
         git config --global --add safe.directory $(pwd)
-        # qmk compile -kb ergohaven/k03 -km xellum
+        qmk compile -kb ergohaven/k03/rev1 -km xellum
         # qmk compile -kb ergohaven/k03 -km velvetified
-        # qmk compile -kb ergohaven/k03 -km miryoku
+        qmk compile -kb ergohaven/k03/rev1 -km miryoku
         # qmk compile -kb ergohaven/k03 -km wellum
         # qmk compile -kb ergohaven/k03 -km wellum_ruen
-        qmk compile -kb ergohaven/k03/rev1 -km v1_v2
+        # qmk compile -kb ergohaven/k03/rev1 -km v1_v2
         # qmk compile -kb ergohaven/k03/rev3 -km v3
         # qmk compile -kb ergohaven/imperial44 -km v1_v2
         # qmk compile -kb ergohaven/velvet/rev1 -km v1
