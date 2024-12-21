@@ -29,6 +29,7 @@
 #define CL_TAB C(KC_F4)
 
 #define SH_ESC LSFT_T(KC_ESC)
+#define CTL_ESC LCTL_T(KC_ESC)
 #define VI_Z LT(_VIM, KC_Z)
 #define MS_SLSH LT(_MOUSE, KC_SLSH)
 #define MS_QUOTE LT(_MOUSE, KC_QUOTE)
@@ -88,11 +89,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-       KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,                                           KC_NO,         KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,
-       KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,      KC_B,                                            KC_J,          KC_L,      KC_U,    KC_Y,    KC_QUOT, KC_NO,
-       KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,      KC_G,                                            KC_M,          KC_N,      KC_E,    KC_I,    KC_O,    KC_NO,
-       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,      KC_V,                                            KC_K,          KC_H,      LG_AT,   LG_LCBR, LG_RCBR, KC_NO,
-                          KC_NO,   KC_NO,   LG_SET_RU, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM(MOD_LSFT), LG_SET_EN, KC_NO,   KC_NO
+       KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,
+       KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,    KC_L,      KC_U,    KC_Y,    KC_QUOT, KC_NO,
+       KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,    KC_N,      KC_E,    KC_I,    KC_O,    KC_NO,
+       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,    KC_H,      LG_AT,   LG_LCBR, LG_RCBR, KC_NO,
+                          KC_NO,   KC_NO,   CTL_ESC, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_TOGGLE, KC_NO,   KC_NO
     ),
 
     [_RUS] = LAYOUT(
