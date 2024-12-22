@@ -250,6 +250,9 @@ E sp х  ъ  S  ё
 E sp T  ,  S  .
 E sp ,  .  S lg
 E sp T  [  S  ]
+E sp    G  S  A
+E sp T     S
+E sp T  A  S  G
 ```
 
 EN
