@@ -135,11 +135,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMRU] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   LG_AT,   LG_LT,   KC_EQL,   LG_GT,    KC_GRV,                                              LG_CIRC, KC_LBRC,    KC_UNDS, KC_RBRC, LG_NUM,  KC_NO,
-        KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             S(KC_2), S(KC_SLSH), S(KC_4), KC_SLSH, KC_EXLM, KC_NO,
-        KC_NO,   LG_HASH, KC_ASTR, S(KC_6),  KC_PIPE,  LG_DLR,                                              KC_PERC, LG_PIPE,    LG_TILD, LG_AMPR, S(KC_7), KC_NO,
-                          KC_NO,   KC_NO,    OSM_CTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, OSM_ALT,    KC_NO,   KC_NO
+        KC_NO, KC_NO,      KC_NO,            KC_NO,   KC_NO,         KC_NO,                                               KC_NO,      KC_NO,      KC_NO,      KC_NO,   KC_NO,   KC_NO,
+        KC_NO, ALGR(KC_V), ALGR(S(KC_SLSH)), KC_EQL,  ALGR(KC_SLSH), KC_GRV,                                              ALGR(KC_3), KC_LBRC,    KC_UNDS,    KC_RBRC, S(KC_3), KC_NO,
+        KC_NO, KC_BSLS,    KC_LPRN,          KC_MINS, KC_RPRN,       KC_PLUS,                                             S(KC_2),    S(KC_SLSH), S(KC_4),    KC_SLSH, KC_EXLM, KC_NO,
+        KC_NO, LG_HASH,    KC_ASTR,          S(KC_6), KC_PIPE,       ALGR(KC_8),                                          KC_PERC,    ALGR(KC_W), ALGR(KC_1), LG_AMPR, S(KC_7), KC_NO,
+                           KC_NO,            KC_NO,   OSM_CTL,       KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______,    OSM_ALT,    KC_NO,      KC_NO
     ),
 
     [_NAV] = LAYOUT(
