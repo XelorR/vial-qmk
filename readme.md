@@ -168,7 +168,7 @@ ps ns lw cw  T          T pu pd MC LG
 NU
 ```
 F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
- 1  2  3  4  5          6  7  8  9  0 
+G1 A2 C3 S4  5          6 S7 C8 A9 G0 
  P mu vd vu F11        F12 rm sm pm GM
           C     ◇    ◇      A
 ```
@@ -259,8 +259,8 @@ EN
 ```
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
-z  x  c  d  v          k  h  @  ~  /
-         E sp  T    ,  S  .
+z  x  c  d  v          k  h  @  {  }
+        CE sp  T    G  S  A
 ```
 
 RU
@@ -268,20 +268,15 @@ RU
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
 я  ч  с  м  и          т  ь  б  ю  э
-         E sp  T    ,  S  .
+        CE sp  T   LG  S LA
 ```
 
 SY ({;}! are also SCAG via tap dance)
 ```
-№  <  =  >  ё          ^  х  _  ъ  '
-\  (  -  )  +          "  {  ;  }  !
+№  <  =  >  ё          ^  х  _  ъ   
+\  (  -  )  +          "  ,  ;  .  !
 #  *  :  /  $          %  |  ~  &  ?
-                    ◇      
-```
-
-missing
-```
-          
+         C sp       ◇  S  A
 ```
 
 NU
@@ -305,6 +300,22 @@ NU
                        9  5  6  7  8
 G  A  C  S  №          0  1  2  3  4
                        *  -  +  =  /
+               ◇           
+```
+
+NU
+```
+                       9  8  7  6  5
+G  A  C  S  №          0  4  3  2  1
+                       *  -  +  =  /
+               ◇           
+```
+
+NU
+```
+                       /  4  5  6  =
+G  A  C  S  №          0  1  2  3  -
+                       *  7  8  9  +
                ◇           
 ```
 
