@@ -36,7 +36,7 @@
 
 #define OSM_SFT OSM(MOD_LSFT)
 #define OSM_ALT OSM(MOD_LALT)
-#define OSM_AGR OSM(MOD_ALGR)
+#define OSM_AGR OSM(MOD_RALT)
 #define OSM_CTL OSM(MOD_LCTL)
 #define OSM_GUI OSM(MOD_LGUI)
 
