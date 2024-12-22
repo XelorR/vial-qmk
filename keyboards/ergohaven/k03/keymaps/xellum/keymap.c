@@ -17,7 +17,7 @@
 #define MO_Z LT(_MOUSE,KC_Z)
 #define LA_GFN MO(_GFN)
 #define LA_FUN MO(_FN)
-#define LA_MAC OSL(_MACRO)
+#define LA_MAC MO(_MACRO)
 // #define LA_LAUNCH OSL(_MACRO)
 // #define LA_MAC MO(_MACRO)
 
@@ -36,7 +36,7 @@
 
 #define OSM_SFT OSM(MOD_LSFT)
 #define OSM_ALT OSM(MOD_LALT)
-#define OSM_AGR OSM(MOD_RALT)
+#define OSM_AGR OSM(MOD_ALGR)
 #define OSM_CTL OSM(MOD_LCTL)
 #define OSM_GUI OSM(MOD_LGUI)
 
@@ -94,11 +94,11 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ENG] = LAYOUT(
-       KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,
-       KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,    KC_L,      KC_U,    KC_Y,    KC_QUOT, KC_NO,
-       KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,    KC_N,      KC_E,    KC_I,    KC_O,    KC_NO,
-       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,    KC_H,      LG_AT,   LG_LCBR, LG_RCBR, KC_NO,
-                          KC_NO,   KC_NO,   CTL_ESC, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_TOGGLE, KC_NO,   KC_NO
+       KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,     KC_NO, KC_NO,   KC_NO,   KC_NO,
+       KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,    KC_L,      KC_U,  KC_Y,    KC_QUOT, KC_NO,
+       KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,    KC_N,      KC_E,  KC_I,    KC_O,    KC_NO,
+       KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,    KC_H,      KC_AT, KC_SCLN, KC_SLSH, KC_NO,
+                          KC_NO,   KC_NO,   CTL_ESC, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_TOGGLE, KC_NO, KC_NO
     ),
 
     [_RUS] = LAYOUT(
@@ -144,7 +144,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT(
         KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
         KC_NO, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_NO,
-        KC_NO, HG_1,    HA_2,    HC_3,    HS_4,    KC_5,                                          KC_6,    HS_7,    HC_8,    HA_9,    HG_0,     KC_NO,
+        KC_NO, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_NO,
         KC_NO, KC_PSCR, KC_MUTE, KC_VOLD, KC_VOLU, KC_F11,                                        KC_F12,  DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
                         KC_NO,   KC_NO,   OSM_CTL, OSM_GUI, _______, KC_NO,       KC_NO, _______, OSM_AGR, OSM_ALT, KC_NO,   KC_NO
     ),
