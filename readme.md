@@ -168,7 +168,7 @@ ps ns lw cw  T          T pu pd MC LG
 NU
 ```
 F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
-G1 A2 C3 S4  5          6 S7 C8 A9 G0 
+G1 A2 C3 S4  5           6 S7 C8 A9 G0 
  P mu vd vu F11        F12 rm sm pm GM
           C     ◇    ◇      A
 ```
