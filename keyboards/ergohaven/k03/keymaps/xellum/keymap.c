@@ -33,7 +33,12 @@
 #define VI_Z LT(_VIM, KC_Z)
 #define MS_SLSH LT(_MOUSE, KC_SLSH)
 #define MS_QUOTE LT(_MOUSE, KC_QUOTE)
+
 #define OSM_SFT OSM(MOD_LSFT)
+#define OSM_ALT OSM(MOD_LALT)
+#define OSM_AGR OSM(MOD_ALGR)
+#define OSM_CTL OSM(MOD_LCTL)
+#define OSM_GUI OSM(MOD_LGUI)
 
 #define UNDO C(KC_Z)
 #define CUT  C(KC_X)
@@ -125,15 +130,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   LG_NUM,  LG_LT,   KC_EQL,   LG_GT,    KC_GRV,                                              LG_CIRC, KC_LBRC,  KC_UNDS, KC_RBRC, KC_NO,   KC_NO,
         KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             LG_DQUO, LG_COMMA, LG_SCLN, LG_DOT,  KC_EXLM, KC_NO,
         KC_NO,   LG_HASH, KC_ASTR, LG_COLON, LG_SLASH, LG_DLR,                                              LG_PERC, LG_PIPE,  LG_TILD, LG_AMPR, LG_QUES, KC_NO,
-                          KC_NO,   KC_NO,    KC_LCTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, KC_LALT,  KC_NO,   KC_NO
+                          KC_NO,   KC_NO,    OSM_CTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, OSM_ALT,  KC_NO,   KC_NO
     ),
 
     [_NAV] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,  KC_DEL,  KC_NO,
         KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_NO,
-        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, KC_LALT, KC_LGUI, KC_NO,
-                          KC_NO,   KC_NO,   _______, LA_MAC, _______, KC_NO,            KC_NO, _______, KC_BTN1,  LA_MAC,  KC_NO,   KC_NO
+        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, LA_MAC,  KC_LGUI, KC_NO,
+                          KC_NO,   KC_NO,   KC_RCTL, _______, _______, KC_NO,           KC_NO, _______, KC_BTN1,  KC_LALT, KC_NO,   KC_NO
     ),
 
     [_NUM] = LAYOUT(
@@ -141,7 +146,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_NO,
         KC_NO, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_NO,
         KC_NO, KC_PSCR, KC_MUTE, KC_VOLD, KC_VOLU, KC_F11,                                        KC_F12,  DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
-                        KC_NO,   KC_NO,   _______, _______, _______, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
+                        KC_NO,   KC_NO,   OSM_CTL, OSM_GUI, _______, KC_NO,       KC_NO, _______, OSM_AGR, OSM_ALT, KC_NO,   KC_NO
     ),
 
     [_MOUSE] = LAYOUT(
@@ -184,6 +189,7 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_NUM:
+    case LA_SYM:
     case LA_NAV:
     case KC_LSFT:
     case OS_SHFT:

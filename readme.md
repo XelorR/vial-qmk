@@ -138,7 +138,7 @@ EN (LTs: z/MS)
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
 z  x  c  d  v          k  h  @  {  }
-        LC sp NV   NU  S lg
+        LC sp NV   SY  S lg
 ```
 
 RU (LTs: я/MS)
@@ -146,7 +146,7 @@ RU (LTs: я/MS)
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
 я  ч  с  м  и          т  ь  б  ю  э
-        LC sp NV   NU  S lg
+        LC sp NV   SY  S lg
 ```
 
 SY
@@ -154,15 +154,15 @@ SY
 №  <  =  >  ё          ^  х  _  ъ   
 \  (  -  )  +          "  ,  ;  .  !
 #  *  :  /  $          %  |  ~  &  ?
-        LC sp FN    ◇    LA
+         C sp NU    ◇     A
 ```
 
 NV
 ```
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
-ps ns lw cw  T          T pu pd LA LG
-            MC  ◇   FN lb MC
+ps ns lw cw  T          T pu pd MC LG
+         RC     ◇   NU lb LA
 ```
 
 NU
@@ -170,7 +170,7 @@ NU
 F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
  1  2  3  4  5          6  7  8  9  0 
  P mu vd vu F11        F12 rm sm pm GM
-                ◇    ◇
+          C     ◇    ◇      A
 ```
 
 GM
