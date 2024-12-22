@@ -250,7 +250,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _SYM, _NAV, _NUM) ||
-    update_tri_layer_state(state, _SYMRU, _NAV, _NUM);
+    if (layer_state_cmp(state, _SYM) && layer_state_cmp(state, _NAV)) {
+        return update_tri_layer_state(state, _SYM, _NAV, _NUM);
+    } else if (layer_state_cmp(state, _SYMRU) && layer_state_cmp(state, _NAV)) {
+        return update_tri_layer_state(state, _SYMRU, _NAV, _NUM);
+    } else {
+        return state;
+    }
 }
 
