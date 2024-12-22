@@ -17,7 +17,7 @@
 #define MO_Z LT(_MOUSE,KC_Z)
 #define LA_GFN MO(_GFN)
 #define LA_FUN MO(_FN)
-#define LA_MAC MO(_MACRO)
+#define LA_MAC OSL(_MACRO)
 // #define LA_LAUNCH OSL(_MACRO)
 // #define LA_MAC MO(_MACRO)
 
