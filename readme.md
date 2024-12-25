@@ -213,8 +213,6 @@ M0 M1 M2 M3 M4         M5 M6 M7 M8 M9
                            ◇
 ```
 
-As you can see, there is no toggler between EN and RU layers. You need to setup combo on your own. It should run `LG_TOGGLE` or macro with TG(1) and language switching system combination (as GUI-Space).
-
 <details>
 
 <summary>Experimental layers</summary>
