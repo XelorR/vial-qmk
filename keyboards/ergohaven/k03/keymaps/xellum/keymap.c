@@ -206,7 +206,7 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_NUM:
-    case LA_FN:
+    case LA_FUN:
     case LA_SYM:
     case LA_NAV:
     case KC_LSFT:
