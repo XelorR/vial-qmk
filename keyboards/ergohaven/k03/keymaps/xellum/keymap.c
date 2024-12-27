@@ -6,7 +6,7 @@
 
 #define LA_SYM MO(_SYM)
 #define LA_SYMRU MO(_SYMRU)
-#define LA_NUM MO(_NUM)
+#define LA_NUM LT(_NUM,KC_SPC)
 #define LA_NAV MO(_NAV)
 #define AL_J LT(_ALT,KC_J)
 #define AL_N LT(_ALT,KC_N)
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,    KC_L,    KC_U,  KC_Y,    KC_QUOT, KC_NO,
        KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,    KC_N,    KC_E,  KC_I,    KC_O,    KC_NO,
        KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,    KC_H,    KC_AT, KC_LCBR, KC_RCBR, KC_NO,
-                          KC_NO,   KC_NO, LG_SET_EN, KC_SPC, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_SET_RU, KC_NO, KC_NO
+                          KC_NO,   KC_NO, LG_SET_EN, OSM_SFT, LA_NAV, KC_NO,           KC_NO, LA_SYM, LA_NUM,  LG_SET_RU, KC_NO, KC_NO
     ),
 
     [_RUS] = LAYOUT(
@@ -123,23 +123,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_ESC,  KC_5,  KC_6,  KC_7,    KC_8,                                      DM_REC2, _______, _______, _______, _______, KC_NO,
         KC_NO, KC_LALT, KC_1,  KC_2,  KC_3,    KC_4,                                      DM_RSTP, _______, _______, _______, _______, KC_NO,
         KC_NO, KC_G,    KC_J,  KC_I,  KC_M,    KC_T,                                      DM_PLY2, _______, _______, _______, _______, KC_NO,
-                        KC_NO, KC_NO, _______, KC_ENT, _______, KC_NO,     KC_NO, LA_NUM, _______, _______, KC_NO,   KC_NO
+                        KC_NO, KC_NO, _______, KC_ENT, _______, KC_NO,    KC_NO, _______, _______, _______, KC_NO,   KC_NO
     ),
 
     [_SYM] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   KC_AT,   KC_LT,   KC_EQL,   KC_GT,    KC_GRV,                                              KC_CIRC, KC_LBRC,  KC_UNDS, KC_RBRC, LG_NUM,  KC_NO,
-        KC_NO,   KC_BSLS, KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             KC_DQT,  KC_COMM,  KC_SCLN, KC_DOT,  KC_EXLM, KC_NO,
-        KC_NO,   KC_HASH, KC_ASTR, KC_COLN,  KC_SLSH,  KC_DLR,                                              KC_PERC, KC_PIPE,  KC_TILD, KC_AMPR, KC_QUES, KC_NO,
-                          KC_NO,   KC_NO,    OSM_CTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, KC_ALGR,  KC_NO,   KC_NO
+        KC_NO,   KC_NO,      KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,      KC_NO,
+        KC_NO,   UC(0x2014), KC_LT,   KC_EQL,   KC_GT,    KC_GRV,                                              KC_CIRC, KC_LBRC,  KC_UNDS, KC_RBRC, UC(0x20BD), KC_NO,
+        KC_NO,   KC_BSLS,    KC_LPRN, KC_MINS,  KC_RPRN,  KC_PLUS,                                             KC_DQT,  KC_COMM,  KC_SCLN, KC_DOT,  KC_EXLM,    KC_NO,
+        KC_NO,   KC_HASH,    KC_ASTR, KC_COLN,  KC_SLSH,  KC_DLR,                                              KC_PERC, KC_PIPE,  KC_TILD, KC_AMPR, KC_QUES,    KC_NO,
+                             KC_NO,   KC_NO,    OSM_CTL,  KC_SPC,  _______, KC_NO,           KC_NO,   _______, KC_SPC,  KC_ALGR,  KC_NO,   KC_NO
     ),
 
     [_SYMRU] = LAYOUT(
-        KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                               KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO, LG_AT,   LG_LT,   KC_EQL,  LG_GT,   KC_GRV,                                              LG_CIRC, KC_LBRC,    KC_UNDS, KC_RBRC, S(KC_3), KC_NO,
-        KC_NO, KC_BSLS, KC_LPRN, KC_MINS, KC_RPRN, KC_PLUS,                                             S(KC_2), S(KC_SLSH), S(KC_4), KC_SLSH, KC_EXLM, KC_NO,
-        KC_NO, LG_HASH, KC_ASTR, S(KC_6), KC_PIPE, ALGR(KC_8),                                          KC_PERC, LG_PIPE,    LG_TILD, LG_AMPR, S(KC_7), KC_NO,
-                        KC_NO,   KC_NO,   OSM_CTL, KC_SPC,  _______, KC_NO,           KC_NO,   _______, _______, KC_ALGR,    KC_NO,   KC_NO
+        KC_NO, KC_NO,      KC_NO,   KC_NO,   KC_NO,   KC_NO,                                               KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO,      KC_NO,
+        KC_NO, UC(0x2014), LG_LT,   KC_EQL,  LG_GT,   KC_GRV,                                              LG_CIRC, KC_LBRC,    KC_UNDS, KC_RBRC, UC(0x20BD), KC_NO,
+        KC_NO, KC_BSLS,    KC_LPRN, KC_MINS, KC_RPRN, KC_PLUS,                                             S(KC_2), S(KC_SLSH), S(KC_4), KC_SLSH, KC_EXLM,    KC_NO,
+        KC_NO, LG_HASH,    KC_ASTR, S(KC_6), KC_PIPE, ALGR(KC_8),                                          KC_PERC, LG_PIPE,    LG_TILD, LG_AMPR, S(KC_7),    KC_NO,
+                           KC_NO,   KC_NO,   OSM_CTL, KC_SPC,  _______, KC_NO,           KC_NO,   _______, KC_SPC,  KC_ALGR,    KC_NO,   KC_NO
+    ),
+
+    [_NUM] = LAYOUT(
+        KC_NO, KC_NO,    KC_NO, KC_NO, KC_NO,  KC_NO,                                              KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO, LG_SLASH, KC_7,  KC_8,  KC_9,   KC_EQL,                                             KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO, KC_ENT,   KC_4,  KC_5,  KC_6,   KC_PLUS,                                            KC_NO,   OS_SHFT,  OS_CTRL, OS_ALT,  OS_CMD,  KC_NO,
+        KC_NO, KC_ASTR,  KC_1,  KC_2,  KC_3,   KC_MINS,                                            KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+                         KC_NO, KC_NO, LG_DOT, KC_0,    LG_COMMA, KC_NO,           KC_NO, _______, _______, _______,  KC_NO,   KC_NO
     ),
 
     [_NAV] = LAYOUT(
@@ -150,11 +158,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           KC_NO,   KC_NO,   KC_RCTL, _______, _______, KC_NO,           KC_NO, _______, KC_BTN1,  KC_ALGR, KC_NO,   KC_NO
     ),
 
-    [_NUM] = LAYOUT(
+    [_FN] = LAYOUT(
         KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,
         KC_NO, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                                         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_NO,
-        KC_NO, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                          KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     KC_NO,
-        KC_NO, KC_PSCR, KC_MUTE, KC_VOLD, KC_VOLU, KC_F11,                                        KC_F12,  DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
+        KC_NO, OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_F11,                                        KC_F12,  OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,   KC_NO,
+        KC_NO, KC_PSCR, KC_MUTE, KC_VOLD, KC_VOLU, UC_LINX,                                       UC_WINC, DM_REC1, DM_RSTP, DM_PLY1, DF(_GAM), KC_NO,
                         KC_NO,   KC_NO,   OSM_CTL, OSM_GUI, _______, KC_NO,       KC_NO, _______, OSM_AGR, OSM_ALT, KC_NO,   KC_NO
     ),
 
@@ -187,7 +195,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 bool is_oneshot_cancel_key(uint16_t keycode) {
     switch (keycode) {
-    // case LA_NUM:
+    case LA_NUM:
     case LA_NAV:
         return true;
     default:
@@ -198,6 +206,7 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_NUM:
+    case LA_FN:
     case LA_SYM:
     case LA_NAV:
     case KC_LSFT:
@@ -251,14 +260,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     if (layer_state_cmp(state, _SYM) && layer_state_cmp(state, _NAV)) {
-        state = update_tri_layer_state(state, _SYM, _NAV, _NUM);
+        state = update_tri_layer_state(state, _SYM, _NAV, _FN);
     }
     else if (layer_state_cmp(state, _SYMRU) && layer_state_cmp(state, _NAV)) {
-        state = update_tri_layer_state(state, _SYMRU, _NAV, _NUM);
+        state = update_tri_layer_state(state, _SYMRU, _NAV, _FN);
     }
     else {
-        state = update_tri_layer_state(state, _SYM, _NAV, _NUM);
-        state = update_tri_layer_state(state, _SYMRU, _NAV, _NUM);
+        state = update_tri_layer_state(state, _SYM, _NAV, _FN);
+        state = update_tri_layer_state(state, _SYMRU, _NAV, _FN);
     }
     return state;
 }
