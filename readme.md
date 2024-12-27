@@ -141,7 +141,7 @@ z  x  c  d  v          k  h  @  {  }
         EN sp NV   SY  S RU
 ```
 
-RU (LTs: я/MS)
+RU (LTs: я/MS, sp/NU)
 ```
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
@@ -151,18 +151,18 @@ RU (LTs: я/MS)
 
 SY (EN)
 ```
-@  <  =  >  `          ^  [  _  ]  №
+—  <  =  >  `          ^  [  _  ]  ₽
 \  (  -  )  +          "  ,  ;  .  !
 #  *  :  /  $          %  |  ~  &  ?
-         C sp NU    ◇    RA
+         C sp FN    ◇    RA
 ```
 
 SY (RU)
 ```
-@  <  =  >  ё          ^  х  _  ъ  №
+—  <  =  >  ё          ^  х  _  ъ  ₽
 \  (  -  )  +          "  ,  ;  .  !
-#  *  :  /  ₽          %  |  ~  &  ?
-         C sp NU    ◇    RA
+#  *  :  /  $          %  |  ~  &  ?
+         C sp FN    ◇    RA
 ```
 
 NV
@@ -170,15 +170,23 @@ NV
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
 ps ns lw cw  T          T pu pd MC LA
-         RC     ◇   NU lb RA
+         RC     ◇   FN lb RA
 ```
 
 NU
 ```
-F1 F2 F3 F4 F5          F6 F7 F8 F9 F10
-G1 A2 C3 S4  5           6 S7 C8 A9 G0 
- P mu vd vu F11        F12 rm sm pm GM
-          C     ◇    ◇      A
+                       /  4  5  6  =
+G  A  C  S  №          N  4  5  6  -
+                       *  1  2  3  +
+            ◇              
+```
+
+FN
+```
+F1 F2 F3 F4 F5           F6 F7 F8 F9 F10
+ G  A  C  S F11         F12  S  C  A  G  
+ P mu vd vu                 rm sm pm GM
+                ◇    ◇       
 ```
 
 GM
@@ -199,9 +207,9 @@ g  j  i  m  t         mp
 
 MS
 ```
-                         wl mu wr dl
-                         ml md mr bs
-◇ ^x ^c ^v               wu wd      
+                         wl mu wr wu
+                         ml md mr wd
+◇ ^x ^c ^v                          
                    rb lb mb
 ```
 
@@ -212,6 +220,15 @@ M0 M1 M2 M3 M4         M5 M6 M7 M8 M9
 20 21 22 23 24         25 26 27 28 20 
                            ◇
 ```
+
+AL
+```
+ Ψ  Ω  φ  ☮  β          ≈  λ  ∞  ⌬  ⌘
+ α  ®  ß  Θ  ±          μ  ☐  ☑  ☒  ⌥
+ Σ  ×  ©  Δ  ✓          ±  «  •  »  ⇧
+```
+
+There are no activators for MC and AL, just assign combo to activate it as one-shot layers.
 
 <details>
 
