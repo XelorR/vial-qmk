@@ -223,9 +223,9 @@ M0 M1 M2 M3 M4         M5 M6 M7 M8 M9
 
 AL
 ```
- Ψ  Ω  φ  ☮  β          ≈  λ  ∞  ⌬  ⌘
- α  ®  ß  Θ  ±          μ  ☐  ☑  ☒  ⌥
- Σ  ×  ©  Δ  ✓          ±  «  •  »  ⇧
+ Ψ  Ω  φ  ☮  ₿          ≈  λ  ∞  ✓  ⌘
+ α  ®  Σ  Θ  ¥          μ  ☐  ☑  ☒  ⌥
+ §  ×  ©  Δ  €          ±  «  •  »  ⇧
 ```
 
 There are no activators for MC and AL, just assign combo to activate it as one-shot layers.
