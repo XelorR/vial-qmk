@@ -154,7 +154,7 @@ SY (EN)
 @  <  =  >  `          ^  [  _  ]  №
 \  (  -  )  +          "  ,  ;  .  !
 #  *  :  /  $          %  |  ~  &  ?
-         C sp NU    ◇     A
+         C sp NU    ◇    RA
 ```
 
 SY (RU)
@@ -162,15 +162,15 @@ SY (RU)
 @  <  =  >  ё          ^  х  _  ъ  №
 \  (  -  )  +          "  ,  ;  .  !
 #  *  :  /  ₽          %  |  ~  &  ?
-         C sp NU    ◇     A
+         C sp NU    ◇    RA
 ```
 
 NV
 ```
 qw sw pt nt  E          E hm  U ed dl
  G  A  C  S  N          N  L  D  R bs
-ps ns lw cw  T          T pu pd MC LG
-         RC     ◇   NU lb LA
+ps ns lw cw  T          T pu pd MC LA
+         RC     ◇   NU lb RA
 ```
 
 NU
