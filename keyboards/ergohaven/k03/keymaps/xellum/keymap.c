@@ -63,6 +63,9 @@
 #define HA_F9 LALT_T(KC_F9)
 #define HG_F10 LGUI_T(KC_F10)
 
+#undef UNICODE_TYPE_DELAY
+#define UNICODE_TYPE_DELAY 5
+
 enum layers {
     _ENG,
     _RUS,
@@ -138,7 +141,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO,      KC_NO,   KC_NO,   KC_NO,   KC_NO,                                               KC_NO,   KC_NO,      KC_NO,   KC_NO,   KC_NO,      KC_NO,
         KC_NO, UC(0x2014), LG_LT,   KC_EQL,  LG_GT,   KC_GRV,                                              LG_CIRC, KC_LBRC,    KC_UNDS, KC_RBRC, UC(0x20BD), KC_NO,
         KC_NO, KC_BSLS,    KC_LPRN, KC_MINS, KC_RPRN, KC_PLUS,                                             S(KC_2), S(KC_SLSH), S(KC_4), KC_SLSH, KC_EXLM,    KC_NO,
-        KC_NO, LG_HASH,    KC_ASTR, S(KC_6), KC_PIPE, ALGR(KC_8),                                          KC_PERC, LG_PIPE,    LG_TILD, LG_AMPR, S(KC_7),    KC_NO,
+        KC_NO, LG_HASH,    KC_ASTR, S(KC_6), KC_PIPE, LG_DLR,                                              KC_PERC, LG_PIPE,    LG_TILD, LG_AMPR, S(KC_7),    KC_NO,
                            KC_NO,   KC_NO,   OSM_CTL, KC_SPC,  _______, KC_NO,           KC_NO,   _______, KC_SPC,  KC_ALGR,    KC_NO,   KC_NO
     ),
 
