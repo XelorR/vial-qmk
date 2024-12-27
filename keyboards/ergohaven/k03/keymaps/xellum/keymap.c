@@ -154,10 +154,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,  KC_DEL,  KC_NO,
-        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_BSPC, KC_NO,
-        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, LA_MAC,  KC_LALT, KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,     KC_NO,   KC_NO,
+        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,    KC_DEL,  KC_NO,
+        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT,   KC_BSPC, KC_NO,
+        KC_NO,   SPACE_L, SPACE_R, LG_WORD, CW_TOGG, KC_TAB,                                            KC_TAB,   KC_PGUP, KC_PGDN, G(KC_SPC), KC_LALT, KC_NO,
                           KC_NO,   KC_NO,   KC_RCTL, _______, _______, KC_NO,           KC_NO, _______, KC_BTN1,  KC_ALGR, KC_NO,   KC_NO
     ),
 
