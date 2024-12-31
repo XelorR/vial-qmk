@@ -234,122 +234,20 @@ There are no activators for MC and AL, just assign combo to activate it as one-s
 
 <summary>Experimental layers</summary>
 
-things to consider:
-
-- ru extra letters (хъёэ)
-  - combo
-  - layer
-- ruen punctuation
-  - layer
-  - side
-  - thumb
-  - combo
-- lang switching
-  - thumb
-  - side
-  - combo
-- modifiers for all layers
-  - layer
-  - thumb
-  - side
-- OSM Shift
-  - thumb
-  - side
-  - mod tap
-  - combo
-  - tap dance
-  - layer
-- enter, tab, escape
-  - layer
-  - thumb
-  - side
-
-thumbs
-
+SY
 ```
-E sp T  N bs dl
-E sp T  N  S  х
-E sp T  N  [  ]
-E sp [  ]  S  A
-E sp х  ъ  S  ё
-E sp T  ,  S  .
-E sp ,  .  S lg
-E sp T  [  S  ]
-E sp    G  S  A
-E sp T     S
-E sp T  A  S  G
-```
-
-EN
-```
-q  w  f  p  b          j  l  u  y  '
-a  r  s  t  g          m  n  e  i  o
-z  x  c  d  v          k  h  @  {  }
-        CE sp  T    G  S  A
-```
-
-RU
-```
-й  ц  у  к  е          н  г  ш  щ  з
-ф  ы  в  а  п          р  о  л  д  ж
-я  ч  с  м  и          т  ь  б  ю  э
-        CE sp  T   LG  S LA
-```
-
-SY ({;}! are also SCAG via tap dance)
-```
-№  <  =  >  ё          ^  х  _  ъ   
-\  (  -  )  +          "  ,  ;  .  !
-#  *  :  /  $          %  |  ~  &  ?
-         C sp       ◇  S  A
+@  <  =  >  `          ^  "  ;  :  &
+#  (  -  )  *          ~  S  C  A  G
+|  [  _  ]  $          %  !  ,  .  ?
+                    ◇       
 ```
 
 NU
 ```
-/  4  5  6  =                       
-0  1  2  3  -          №  S  C  A  G
-*  7  8  9  +                       
-                       ◇   
-```
-
-NU
-```
-5  6  7  8  9                       
-1  2  3  4  0          №  S  C  A  G
-/  -  +  =  *                       
-                       ◇   
-```
-
-NU
-```
-                       9  5  6  7  8
-G  A  C  S  №          0  1  2  3  4
-                       *  -  +  =  /
-               ◇           
-```
-
-NU
-```
-                       9  8  7  6  5
-G  A  C  S  №          0  4  3  2  1
-                       *  -  +  =  /
-               ◇           
-```
-
-NU
-```
-                       /  4  5  6  =
-G  A  C  S  №          0  1  2  3  -
-                       *  7  8  9  +
-               ◇           
-```
-
-FN
-```
-F11 F4 F5 F6  P                       
-F10 F1 F2 F3 GM             S  C  A  G
-F12 F7 F8 F9 MC                       
-                            ◇
+=  7  8  9  /          \  "  ;  :  &
+-  4  5  6  *          ~  S  C  A  G
++  1  2  3  N          №  !  ,  .  ?
+            0          ◇   
 ```
 
 </details>
