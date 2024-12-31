@@ -236,18 +236,18 @@ There are no activators for MC and AL, just assign combo to activate it as one-s
 
 SY
 ```
-@  <  =  >  `          ^  "  ;  :  &
-#  (  -  )  *          ~  S  C  A  G
-|  [  _  ]  $          %  !  ,  .  ?
-                    ◇       
+   <  =  >  `          ^  [  !  ]  @
+$  (  -  )  _          &  S  C  A  G
+   *  ;  |                "  ,  .  ?
+            #  :    ◇       
 ```
 
 NU
 ```
-=  7  8  9  /          \  "  ;  :  &
--  4  5  6  *          ~  S  C  A  G
-+  1  2  3  N          №  !  ,  .  ?
-            0          ◇   
+/  7  8  9  =          °  {  %  }  №
+N  4  5  6  +          ±  S  C  A  G
+*  1  2  3  -             /  ~  \   
+         ,  0  .       ◇   
 ```
 
 </details>
