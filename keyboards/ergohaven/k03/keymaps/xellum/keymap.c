@@ -148,11 +148,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NUM] = LAYOUT(
-        KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,                                              KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,
-        KC_NO, KC_EQL,  KC_7,    KC_8,    KC_9,     LG_SLASH,                                           KC_NO,   KC_LCBR, KC_NO,    KC_RCBR, KC_NO,   KC_NO,
-        KC_NO, KC_PLUS, KC_4,    KC_5,    KC_6,     KC_ENT,                                             KC_NO,   OS_SHFT, OS_CTRL,  OS_ALT,  OS_CMD,  KC_NO,
-        KC_NO, KC_MINS, KC_1,    KC_2,    KC_3,     KC_ASTR,                                            KC_NO,   KC_EXLM, LG_COMMA, LG_DOT,  LG_QUES, KC_NO,
-                        KC_NO,   KC_NO,   _______,  KC_0,     _______, KC_NO,           KC_NO, _______, _______, _______, KC_NO,    KC_NO
+        KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,                                              KC_NO,      KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO, KC_EQL,  KC_7,    KC_8,    KC_9,     LG_SLASH,                                           UC(0x00B0), KC_LCBR,  KC_PERC, KC_RCBR, LG_NUM,  KC_NO,
+        KC_NO, KC_PLUS, KC_4,    KC_5,    KC_6,     KC_ENT,                                             UC(0x00B1), OS_SHFT,  OS_CTRL, OS_ALT,  OS_CMD,  KC_NO,
+        KC_NO, KC_MINS, KC_1,    KC_2,    KC_3,     KC_ASTR,                                            KC_NO,      LG_SLASH, LG_TILD, KC_BSLS, KC_NO,   KC_NO,
+                        KC_NO,   KC_NO,   _______,  KC_0,     _______, KC_NO,           KC_NO, _______, _______,    _______,  KC_NO,   KC_NO
     ),
 
     [_NAV] = LAYOUT(
@@ -182,8 +182,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_MEDIA] = LAYOUT(
         KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
         KC_NO,  QK_BOOT, _______, _______, _______, KC_VOLU,                                         UC_LINX, _______, KC_VOLU, _______, _______, KC_NO,
-        KC_NO,  OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_VOLD,                                         UC_WINC, KC_MPRV, KC_VOLD, KC_MNXT, CG_TOGG, KC_NO,
-        KC_NO,  UNDO,    CUT,     COPY,    PASTE,   KC_MUTE,                                         UC_MAC,  _______, KC_MUTE, _______, _______, KC_NO,
+        KC_NO,  OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_VOLD,                                         UC_WIN,  KC_MPRV, KC_VOLD, KC_MNXT, CG_TOGG, KC_NO,
+        KC_NO,  UNDO,    CUT,     COPY,    PASTE,   KC_MUTE,                                         UC_MAC,  UC_WINC, KC_MUTE, _______, _______, KC_NO,
                          KC_NO,   KC_NO,   _______, _______, _______, _______,     _______, KC_MSTP, KC_MPLY, KC_MUTE, KC_NO,   KC_NO
     ),
 
