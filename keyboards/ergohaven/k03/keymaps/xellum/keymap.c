@@ -8,7 +8,7 @@
 #define LA_MED LT(_MEDIA,KC_ESC)
 #define LA_MOS LT(_MOUSE,KC_TAB)
 #define LA_SYM LT(_SYM,KC_ENT)
-#define LA_SYMRU LT(_SYM,KC_ENT)
+#define LA_SYMRU LT(_SYMRU,KC_ENT)
 #define LA_NUM LT(_NUM,KC_BSPC)
 #define LA_FUN LT(_FN,KC_DEL)
 #define AL_J LT(_ALT,KC_J)
@@ -20,7 +20,6 @@
 #define SY_SCLN LT(_SYM,KC_SCLN)
 #define MO_Z LT(_MOUSE,KC_Z)
 #define LA_GFN MO(_GFN)
-#define LA_FUN MO(_FN)
 #define LA_MAC OSL(_MACRO)
 // #define LA_LAUNCH OSL(_MACRO)
 // #define LA_MAC MO(_MACRO)
@@ -217,11 +216,8 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 bool is_oneshot_cancel_key(uint16_t keycode) {
     switch (keycode) {
-    case LA_NUM:
     case LA_NAV:
-    case LA_FUN:
-    case LA_SYM:
-    case LA_SYMRU:
+    case LA_MOS:
         return true;
     default:
         return false;
@@ -230,13 +226,11 @@ bool is_oneshot_cancel_key(uint16_t keycode) {
 
 bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
-    case LA_NUM:
-    case LA_FUN:
-    case LA_SYM:
-    case LA_SYMRU:
+    case LA_MOS:
     case LA_NAV:
     case KC_LSFT:
     case OS_SHFT:
+    case OSM_SFT:
     case OS_CTRL:
     case OS_ALT:
     case OS_CMD:
