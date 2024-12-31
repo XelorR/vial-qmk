@@ -6,8 +6,8 @@
 
 #define LA_SYM MO(_SYM)
 #define LA_SYMRU MO(_SYMRU)
-#define LA_NUM LT(_NUM,KC_SPC)
-#define LA_NAV MO(_NAV)
+#define LA_NUM MO(_NUM)
+#define LA_NAV LT(_NAV,KC_SPC)
 #define AL_J LT(_ALT,KC_J)
 #define AL_N LT(_ALT,KC_N)
 #define AL_T LT(_ALT,KC_T)
@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,    KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                                            KC_J,    KC_L,    KC_U,  KC_Y,    KC_QUOT, KC_NO,
        KC_NO,    KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                                            KC_M,    KC_N,    KC_E,  KC_I,    KC_O,    KC_NO,
        KC_NO,    MO_Z,    KC_X,    KC_C,    KC_D,    KC_V,                                            KC_K,    KC_H,    KC_AT, KC_LCBR, KC_RCBR, KC_NO,
-                          KC_NO,   KC_NO, LG_SET_EN, LA_NUM, LA_NAV, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_SET_RU, KC_NO, KC_NO
+                          KC_NO,   KC_NO, LG_SET_EN, LA_NAV, LA_NUM, KC_NO,            KC_NO, LA_SYM, OSM_SFT, LG_SET_RU, KC_NO, KC_NO
     ),
 
     [_RUS] = LAYOUT(
@@ -270,15 +270,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    if (layer_state_cmp(state, _SYM) && layer_state_cmp(state, _NAV)) {
-        state = update_tri_layer_state(state, _SYM, _NAV, _FN);
+    if (layer_state_cmp(state, _SYM) && layer_state_cmp(state, _NUM)) {
+        state = update_tri_layer_state(state, _SYM, _NUM, _FN);
     }
-    else if (layer_state_cmp(state, _SYMRU) && layer_state_cmp(state, _NAV)) {
-        state = update_tri_layer_state(state, _SYMRU, _NAV, _FN);
+    else if (layer_state_cmp(state, _SYMRU) && layer_state_cmp(state, _NUM)) {
+        state = update_tri_layer_state(state, _SYMRU, _NUM, _FN);
     }
     else {
-        state = update_tri_layer_state(state, _SYM, _NAV, _FN);
-        state = update_tri_layer_state(state, _SYMRU, _NAV, _FN);
+        state = update_tri_layer_state(state, _SYM, _NUM, _FN);
+        state = update_tri_layer_state(state, _SYMRU, _NUM, _FN);
     }
     return state;
 }
