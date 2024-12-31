@@ -228,6 +228,9 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
     switch (keycode) {
     case LA_MOS:
     case LA_NAV:
+    case LA_SYM:
+    case LA_SYMRU:
+    case LA_NUM:
     case KC_LSFT:
     case OS_SHFT:
     case OSM_SFT:
