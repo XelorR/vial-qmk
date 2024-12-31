@@ -133,60 +133,60 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-EN (LTs: z/MS)
+EN (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN)
 ```
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
 z  x  c  d  v          k  h  @  {  }
-        EN sp NV   SY  S RU
+         E sp  T    N bs dl
 ```
 
-RU (LTs: я/MS, sp/NU)
+RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN)
 ```
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
 я  ч  с  м  и          т  ь  б  ю  э
-        EN sp NV   SY  S RU
+         E sp  T    N bs dl
 ```
 
 SY (EN)
 ```
-—  <  =  >  `          ^  [  _  ]  №
-\  (  -  )  +          "  ,  ;  .  !
-#  *  :  /  $          %  |  ~  &  ?
-         C sp FN    ◇    RA
+—  <  =  >  `          ^  [  !  ]  @
+$  (  -  )  _          &  S  C  A  G
+#  *  ;  |                "  ,  .  ?
+           sp  :    ◇       
 ```
 
 SY (RU)
 ```
-—  <  =  >  ё          ^  х  _  ъ  №
-\  (  -  )  +          "  ,  ;  .  !
-#  *  :  /  $          %  |  ~  &  ?
-         C sp FN    ◇    RA
+—  <  =  >  ё          ^  х  !  ъ  @
+$  (  -  )  _          &  S  C  A  G
+#  *  ;  |                "  ,  .  ?
+           sp  :    ◇       
 ```
 
 NV
 ```
-qw sw pt nt  E          E hm  U ed dl
- G  A  C  S  N          N  L  D  R bs
-ps ns lw cw  T          T pu pd MC LA
+qw sw pt nt  E          E hm  U ed pu
+ G  A  C  S  N          N  L  D  R pd
+^z ^x ^c ^v  T          T cw lw MC LA
          RC     ◇   FN lb RA
 ```
 
 NU
 ```
-                       /  7  8  9  =
-G  A  C  S             N  4  5  6  -
-                       *  1  2  3  +
-            ◇       .  0  ,
+=  7  8  9  /          °  {  %  }  №
++  4  5  6  N          ±  S  C  A  G
+-  1  2  3  *             /  ~  \   
+         ,  0  .       ◇   
 ```
 
 FN
 ```
-F1 F2 F3 F4 F5           F6 F7 F8 F9 F10
- G  A  C  S F11         F12  S  C  A  G  
- P mu vd vu                 rm sm pm GM
-                ◇    ◇       
+F12 F7 F8 F9  P                       
+F11 F4 F5 F6 sl             S  C  A  G
+F10 F1 F2 F3 cl                       
+                            ◇
 ```
 
 GM
@@ -200,7 +200,7 @@ C  z  x  c  v                      C
 GF
 ```
 E  5  6  7  8         mr   
-A  1  2  3  4         ms   
+cl 1  2  3  4         ms   
 g  j  i  m  t         mp   
             N  ◇   FN
 ```
@@ -208,8 +208,8 @@ g  j  i  m  t         mp
 MS
 ```
                          wl mu wr wu
-                         ml md mr wd
-◇ ^x ^c ^v                          
+ G  A  C  S              ml md mr wd
+^z ^x ^c ^v                          
                    rb lb mb
 ```
 
