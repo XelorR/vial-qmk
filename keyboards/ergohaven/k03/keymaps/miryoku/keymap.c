@@ -149,7 +149,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       DM_REC1, KC_NO,   KC_NO,   LA_MAC,  QK_BOOT,  KC_NO,
         KC_NO,   KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       DM_RSTP, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO,
         KC_NO,   KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_CAPS,                                       DM_PLY1, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
+                          KC_NO,   KC_NO,   KC_APP,  KC_SPC, KC_TAB, KC_NO,         KC_NO, _______, _______, _______, KC_NO,   KC_NO
     ),
 
     [_MACRO] = LAYOUT(
