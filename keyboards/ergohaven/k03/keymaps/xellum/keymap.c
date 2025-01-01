@@ -132,34 +132,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        KC_NO,   KC_NO,      KC_NO,   KC_NO,    KC_NO,    KC_NO,                                               KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,   UC(0x2014), KC_LT,   KC_EQL,   KC_GT,    KC_GRV,                                              KC_CIRC, KC_LBRC, KC_EXLM, KC_RBRC, KC_AT,   KC_NO,
-        KC_NO,   KC_DLR,     KC_LPRN, KC_MINS,  KC_RPRN,  KC_UNDS,                                             KC_AMPR, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_NO,
-        KC_NO,   KC_HASH,    KC_ASTR, KC_SCLN,  KC_PIPE,  KC_NO,                                               KC_NO,   KC_DQT,  KC_COMM, KC_DOT,  KC_QUES, KC_NO,
-                             KC_NO,   KC_NO,    KC_ESC,   KC_SPC, KC_COLN, KC_NO,            KC_NO,   _______, _______, _______, KC_NO,   KC_NO
+        KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                                         KC_NO,   KC_NO,      KC_NO,     KC_NO,      KC_NO,  KC_NO,  
+        KC_NO,  KC_LBRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RBRC,                                       KC_NO,   S(KC_LBRC), S(KC_GRV), S(KC_RBRC), KC_NO,  KC_NO,
+        KC_NO,  KC_COLN,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_PLUS,                                       KC_NO,   OS_SHFT,    OS_CTRL,   OS_ALT,     OS_CMD, KC_NO,
+        KC_NO,  KC_TILD,  KC_EXLM,  KC_AT,    KC_HASH,  KC_PIPE,                                       KC_NO,   PASTE,      COPY,      CUT,        UNDO,   KC_NO,
+                          KC_NO,    KC_NO,    KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______,    KC_NO,     KC_NO
     ),
 
     [_SYMRU] = LAYOUT(
-        KC_NO, KC_NO,      KC_NO,   KC_NO,   KC_NO,   KC_NO,                                               KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO, UC(0x2014), LG_LT,   KC_EQL,  LG_GT,   KC_GRV,                                              LG_CIRC, KC_LBRC, KC_EXLM, KC_RBRC, LG_AT,   KC_NO,
-        KC_NO, LG_DLR,     KC_LPRN, KC_MINS, KC_RPRN, KC_UNDS,                                             LG_AMPR, OS_SHFT, OS_CTRL, OS_ALT,  OS_CMD,  KC_NO,
-        KC_NO, LG_HASH,    KC_ASTR, S(KC_4), LG_PIPE, KC_NO,                                               KC_NO,   S(KC_2), KC_QUES, KC_SLSH, S(KC_7), KC_NO,
-                           KC_NO,   KC_NO,   KC_ESC,  KC_SPC, S(KC_6), KC_NO,            KC_NO,   _______, _______, _______, KC_NO,   KC_NO
+        KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                                         KC_NO,   KC_NO,      KC_NO,     KC_NO,      KC_NO,  KC_NO,  
+        KC_NO,  LG_LCBR,  LG_AMPR,  KC_ASTR,  KC_LPRN,  LG_RCBR,                                       KC_NO,   S(KC_LBRC), S(KC_GRV), S(KC_RBRC), KC_NO,  KC_NO,
+        KC_NO,  LG_COLON, LG_DLR,   KC_PERC,  LG_CIRC,  KC_PLUS,                                       KC_NO,   OS_SHFT,    OS_CTRL,   OS_ALT,     OS_CMD, KC_NO,
+        KC_NO,  LG_TILD,  KC_EXLM,  LG_AT,    LG_HASH,  LG_PIPE,                                       KC_NO,   PASTE,      COPY,      CUT,        UNDO,   KC_NO,
+                          KC_NO,    KC_NO,    KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______,    KC_NO,     KC_NO
     ),
 
     [_NUM] = LAYOUT(
-        KC_NO, KC_NO,   KC_NO,   KC_NO,   KC_NO,    KC_NO,                                              KC_NO,      KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO, KC_EQL,  KC_7,    KC_8,    KC_9,     LG_SLASH,                                           UC(0x00B0), KC_LCBR,  KC_PERC, KC_RCBR, LG_NUM,  KC_NO,
-        KC_NO, KC_PLUS, KC_4,    KC_5,    KC_6,     KC_ENT,                                             UC(0x00B1), OS_SHFT,  OS_CTRL, OS_ALT,  OS_CMD,  KC_NO,
-        KC_NO, KC_MINS, KC_1,    KC_2,    KC_3,     KC_NO,                                              KC_NO,      LG_SLASH, LG_TILD, KC_BSLS, KC_NO,   KC_NO,
-                        KC_NO,   KC_NO,   _______,  KC_0,     _______, KC_NO,           KC_NO, _______, _______,    _______,  KC_NO,   KC_NO
+        KC_NO,   KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,   KC_NO,     KC_NO,    KC_NO,         KC_NO,   KC_NO,  
+        KC_NO,   LG_LBR,    KC_7,    KC_8,    KC_9,    LG_RBR,                                            KC_NO,   LG_RU_KHA, LG_RU_YO, LG_RU_HRD_SGN, KC_NO,   KC_NO,  
+        KC_NO,   LG_SCLN,   KC_4,    KC_5,    KC_6,    KC_EQL,                                            KC_NO,   OS_SHFT,   OS_CTRL,  OS_ALT,        OS_CMD,  KC_NO,  
+        KC_NO,   LG_GRAVE,  KC_1,    KC_2,    KC_3,    KC_BSLS,                                           KC_NO,   PASTE,     COPY,     CUT,           UNDO,    KC_NO,  
+                            KC_NO,   KC_NO,   LG_DOT,  KC_0,    KC_MINS, KC_NO,           KC_NO, _______, _______, _______,   KC_NO,    KC_NO
     ),
 
     [_NAV] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,     KC_NO,   KC_NO,
-        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_ESC,                                            KC_ESC,   KC_HOME, KC_UP,   KC_END,    KC_PGUP, KC_NO,
-        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_ENT,                                            KC_ENT,   KC_LEFT, KC_DOWN, KC_RGHT,   KC_PGDN, KC_NO,
-        KC_NO,   UNDO,    CUT,     COPY,    PASTE,   KC_TAB,                                            KC_TAB,   CW_TOGG, LG_WORD, G(KC_SPC), KC_LALT, KC_NO,
+        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_NO,                                             KC_NO,   KC_HOME, KC_UP,   KC_END,    KC_PGUP, KC_NO,
+        KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_NO,                                             KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT,   KC_PGDN, KC_NO,
+        KC_NO,   UNDO,    CUT,     COPY,    PASTE,   KC_NO,                                             KC_NO,   CW_TOGG, LG_WORD, G(KC_SPC), KC_LALT, KC_NO,
                           KC_NO,   KC_NO,   _______, _______, _______, KC_NO,           KC_NO, KC_ENT,  KC_BSPC,  KC_DEL,  KC_NO,   KC_NO
     ),
 
