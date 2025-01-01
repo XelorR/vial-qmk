@@ -96,7 +96,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,    KC_Q,  KC_W,  KC_F,  KC_P,   KC_B,                                          KC_J,   KC_L,   KC_U,    KC_Y,    KC_QUOT, KC_NO,
        KC_NO,    HG_A,  HA_R,  HC_S,  HS_T,   KC_G,                                          KC_M,   HS_N,   HC_E,    HA_I,    HG_O,    KC_NO,
        KC_NO,    BU_Z,  KC_X,  KC_C,  KC_D,   KC_V,                                          KC_K,   KC_H,   KC_COMM, KC_DOT,  BU_SLSH, KC_NO,
-                        KC_NO, KC_NO, LA_MED, LA_NAV, LA_MOS, _______,      _______, LA_SYM, LA_NUM, LA_FUN, KC_NO,   KC_NO
+                        KC_NO, KC_NO, LA_MED, LA_NAV, LA_MOS, KC_NO,          KC_NO, LA_SYM, LA_NUM, LA_FUN, KC_NO,   KC_NO
     ),
 
     [_RU] = LAYOUT(
@@ -168,7 +168,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                                       DM_REC1, KC_NO,   KC_NO,   LA_MAC,  QK_BOOT,  KC_NO,
         KC_NO,   KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SCRL,                                       DM_RSTP, KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO,
         KC_NO,   KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_CAPS,                                       DM_PLY1, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-                          KC_NO,   KC_NO,   _______, _______, _______, _______,   _______, _______, _______, _______, KC_NO,   KC_NO
+                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
     ),
 
     [_MACRO] = LAYOUT(
@@ -192,7 +192,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   UNDO,    CUT,     COPY,    PASTE,   REDO,                                            REDO,    PASTE,   COPY,    CUT,     UNDO,    KC_NO,  
         KC_NO,   KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,                                           KC_NO,   KC_RSFT, KC_RCTL, KC_ALGR, KC_RGUI, KC_NO,  
         KC_NO,   UNDO,    CUT,     COPY,    PASTE,   REDO,                                            REDO,    PASTE,   COPY,    CUT,     UNDO,    KC_NO,  
-                          KC_NO,   KC_NO,   KC_BTN3, KC_BTN1, KC_BTN2, _______,     _______, KC_BTN2, KC_BTN1, KC_BTN3, KC_NO,   KC_NO
+                          KC_NO,   KC_NO,   KC_BTN3, KC_BTN1, KC_BTN2, KC_NO,         KC_NO, KC_BTN2, KC_BTN1, KC_BTN3, KC_NO,   KC_NO
     ),
 
     [_ALT] = LAYOUT(
