@@ -121,7 +121,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_NO,   KC_NO,   KC_NO,     KC_NO,   KC_NO,
-        KC_NO,   CL_WIN,  SW_WIN,  TAB_L,   TAB_R,   KC_NO,                                             KC_NO,    KC_HOME, KC_UP,   KC_END,    KC_PGUP, KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,    KC_HOME, KC_UP,   KC_END,    KC_PGUP, KC_NO,
         KC_NO,   OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_NO,                                             KC_NO,    KC_LEFT, KC_DOWN, KC_RGHT,   KC_PGDN, KC_NO,
         KC_NO,   UNDO,    CUT,     COPY,    PASTE,   KC_NO,                                             KC_NO,    CW_TOGG, LG_WORD, G(KC_SPC), KC_LALT, KC_NO,
                           KC_NO,   KC_NO,   _______, _______, _______, KC_NO,           KC_NO, KC_ENT,  KC_BSPC,  KC_DEL,  KC_NO,   KC_NO
