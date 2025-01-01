@@ -1,8 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "ergohaven_ruen.h"
 #include "ergohaven.h"
-#include "oneshot.h"
-#include "swapper.h"
+// #include "oneshot.h"
+// #include "swapper.h"
 
 #undef QUICK_TAP_TERM
 #undef IGNORE_MOD_TAP_INTERRUPT
@@ -24,11 +24,11 @@
 #define LA_GFN MO(_GFN)
 #define LA_MAC OSL(_MACRO)
 
-#define SPACE_L C(G(KC_LEFT))
-#define SPACE_R C(G(KC_RGHT))
-#define TAB_L C(S(KC_TAB))
-#define TAB_R C(KC_TAB)
-#define CL_WIN A(KC_F4)
+// #define SPACE_L C(G(KC_LEFT))
+// #define SPACE_R C(G(KC_RGHT))
+// #define TAB_L C(S(KC_TAB))
+// #define TAB_R C(KC_TAB)
+// #define CL_WIN A(KC_F4)
 
 #define BU_Z LT(_BUTTON, KC_Z)
 #define BU_SLSH LT(_BUTTON, KC_SLSH)
@@ -57,6 +57,9 @@
 #define PASTE C(KC_V)
 #define REDO C(KC_Y)
 
+#undef UNICODE_TYPE_DELAY
+#define UNICODE_TYPE_DELAY 5
+
 enum layers {
     _EN,
     _RU,
@@ -76,16 +79,16 @@ enum layers {
     _ALT,
 };
 
-enum keycodes {
-    // Custom oneshot mod implementation with no timers.
-    OS_SHFT = SAFE_RANGE,
-    OS_CTRL,
-    OS_ALT,
-    OS_CMD,
+// enum keycodes {
+//     // Custom oneshot mod implementation with no timers.
+//     OS_SHFT = SAFE_RANGE,
+//     OS_CTRL,
+//     OS_ALT,
+//     OS_CMD,
 
-    SW_WIN,  // Switch to next window         (alt-tab)
-    SW_TAB,  // Switch to next browser tab    (ctrl-tab)
-};
+//     SW_WIN,  // Switch to next window         (alt-tab)
+//     SW_TAB,  // Switch to next browser tab    (ctrl-tab)
+// };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_EN] = LAYOUT(
@@ -209,69 +212,69 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // ),
 };
 
-bool is_oneshot_cancel_key(uint16_t keycode) {
-    switch (keycode) {
-    case LA_NAV:
-    case LA_MOS:
-        return true;
-    default:
-        return false;
-    }
-}
+// bool is_oneshot_cancel_key(uint16_t keycode) {
+//     switch (keycode) {
+//     case LA_NAV:
+//     case LA_MOS:
+//         return true;
+//     default:
+//         return false;
+//     }
+// }
 
-bool is_oneshot_ignored_key(uint16_t keycode) {
-    switch (keycode) {
-    case LA_MOS:
-    case LA_NAV:
-    case LA_SYM:
-    case LA_SYMRU:
-    case LA_NUM:
-    case KC_LSFT:
-    case OS_SHFT:
-    case OS_CTRL:
-    case OS_ALT:
-    case OS_CMD:
-        return true;
-    default:
-        return false;
-    }
-}
+// bool is_oneshot_ignored_key(uint16_t keycode) {
+//     switch (keycode) {
+//     case LA_MOS:
+//     case LA_NAV:
+//     case LA_SYM:
+//     case LA_SYMRU:
+//     case LA_NUM:
+//     case KC_LSFT:
+//     case OS_SHFT:
+//     case OS_CTRL:
+//     case OS_ALT:
+//     case OS_CMD:
+//         return true;
+//     default:
+//         return false;
+//     }
+// }
 
-bool sw_win_active = false;
-bool sw_tab_active = false;
+// bool sw_win_active = false;
+// bool sw_tab_active = false;
 
-oneshot_state os_shft_state = os_up_unqueued;
-oneshot_state os_ctrl_state = os_up_unqueued;
-oneshot_state os_alt_state = os_up_unqueued;
-oneshot_state os_cmd_state = os_up_unqueued;
+// oneshot_state os_shft_state = os_up_unqueued;
+// oneshot_state os_ctrl_state = os_up_unqueued;
+// oneshot_state os_alt_state = os_up_unqueued;
+// oneshot_state os_cmd_state = os_up_unqueued;
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    update_swapper(
-        &sw_win_active, KC_LALT, KC_TAB, SW_WIN, OS_SHFT,
-        keycode, record
-    );
-    update_swapper(
-        &sw_tab_active, KC_LCTL, KC_TAB, SW_TAB, OS_SHFT,
-        keycode, record
-    );
+// bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+//     update_swapper(
+//         &sw_win_active, KC_LALT, KC_TAB, SW_WIN, OS_SHFT,
+//         keycode, record
+//     );
+//     update_swapper(
+//         &sw_tab_active, KC_LCTL, KC_TAB, SW_TAB, OS_SHFT,
+//         keycode, record
+//     );
 
-    update_oneshot(
-        &os_shft_state, KC_LSFT, OS_SHFT,
-        keycode, record
-    );
-    update_oneshot(
-        &os_ctrl_state, KC_LCTL, OS_CTRL,
-        keycode, record
-    );
-    update_oneshot(
-        &os_alt_state, KC_LALT, OS_ALT,
-        keycode, record
-    );
-    update_oneshot(
-        &os_cmd_state, KC_LCMD, OS_CMD,
-        keycode, record
-    );
+//     update_oneshot(
+//         &os_shft_state, KC_LSFT, OS_SHFT,
+//         keycode, record
+//     );
+//     update_oneshot(
+//         &os_ctrl_state, KC_LCTL, OS_CTRL,
+//         keycode, record
+//     );
+//     update_oneshot(
+//         &os_alt_state, KC_LALT, OS_ALT,
+//         keycode, record
+//     );
+//     update_oneshot(
+//         &os_cmd_state, KC_LCMD, OS_CMD,
+//         keycode, record
+//     );
 
-    return true;
-}
+//     return true;
+// }
 
