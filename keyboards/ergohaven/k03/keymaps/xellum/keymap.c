@@ -181,9 +181,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_MEDIA] = LAYOUT(
         KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,  QK_BOOT, _______, _______, _______, KC_VOLU,                                         UC_LINX, _______, KC_VOLU, _______, _______, KC_NO,
-        KC_NO,  OS_CMD,  OS_ALT,  OS_CTRL, OS_SHFT, KC_VOLD,                                         UC_WIN,  KC_MPRV, KC_VOLD, KC_MNXT, CG_TOGG, KC_NO,
-        KC_NO,  UNDO,    CUT,     COPY,    PASTE,   KC_MUTE,                                         UC_MAC,  UC_WINC, KC_MUTE, _______, _______, KC_NO,
+        KC_NO,  UC_WIN,  UC_WINC, UC_MAC,  UC_LINX, UC_BSD,                                          KC_NO,   _______, KC_VOLU, _______, _______, KC_NO,
+        KC_NO,  KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,                                           KC_NO,   KC_MPRV, KC_VOLD, KC_MNXT, CG_TOGG, KC_NO,
+        KC_NO,  UNDO,    CUT,     COPY,    PASTE,   KC_NO,                                           KC_NO,   _______, KC_MUTE, _______, _______, KC_NO,
                          KC_NO,   KC_NO,   _______, _______, _______, KC_NO,         KC_NO, KC_MSTP, KC_MPLY, KC_MUTE, KC_NO,   KC_NO
     ),
 
