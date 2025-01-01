@@ -17,6 +17,7 @@
 #define LA_MED LT(_MEDIA,KC_ESC)
 #define LA_MOS LT(_MOUSE,KC_TAB)
 #define LA_SYM LT(_SYM,KC_ENT)
+#define LA_SYMRU LT(_SYMRU,KC_ENT)
 #define LA_NUM LT(_NUM,KC_BSPC)
 #define LA_FUN LT(_FN,KC_DEL)
 #define LA_GAM DF(_GAM)
@@ -226,7 +227,6 @@ bool is_oneshot_ignored_key(uint16_t keycode) {
     case LA_NUM:
     case KC_LSFT:
     case OS_SHFT:
-    case OSM_SFT:
     case OS_CTRL:
     case OS_ALT:
     case OS_CMD:
