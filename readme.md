@@ -151,42 +151,50 @@ RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN)
 
 SY (EN)
 ```
-—  <  =  >  `          ^  [  !  ]  @
-$  (  -  )  _          &  S  C  A  G
-#  *  ;  |                "  ,  .  ?
-           sp  :    ◇       
+{  &  *  (  }             {  ~  }   
+:  $  %  ^  +            RS RC LA RG
+~  !  @  #  |             "  ,  .  ?
+         (  )  _    ◇       
 ```
 
 SY (RU)
 ```
-—  <  =  >  ё          ^  х  !  ъ  @
-$  (  -  )  _          &  S  C  A  G
-#  *  ;  |                "  ,  .  ?
-           sp  :    ◇       
-```
-
-NV
-```
-qw sw pt nt  E          E hm  U ed pu
- G  A  C  S  N          N  L  D  R pd
-^z ^x ^c ^v  T          T cw lw MC LA
-         RC     ◇   FN lb RA
+{  &  *  (  }             Х  Ё  Ъ   
+:  $  %  ^  +            RS RC LA RG
+~  !  @  #  |             "  ,  .  ?
+         (  )  _    ◇       
 ```
 
 NU
 ```
-=  7  8  9  /          °  {  %  }  №
-+  4  5  6  N          ±  S  C  A  G
--  1  2  3  *             /  ~  \   
-         ,  0  .       ◇   
+[  7  8  9  ]          °  х  ё  ъ   
+;  4  5  6  =          ± RS RC LA RG
+`  1  2  3  \          №  "  ,  .  ?
+         .  0  -       ◇   
 ```
 
 FN
 ```
-F12 F7 F8 F9  P                       
-F11 F4 F5 F6 sl             S  C  A  G
-F10 F1 F2 F3 cl                       
+F12 F7 F8 F9  P                  MC   
+F11 F4 F5 F6 sl            RS RC LA RG
+F10 F1 F2 F3 cl                  RA   
                             ◇
+```
+
+NV
+```
+   MC                     hm  U ed pu
+LG LA LC LS                L  D  R pd
+   RA                     cw lw      
+         RC     ◇   FN lb RA
+```
+
+MS
+```
+   MC                    wl mu wr wu
+LG LA LC LS              ml md mr wd
+   RA                 ^y ^v ^c ^x ^z 
+                   rb lb mb
 ```
 
 GM
@@ -205,11 +213,11 @@ g  j  i  m  t         mp
             N  ◇   FN
 ```
 
-MS
+BU
 ```
-                         wl mu wr wu
- G  A  C  S              ml md mr wd
-^z ^x ^c ^v                          
+^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z
+LG LA LC LS              RS RC LA RG
+^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z 
                    rb lb mb
 ```
 
@@ -228,7 +236,7 @@ AL
  §  ×  ©  Δ  ✓          ⌨  «  •  »  ⇧
 ```
 
-There are no activators for MC and AL, just assign combo to activate it as one-shot layers.
+There are no activators for AL, just assign combo to activate it as one-shot layers.
 
 <details>
 
