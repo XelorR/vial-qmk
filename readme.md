@@ -92,9 +92,13 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 | pt       |            | Previous tab                                     |
 | nt       |            | Next tab                                         |
 | ns       |            | Next space                                       |
-| ps       |            | Next space                                       |
+| ps       |            | Prev space                                       |
 | qt       |            | Close tab                                        |
 | qw       |            | Close window                                     |
+| pl       |            | Media play                                       |
+| tp       |            | Media stop                                       |
+| mp       |            | Media prev                                       |
+| mn       |            | Media next                                       |
 | vu       |            | Volume up                                        |
 | vd       |            | Volume down                                      |
 | mt       |            | Mute                                             |
@@ -139,6 +143,7 @@ It is mostly [Miryoku](https://github.com/manna-harbour/miryoku/tree/master/docs
 - separate gaming layer
 - extra russian letters and punctuation placrment on Sym and Num layers
 - unicode symbol layer
+- macro layer
 - active use of [RuEn](https://github.com/ergohaven/vial-qmk/blob/vial/keyboards/ergohaven/docs/ruen.md) functionality
 - i prefer inverted t in most cases
 
@@ -187,7 +192,7 @@ FN
 F12 F7 F8 F9  P                  MC   
 F11 F4 F5 F6 sl            RS RC LA RG
 F10 F1 F2 F3 cl                  RA   
-                            ◇
+          ap sp  T          ◇
 ```
 
 NV
@@ -222,12 +227,20 @@ g  j  i  m  t         mp
             N  ◇   FN
 ```
 
+ME
+```
+   MC                       vu      
+LG LA LC LS              mp vd mn   
+   RA                                
+                   tp pl mt
+```
+
 BU
 ```
 ^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z
 LG LA LC LS              RS RC LA RG
 ^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z 
-                   rb lb mb
+         mb lb rb  rb lb mb
 ```
 
 MC
