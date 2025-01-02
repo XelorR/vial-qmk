@@ -158,6 +158,14 @@ RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN, Mod-taps: GACS on home row)
          E sp  T    N bs dl
 ```
 
+NU
+```
+[  7  8  9  ]          °  х  ё  ъ   
+;  4  5  6  =          ± RS RC LA RG
+`  1  2  3  \          №  "  ,  .  ?
+         .  0  -       ◇   
+```
+
 SY (EN)
 ```
 {  &  *  (  }             {  ~  }   
@@ -172,14 +180,6 @@ SY (RU)
 :  $  %  ^  +            RS RC LA RG
 ~  !  @  #  |             "  ,  .  ?
          (  )  _    ◇       
-```
-
-NU
-```
-[  7  8  9  ]          °  х  ё  ъ   
-;  4  5  6  =          ± RS RC LA RG
-`  1  2  3  \          №  "  ,  .  ?
-         .  0  -       ◇   
 ```
 
 FN
