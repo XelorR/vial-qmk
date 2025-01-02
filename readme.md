@@ -133,7 +133,16 @@ Also, I use two layouts: [Colemak-dh](https://colemakmods.github.io/mod-dh/) for
 
 </details>
 
-EN (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN)
+It is mostly [Miryoku](https://github.com/manna-harbour/miryoku/tree/master/docs/reference), but with following additions:
+
+- separate RU layer with corresponding symbol layer
+- separate gaming layer
+- extra russian letters and punctuation placrment on Sym and Num layers
+- unicode symbol layer
+- active use of [RuEn](https://github.com/ergohaven/vial-qmk/blob/vial/keyboards/ergohaven/docs/ruen.md) functionality
+- i prefer inverted t in most cases
+
+EN (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN, Mod-taps: GACS on home row)
 ```
 q  w  f  p  b          j  l  u  y  '
 a  r  s  t  g          m  n  e  i  o
@@ -141,7 +150,7 @@ z  x  c  d  v          k  h  ,  .  /
          E sp  T    N bs dl
 ```
 
-RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN)
+RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN, Mod-taps: GACS on home row)
 ```
 й  ц  у  к  е          н  г  ш  щ  з
 ф  ы  в  а  п          р  о  л  д  ж
@@ -262,4 +271,4 @@ NU
 
 ## Current version
 
-- [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/xellum/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_xellum.uf2)
+- [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/miryoku/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_rev1_miryoku.uf2)
