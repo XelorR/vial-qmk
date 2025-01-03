@@ -174,17 +174,17 @@ NU
 SY (EN)
 ```
 {  &  *  ?  }                  MC   
-:  (  )  $  +            RS RC LA RG
+:  $  %  ^  +            RS RC LA RG
 ~  !  @  #  |                  RA   
-         ^  %  _    ◇       
+         (  )  _    ◇       
 ```
 
 SY (RU)
 ```
 Х  .  *  ?  Ъ                  MC   
-:  (  )  ,  +            RS RC LA RG
+:  ₽  %  ,  +            RS RC LA RG
 Ё  !  "  #  |                  RA   
-            %  _    ◇       
+         (  )  _    ◇       
 ```
 
 FN
