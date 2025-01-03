@@ -211,20 +211,20 @@ LG LA LC LS              ml md mr wd
                    rb lb mb
 ```
 
-GM
+GM (LTs: P/FN)
 ```
 T  q  w  e  r                U     T
 S  a  s  d  f             L  D  R  S
 C  z  x  c  v                      C
-        LA sp GF   EN  P  N
+        LA sp GF   EN sp  P
 ```
 
 GF
 ```
-E  5  6  7  8         mr   
-cl 1  2  3  4         ms   
-g  j  i  m  t         mp   
-            N  ◇   FN
+E  7  8  9  j         mr   
+cl 4  5  6  i         ms   
+g  1  2  3  m         mp   
+         N  N  ◇   FN
 ```
 
 ME
