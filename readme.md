@@ -219,12 +219,12 @@ C  z  x  c  v                      C
         LA sp GF   EN sp  P
 ```
 
-GF
+GF (LTs: bs/NU)
 ```
 E  7  8  9  j         mr   
 cl 4  5  6  i         ms   
 g  1  2  3  m         mp   
-         N  N  ◇   FN
+        ME  N  ◇      bs
 ```
 
 ME
