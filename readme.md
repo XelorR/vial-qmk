@@ -166,7 +166,7 @@ RU (LTs: E/ME, sp/NV, T/MS, N/SY, bs/NY, dl/FN, Mod-taps: GACS on home row)
 NU
 ```
 [  7  8  9  ]                  MC   
-;  4  5  6  =            RS RC LA RG
+;  4  5  6  =            LS LC LA LG
 `  1  2  3  \                  RA   
          .  0  -       ◇   
 ```
@@ -174,7 +174,7 @@ NU
 SY (EN)
 ```
 {  &  *  ?  }                  MC   
-:  $  %  ^  +            RS RC LA RG
+:  $  %  ^  +            LS LC LA LG
 ~  !  @  #  |                  RA   
          (  )  _    ◇       
 ```
@@ -182,7 +182,7 @@ SY (EN)
 SY (RU)
 ```
 Х  .  *  ?  Ъ                  MC   
-:  ₽  %  ,  +            RS RC LA RG
+:  ₽  %  ,  +            LS LC LA LG
 Ё  !  "  #  |                  RA   
          (  )  _    ◇       
 ```
@@ -190,7 +190,7 @@ SY (RU)
 FN
 ```
 F12 F7 F8 F9  P                  MC   
-F11 F4 F5 F6 sl            RS RC LA RG
+F11 F4 F5 F6 sl            LS LC LA LG
 F10 F1 F2 F3                     RA   
           ap sp  T          ◇
 ```
@@ -238,7 +238,7 @@ LG LA LC LS              mp vd mn
 BU
 ```
 ^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z
-LG LA LC LS              RS RC LA RG
+LG LA LC LS              RS RC RA RG
 ^z ^x ^c ^v ^y        ^y ^v ^c ^x ^z 
          mb lb rb  rb lb mb
 ```
