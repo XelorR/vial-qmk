@@ -179,7 +179,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ALT] = LAYOUT(
         KC_NO, KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,                                      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO,
-        KC_NO, UC(0x238B), UC(0x03A9), UC(0x03C6), UC(0x00A7), UC(0x20BF),                                 UC(0x2248), UC(0x03BB), UC(0x221E), UC(0x00A5), UC(0x2318), KC_NO,
+        KC_NO, UC(0x238B), UC(0x20B9), UC(0x03C6), UC(0x00A7), UC(0x20BF),                                 UC(0x2248), UC(0x03BB), UC(0x221E), UC(0x00A5), UC(0x2318), KC_NO,
         KC_NO, UC(0x03B1), UC(0x20BD), UC(0x03A3), UC(0x00B1), UC(0x2756),                                 UC(0x03BC), UC(0x2116), UC(0x20AC), UC(0x2794), UC(0x2325), KC_NO,
         KC_NO, UC(0x2022), UC(0x00D7), UC(0x00A9), UC(0x00B0), UC(0x2713),                                 UC(0x2328), UC(0x2317), UC(0x00AB), UC(0x00BB), UC(0x21E7), KC_NO,
                            KC_NO,      KC_NO,      KC_NO,      KC_NO,      KC_NO, KC_NO,     KC_NO, KC_NO, KC_NO,      KC_NO,      KC_NO,      KC_NO
