@@ -261,8 +261,6 @@ AL
 There is no language togglers here.
 Just set `LG_TOGGLE` or `LG_SET_EN`/`LG_SET_RU` as combo. It will also toggle layers on language switch.
 
-<details>
-
 ## Current version
 
 - [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/miryoku/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_rev1_miryoku.uf2)
