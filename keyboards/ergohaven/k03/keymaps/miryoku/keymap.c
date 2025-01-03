@@ -171,7 +171,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BUTTON] = LAYOUT(
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                                           KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  
         KC_NO,   UNDO,    CUT,     COPY,    PASTE,   REDO,                                            REDO,    PASTE,   COPY,    CUT,     UNDO,    KC_NO,  
-        KC_NO,   KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,                                           KC_NO,   KC_RSFT, KC_RCTL, KC_LALT, KC_RGUI, KC_NO,  
+        KC_NO,   KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,                                           KC_NO,   KC_RSFT, KC_RCTL, KC_ALGR, KC_RGUI, KC_NO,  
         KC_NO,   UNDO,    CUT,     COPY,    PASTE,   REDO,                                            REDO,    PASTE,   COPY,    CUT,     UNDO,    KC_NO,  
                           KC_NO,   KC_NO,   KC_BTN3, KC_BTN1, KC_BTN2, KC_NO,         KC_NO, KC_BTN2, KC_BTN1, KC_BTN3, KC_NO,   KC_NO
     ),
