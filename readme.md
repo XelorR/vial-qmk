@@ -258,7 +258,8 @@ AL
  •  ×  ©  °  ✓          ⌨  ⌗  «  »  ⇧
 ```
 
-There are no activators for AL, just assign combo to activate it as one-shot layers.
+There is no language togglers here.
+Just set `LG_TOGGLE` or `LG_SET_EN`/`LG_SET_RU` as combo. It will also toggle layers on language switch.
 
 <details>
 
