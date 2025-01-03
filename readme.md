@@ -200,7 +200,7 @@ NV
    AL                     hm  U ed pu
 LG LA LC LS            cl  L  D  R pd
    RA GM MC               cw lw      
-         RC     ◇   FN lb RA
+                ◇   FN lb RA
 ```
 
 MS
