@@ -122,7 +122,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYM] = LAYOUT(
         KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                                         KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,  
-        KC_NO,  KC_LBRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RBRC,                                       KC_NO,   KC_LBRC, KC_TILD,  KC_RBRC, QK_BOOT, KC_NO,
+        KC_NO,  KC_LCBR,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RCBR,                                       KC_NO,   KC_LBRC, KC_TILD,  KC_RBRC, QK_BOOT, KC_NO,
         KC_NO,  KC_COLN,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_PLUS,                                       KC_NO,   KC_LSFT, KC_LCTL,  KC_LALT, KC_LGUI, KC_NO,
         KC_NO,  KC_TILD,  KC_EXLM,  KC_AT,    KC_HASH,  KC_PIPE,                                       KC_NO,   LG_DQUO, LG_COMMA, LG_DOT,  LG_QUES, KC_NO,
                           KC_NO,    KC_NO,    KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______, KC_NO,    KC_NO
@@ -130,17 +130,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_SYMRU] = LAYOUT(
         KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                                         KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   KC_NO,  
-        KC_NO,  LG_LCBR,  LG_AMPR,  KC_ASTR,  KC_LPRN,  LG_RCBR,                                       KC_NO,   KC_LBRC, KC_TILD,  KC_RBRC, QK_BOOT, KC_NO,
+        KC_NO,  KC_LCBR,  LG_AMPR,  KC_ASTR,  KC_LPRN,  KC_RCBR,                                       KC_NO,   KC_LBRC, KC_TILD,  KC_RBRC, QK_BOOT, KC_NO,
         KC_NO,  LG_COLON, LG_DLR,   KC_PERC,  LG_CIRC,  KC_PLUS,                                       KC_NO,   KC_LSFT, KC_LCTL,  KC_LALT, KC_LGUI, KC_NO,
-        KC_NO,  LG_TILD,  KC_EXLM,  LG_AT,    LG_HASH,  LG_PIPE,                                       KC_NO,   LG_DQUO, LG_COMMA, LG_DOT,  LG_QUES, KC_NO,
+        KC_NO,  KC_TILD,  KC_EXLM,  LG_AT,    LG_HASH,  LG_PIPE,                                       KC_NO,   LG_DQUO, LG_COMMA, LG_DOT,  LG_QUES, KC_NO,
                           KC_NO,    KC_NO,    KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______, KC_NO,    KC_NO
     ),
 
     [_NUM] = LAYOUT(
         KC_NO,   KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO,                                             KC_NO,      KC_NO,     KC_NO,    KC_NO,         KC_NO,   KC_NO,  
-        KC_NO,   LG_LBR,    KC_7,    KC_8,    KC_9,    LG_RBR,                                            UC(0x00B0), LG_RU_KHA, LG_RU_YO, LG_RU_HRD_SGN, QK_BOOT, KC_NO,  
+        KC_NO,   KC_LBRC,   KC_7,    KC_8,    KC_9,    KC_RBRC,                                           UC(0x00B0), LG_RU_KHA, LG_RU_YO, LG_RU_HRD_SGN, QK_BOOT, KC_NO,  
         KC_NO,   LG_SCLN,   KC_4,    KC_5,    KC_6,    KC_EQL,                                            UC(0x00B1), KC_LSFT,   KC_LCTL,  KC_LALT,       KC_LGUI, KC_NO,  
-        KC_NO,   LG_GRAVE,  KC_1,    KC_2,    KC_3,    KC_BSLS,                                           LG_NUM,     LG_DQUO,   LG_COMMA, LG_DOT,        LG_QUES, KC_NO,  
+        KC_NO,   KC_GRV,    KC_1,    KC_2,    KC_3,    KC_BSLS,                                           LG_NUM,     LG_DQUO,   LG_COMMA, LG_DOT,        LG_QUES, KC_NO,  
                             KC_NO,   KC_NO,   LG_DOT,  KC_0,    KC_MINS, KC_NO,           KC_NO, _______, _______,    _______,   KC_NO,    KC_NO
     ),
 
