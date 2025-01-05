@@ -263,3 +263,32 @@ Just set `LG_TOGGLE` or `LG_SET_EN`/`LG_SET_RU` as combo. It will also toggle la
 ## Current version
 
 - [Ergohaven](https://ergohaven.xyz/) [K03](https://ergohaven.xyz/k03): [keymap](./keyboards/ergohaven/k03/keymaps/miryoku/keymap.c), precompiled [firmware](https://github.com/XelorR/xellum/releases/download/latest/ergohaven_k03_rev1_miryoku.uf2)
+
+<details>
+
+<summary>Experimental layers</summary>
+
+```
+q  w  f  p  b          j  l  u  y  '
+a  r  s  t  g          m  n  e  i  o
+z  x  c  d  v          k  h  ,  .  /
+         E sp  T    N bs dl
+```
+
+NU
+```
+!  7  8  9  %                  AL   
+,  4  5  6  .            LS LC LA LG
+?  1  2  3  ^            MC GM RA   
+         .  0  \       ◇   
+```
+
+SY (EN)
+```
+@  <  =  >  `                  AL   
+:  (  -  )  *            LS LC LA LG
+~  [  ;  ]  #            MC GM RA   
+         &  $  /    ◇       
+```
+
+</details>
