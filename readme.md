@@ -6,6 +6,7 @@
 - [Wellum](https://github.com/braindefender/wellum)
 - [Miryoku](https://github.com/manna-harbour/miryoku)
 - [Dreymar's Extend layer](https://dreymar.colemak.org/layers-extend.html)
+- [Engram 3x5 mod](https://github.com/shnarazk/engram/tree/extensions/mod-3x5)
 - [Раскладка Ильи Шепрута](https://optozorax.github.io/p/my-keyboard-layout/)
 - [Pascal Getreuer's layout](https://github.com/getreuer/qmk-keymap) and his ["Designing Symbol Layer"](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 - [T-34 keyboard layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/)
