@@ -183,7 +183,7 @@ SY (EN)
 SY (RU)
 ```
 Х  .  *  ?  Ъ                  AL   
-:  ₽  %  ,  +            LS LC LA LG
+:  $  %  ,  +            LS LC LA LG
 Ё  !  "  #  |            MC GM RA   
          (  )  _    ◇       
 ```

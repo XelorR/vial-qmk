@@ -139,11 +139,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYMRU] = LAYOUT(
-        KC_NO,  KC_NO,    KC_NO,      KC_NO,    KC_NO,    KC_NO,                                         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
-        KC_NO,  KC_LCBR,  LG_DOT,     KC_ASTR,  LG_QUES,  KC_RCBR,                                       KC_NO,   KC_NO,   KC_NO,   LA_ALT,  QK_BOOT, KC_NO,
-        KC_NO,  LG_COLON, UC(0x20BD), LG_PERC,  LG_COMMA, KC_PLUS,                                       KC_NO,   KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO,
-        KC_NO,  KC_TILD,  KC_EXLM,    LG_DQUO,  LG_HASH,  LG_PIPE,                                       KC_NO,   LA_MAC,  LA_GAM,  KC_ALGR, KC_NO,   KC_NO,
-                          KC_NO,      KC_NO,    KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
+        KC_NO,  KC_NO,    KC_NO,   KC_NO,   KC_NO,    KC_NO,                                         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
+        KC_NO,  KC_LCBR,  LG_DOT,  KC_ASTR, LG_QUES,  KC_RCBR,                                       KC_NO,   KC_NO,   KC_NO,   LA_ALT,  QK_BOOT, KC_NO,
+        KC_NO,  LG_COLON, LG_DLR,  LG_PERC, LG_COMMA, KC_PLUS,                                       KC_NO,   KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_NO,
+        KC_NO,  KC_TILD,  KC_EXLM, LG_DQUO, LG_HASH,  LG_PIPE,                                       KC_NO,   LA_MAC,  LA_GAM,  KC_ALGR, KC_NO,   KC_NO,
+                          KC_NO,   KC_NO,   KC_LPRN,  KC_RPRN, KC_UNDS, KC_NO,       KC_NO, _______, _______, _______, KC_NO,   KC_NO
     ),
 
     [_NUM] = LAYOUT(
