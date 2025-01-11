@@ -258,7 +258,7 @@ AL
  •  ×  ©  °  ✓          ⌨  ⌗  «  »  ⇧
 ```
 
-There is no language togglers here.
+There are no language togglers here.
 Just set `LG_TOGGLE` or `LG_SET_EN`/`LG_SET_RU` as combo. It will also toggle layers on language switch.
 
 ## Current version
