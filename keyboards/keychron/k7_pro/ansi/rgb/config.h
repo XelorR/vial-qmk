@@ -25,6 +25,7 @@
 #    define DRIVER_1_LED_COUNT 30
 #    define DRIVER_2_LED_COUNT 38
 #    define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_COUNT + DRIVER_2_LED_COUNT)
+#    define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
 
 /* Set to infinit, which is use in USB mode by default
  */
