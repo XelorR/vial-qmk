@@ -25,7 +25,13 @@ jobs:
       id: build
       run: |
         # qmk compile -kb keychron/k7_pro/ansi/rgb -km vial
-        make keychron/k7_pro/ansi/rgb:vial
+        echo "Debugging Environment"
+        echo "Git Version:"
+        git --version || echo "Git not available"
+        echo "QMK_BIN:"
+        which qmk || echo "qmk not found"
+        echo "Building firmware..."
+        make keychron/k7_pro/ansi/rgb:vial V=1
 
     - uses: actions/upload-artifact@v4
       name: Upload
