@@ -31,7 +31,7 @@ jobs:
         which qmk || echo "qmk not found"
         echo "Building firmware...\n"
         echo "Keymap Output Path:"
-        find build/ -type d
+        find . -type d
         echo "Checking for duplicates:"
         find . -name version.h
 
