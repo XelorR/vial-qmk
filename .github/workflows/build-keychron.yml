@@ -25,7 +25,7 @@ jobs:
       id: build
       run: |
         # qmk compile -kb keychron/k7_pro/ansi/rgb -km vial
-        make keychron/k6_pro/ansi/rgb:vial
+        make keychron/k7_pro/ansi/rgb:vial
 
     - uses: actions/upload-artifact@v4
       name: Upload
