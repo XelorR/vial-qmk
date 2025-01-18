@@ -14,11 +14,6 @@ jobs:
     # fixme: delete sha256 when upstream works
     container: ghcr.io/qmk/qmk_cli:latest@sha256:cd048bb28902adbde8c950b65ede93d058b398b380c6d28556c5f104b35f8840
 
-    steps:
-    - name: Addimg exception to make git-submodules
-      run: |
-        git config --global --add safe.directory /__w/xellum/xellum
-
     - name: (actions) Checkout Vial repo
       uses: actions/checkout@v3
       with:
