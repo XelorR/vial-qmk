@@ -1,0 +1,36 @@
+name: Pre-Release
+
+on:
+  push:
+    branches: ['keychron']
+
+jobs:
+
+  build-keychron:
+    uses: ./.github/workflows/build-keychron.yml
+
+  pre-release:
+    name: Pre-Release
+    needs:
+      - build-keychron
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'write'
+      packages: 'write'
+      pull-requests: 'read'
+
+    steps:
+      - name: Download
+        uses: actions/download-artifact@v4
+        with:
+          path: keychron_fw
+
+      - name: Create Release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: 'latest'
+          prerelease: true
+          title: 'Latest Build'
+          files: |
+            keychron_fw/**/*.uf2

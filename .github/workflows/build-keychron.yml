@@ -1,0 +1,35 @@
+name: Build Keychron
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+
+  build-keychron:
+    name: Build keychron keymaps
+    runs-on: ubuntu-latest
+    # fixme: delete sha256 when upstream works
+    container: ghcr.io/qmk/qmk_cli:latest@sha256:cd048bb28902adbde8c950b65ede93d058b398b380c6d28556c5f104b35f8840
+
+    steps:
+    - name: (actions) Checkout Vial repo
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+        submodules: recursive
+
+    - name: Build
+      id: build
+      run: |
+        # qmk compile -kb keychron/k7_pro/ansi/rgb -km vial
+        make keychron/k7_pro/ansi/rgb:vial
+
+    - uses: actions/upload-artifact@v4
+      name: Upload
+      id: upload
+      with:
+        path: "*.uf2"
+        name: keychron_fw
