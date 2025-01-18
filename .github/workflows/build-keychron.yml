@@ -21,17 +21,25 @@ jobs:
         persist-credentials: false
         submodules: recursive
 
-    - name: Build
-      id: build
+    - name: Debug Makefile Paths
+      id: debug
       run: |
-        # qmk compile -kb keychron/k7_pro/ansi/rgb -km vial
         echo "Debugging Environment"
         echo "Git Version:"
         git --version || echo "Git not available"
         echo "QMK_BIN:"
         which qmk || echo "qmk not found"
-        echo "Building firmware..."
-        make keychron/k7_pro/ansi/rgb:vial VERSION=1.0 V=1
+        echo "Building firmware...\n"
+        echo "Keymap Output Path:"
+        find build/ -type d
+        echo "Checking for duplicates:"
+        find . -name version.h
+
+    - name: Build
+      id: build
+      run: |
+        # qmk compile -kb keychron/k7_pro/ansi/rgb -km vial
+        make keychron/k7_pro/ansi/rgb:vial V=1
 
     - uses: actions/upload-artifact@v4
       name: Upload
