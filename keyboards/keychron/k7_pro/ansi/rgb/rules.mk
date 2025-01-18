@@ -1,1 +1,3 @@
-# This file intentionally blank
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_DRIVER = CKLED2001
+
