@@ -1,5 +1,3 @@
-VERSION = 1.0
-
 # MCU name
 MCU = STM32L432
 
